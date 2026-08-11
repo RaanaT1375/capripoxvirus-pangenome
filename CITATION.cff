@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: >-
+  Pan-genome and selection analysis of 290 Capripoxvirus genomes
+message: If you use this repository, please cite it as below.
+type: software
+authors:
+  - family-names: Tabashiri
+    given-names: Raana
+    orcid: 'https://orcid.org/0009-0003-7975-6686'
+    affiliation: >-
+      Zurich University of Applied Sciences (ZHAW)
+repository-code: 'https://github.com/RaanaT1375/capripoxvirus-pangenome'
+abstract: >-
+  Reproducible pipeline and results for a pan-genome, phylogenetic,
+  recombination and selection analysis of 290 Capripoxvirus genomes
+  (240 lumpy skin disease virus, 34 sheeppox virus, 16 goatpox virus).
+  The principal result is a McDonald-Kreitman estimate of adaptive
+  amino-acid divergence on the LSDV branch (alpha = 0.604), together with
+  a quantitative demonstration of why codon substitution models are not
+  applicable within present-day LSDV.
+keywords:
+  - lumpy skin disease virus
+  - Capripoxvirus
+  - pan-genome
+  - molecular evolution
+  - McDonald-Kreitman test
+  - positive selection
+license: MIT
