@@ -47,6 +47,10 @@ flowchart TD
 **Green** = primary result · **Yellow** = valid but easily misread ·
 **Grey** = negative or inconclusive, documented as such
 
+<p align="center">
+  <img src="figures/pipeline.svg" alt="Analysis pipeline" width="100%">
+</p>
+
 ## Headline results
 
 **1. Present-day LSDV is evolutionarily static.** Across 240 genomes the

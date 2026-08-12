@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 720" width="1240" height="720"
+     font-family="Helvetica Neue, Helvetica, Arial, sans-serif" role="img">
+<title>Capripoxvirus pan-genome and selection analysis pipeline</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6"
+  orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#9AA4B0"
+  stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+<text x="60" y="44" font-size="19" font-weight="600" fill="#1C2431">Capripoxvirus pan-genome and selection analysis</text>
+<text x="60" y="66" font-size="12" fill="#6B7684">290 genomes · 240 LSDV, 34 SPPV, 16 GTPV · 16 analysis stages</text>
+<line x1="60" y1="86" x2="1180" y2="86" stroke="#DFE3E8" stroke-width="1"/>
+
+<rect x="60" y="103" width="9" height="9" fill="#2B4C7E"/>
+<text x="75" y="112" font-size="11.5" font-weight="600" fill="#6B7684" letter-spacing="0.05em">Dataset</text>
+<rect x="330" y="103" width="9" height="9" fill="#2B4C7E"/>
+<text x="345" y="112" font-size="11.5" font-weight="600" fill="#6B7684" letter-spacing="0.05em">Pan-genome</text>
+<rect x="600" y="103" width="9" height="9" fill="#2B4C7E"/>
+<text x="615" y="112" font-size="11.5" font-weight="600" fill="#6B7684" letter-spacing="0.05em">Evolutionary context</text>
+<rect x="880" y="103" width="9" height="9" fill="#17877A"/>
+<text x="895" y="112" font-size="11.5" font-weight="600" fill="#6B7684" letter-spacing="0.05em">Selection</text>
+
+<g>
+<rect x="60" y="134" width="240" height="52" rx="6" fill="#F2F5F8" stroke="#D5DEE7"/>
+<text x="78" y="156" font-size="13" font-weight="600" fill="#2C3E50">323 genomes</text>
+<text x="78" y="172" font-size="11" fill="#5F7183">GenBank and SRA</text>
+<line x1="180" y1="186" x2="180" y2="200" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="60" y="204" width="240" height="52" rx="6" fill="#F2F5F8" stroke="#D5DEE7"/>
+<text x="78" y="226" font-size="13" font-weight="600" fill="#2C3E50">01  Quality control</text>
+<text x="78" y="242" font-size="11" fill="#5F7183">three filtering rounds</text>
+<line x1="180" y1="256" x2="180" y2="270" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="60" y="274" width="240" height="76" rx="6" fill="#F2F5F8" stroke="#D5DEE7"/>
+<text x="78" y="296" font-size="13" font-weight="600" fill="#2C3E50">290 genomes</text>
+<rect x="78" y="306" width="169" height="9" fill="#2B4C7E"/>
+<rect x="247" y="306" width="24" height="9" fill="#6B8FB8"/>
+<rect x="271" y="306" width="11" height="9" fill="#B3C6DD"/>
+<text x="78" y="332" font-size="11" fill="#5F7183">240 LSDV · 34 SPPV · 16 GTPV</text>
+</g>
+
+<path d="M300 312 H315 V160 H324" fill="none" stroke="#9AA4B0" marker-end="url(#a)"/>
+
+<g>
+<rect x="330" y="134" width="240" height="52" rx="6" fill="#F2F5F8" stroke="#D5DEE7"/>
+<text x="348" y="156" font-size="13" font-weight="600" fill="#2C3E50">02–03  OrthoFinder</text>
+<text x="348" y="172" font-size="11" fill="#5F7183">206 orthogroups</text>
+<line x1="450" y1="186" x2="450" y2="196" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="330" y="198" width="240" height="52" rx="6" fill="#F2F5F8" stroke="#D5DEE7"/>
+<text x="348" y="220" font-size="13" font-weight="600" fill="#2C3E50">04  Pan-genome statistics</text>
+<text x="348" y="236" font-size="11" fill="#5F7183">open pan-genome, γ = 0.068</text>
+<line x1="450" y1="250" x2="450" y2="260" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="330" y="262" width="240" height="52" rx="6" fill="#FDF4E3" stroke="#E8CF9B"/>
+<text x="348" y="284" font-size="13" font-weight="600" fill="#7A5410">11  Scoary</text>
+<text x="348" y="300" font-size="11" fill="#96703A">phylogenetic confounding</text>
+<line x1="450" y1="314" x2="450" y2="324" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="330" y="326" width="240" height="64" rx="6" fill="#F2F5F8" stroke="#D5DEE7"/>
+<text x="348" y="352" font-size="13" font-weight="600" fill="#2C3E50">60 single-copy core genes</text>
+<text x="348" y="370" font-size="11" fill="#5F7183">290 × 16,215 supermatrix</text>
+</g>
+<path d="M570 358 H585 V160 H594" fill="none" stroke="#9AA4B0" marker-end="url(#a)"/>
+
+<g>
+<rect x="600" y="134" width="250" height="52" rx="6" fill="#F2F5F8" stroke="#D5DEE7"/>
+<text x="618" y="156" font-size="13" font-weight="600" fill="#2C3E50">05  ML phylogeny</text>
+<text x="618" y="172" font-size="11" fill="#5F7183">SPPV + GTPV clade, BS 100</text>
+<line x1="725" y1="186" x2="725" y2="196" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="600" y="198" width="250" height="52" rx="6" fill="#F2F5F8" stroke="#D5DEE7"/>
+<text x="618" y="220" font-size="13" font-weight="600" fill="#2C3E50">06  Recombination</text>
+<text x="618" y="236" font-size="11" fill="#5F7183">r/m = 0.13, 29.2% of genome</text>
+<line x1="725" y1="250" x2="725" y2="260" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="600" y="262" width="250" height="52" rx="6" fill="#FDF4E3" stroke="#E8CF9B"/>
+<text x="618" y="284" font-size="13" font-weight="600" fill="#7A5410">07  Phylogeography</text>
+<text x="618" y="300" font-size="11" fill="#96703A">Africa → Asia → Europe</text>
+<line x1="725" y1="314" x2="725" y2="324" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="600" y="326" width="250" height="52" rx="6" fill="#FDF4E3" stroke="#E8CF9B"/>
+<text x="618" y="348" font-size="13" font-weight="600" fill="#7A5410">08  Population structure</text>
+<text x="618" y="364" font-size="11" fill="#96703A">two clusters are species</text>
+<line x1="725" y1="378" x2="725" y2="388" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="600" y="390" width="250" height="52" rx="6" fill="#F4F5F6" stroke="#DCDFE3"/>
+<text x="618" y="412" font-size="13" font-weight="600" fill="#5C6570">09  Temporal signal</text>
+<text x="618" y="428" font-size="11" fill="#7D858F">none (p = 0.887)</text>
+</g>
+
+<line x1="850" y1="160" x2="874" y2="160" stroke="#9AA4B0" marker-end="url(#a)"/>
+
+<g>
+<rect x="880" y="134" width="300" height="52" rx="6" fill="#FDF4E3" stroke="#E8CF9B"/>
+<text x="898" y="156" font-size="13" font-weight="600" fill="#7A5410">10  BUSTED, 290 genomes</text>
+<text x="898" y="172" font-size="11" fill="#96703A">genus level, not within LSDV</text>
+<line x1="1030" y1="186" x2="1030" y2="196" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="880" y="198" width="300" height="52" rx="6" fill="#F4F5F6" stroke="#DCDFE3"/>
+<text x="898" y="220" font-size="13" font-weight="600" fill="#5C6570">12  MEME</text>
+<text x="898" y="236" font-size="11" fill="#7D858F">dS ≈ 0 artefact</text>
+<line x1="1030" y1="250" x2="1030" y2="260" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="880" y="262" width="300" height="52" rx="6" fill="#F4F5F6" stroke="#DCDFE3"/>
+<text x="898" y="284" font-size="13" font-weight="600" fill="#5C6570">13  BUSTED, 240 LSDV</text>
+<text x="898" y="300" font-size="11" fill="#7D858F">codon models break down</text>
+<line x1="1030" y1="314" x2="1030" y2="322" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="880" y="326" width="300" height="84" rx="6" fill="#17877A" stroke="#0D5F54"/>
+<text x="898" y="352" font-size="13" font-weight="600" fill="#FFFFFF">14  McDonald–Kreitman</text>
+<text x="898" y="380" font-size="24" font-weight="600" fill="#FFFFFF">α = 0.604</text>
+<text x="898" y="398" font-size="11" fill="#C4E5DF">on the LSDV branch · CMH p = 0.009</text>
+<line x1="1030" y1="410" x2="1030" y2="418" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="880" y="422" width="300" height="52" rx="6" fill="#F4F5F6" stroke="#DCDFE3"/>
+<text x="898" y="444" font-size="13" font-weight="600" fill="#5C6570">15  RELAX</text>
+<text x="898" y="460" font-size="11" fill="#7D858F">41% non-convergence</text>
+<line x1="1030" y1="474" x2="1030" y2="482" stroke="#9AA4B0" marker-end="url(#a)"/>
+<rect x="880" y="486" width="300" height="52" rx="6" fill="#F4F5F6" stroke="#DCDFE3"/>
+<text x="898" y="508" font-size="13" font-weight="600" fill="#5C6570">16  aBSREL on LSDV stem</text>
+<text x="898" y="524" font-size="11" fill="#7D858F">two hits, both artefacts</text>
+</g>
+
+<rect x="60" y="574" width="1120" height="86" rx="6" fill="#EAF3F1" stroke="#9FCFC6"/>
+<text x="88" y="626" font-size="32" font-weight="600" fill="#0D5F54">α = 0.604</text>
+<line x1="252" y1="594" x2="252" y2="640" stroke="#9FCFC6"/>
+<text x="280" y="606" font-size="13" font-weight="600" fill="#0D5F54">Adaptive amino-acid divergence on the LSDV branch, polarised against the SPPV + GTPV ancestor</text>
+<text x="280" y="626" font-size="11.5" fill="#2E7167">Mantel–Haenszel OR = 1.98 · 14,412 of 16,215 codons with a confident ancestral state · no single gene passes FDR</text>
+<text x="280" y="645" font-size="11.5" fill="#2E7167">Robust to two independent outgroups, vaccine-strain removal, SRA removal, polarisation and gap masking (α = 0.570–0.604)</text>
+
+<rect x="60" y="689" width="12" height="12" rx="2" fill="#F2F5F8" stroke="#D5DEE7"/>
+<text x="78" y="699" font-size="11" fill="#6B7684">Data and method</text>
+<rect x="240" y="689" width="12" height="12" rx="2" fill="#FDF4E3" stroke="#E8CF9B"/>
+<text x="258" y="699" font-size="11" fill="#6B7684">Interpret with care</text>
+<rect x="430" y="689" width="12" height="12" rx="2" fill="#F4F5F6" stroke="#DCDFE3"/>
+<text x="448" y="699" font-size="11" fill="#6B7684">Negative or inconclusive</text>
+<rect x="660" y="689" width="12" height="12" rx="2" fill="#17877A" stroke="#0D5F54"/>
+<text x="678" y="699" font-size="11" fill="#6B7684">Primary result</text>
+</svg>
