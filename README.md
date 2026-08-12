@@ -11,42 +11,6 @@ genomes assembled from GenBank and SRA.
 
 ## Pipeline
 
-```mermaid
-flowchart TD
-    A["323 genomes<br/>GenBank + SRA"] --> B["01 QC and filtering"]
-    B --> C["290 genomes<br/>240 LSDV · 34 SPPV · 16 GTPV"]
-    C --> D["02-04 OrthoFinder<br/>206 orthogroups · open pan-genome"]
-    D --> E["60 single-copy core genes<br/>290 × 16,215 supermatrix"]
-
-    E --> F["05 ML phylogeny<br/>SPPV+GTPV clade, bootstrap 100"]
-    F --> G["06 Recombination<br/>r/m = 0.13"]
-    F --> H["07 Phylogeography<br/>Africa → Asia → Europe"]
-    F --> I["08 Population structure"]
-    F --> J["09 Temporal signal<br/>none"]
-
-    E --> K["10 BUSTED, 290 genomes<br/>genus level"]
-    K --> L["12 MEME<br/>dS ≈ 0 artefact"]
-    K --> M["13 BUSTED, 240 LSDV<br/>codon models break down"]
-    M --> N["14 McDonald-Kreitman<br/>α = 0.604 on LSDV branch"]
-    N --> O["15 RELAX<br/>41% non-convergence"]
-    N --> P["16 aBSREL on LSDV stem<br/>2 hits, both artefacts"]
-
-    D --> Q["11 Scoary<br/>phylogenetic confounding"]
-
-    classDef primary fill:#1a7f37,stroke:#0d4d21,color:#fff,stroke-width:2px
-    classDef negative fill:#eaeef2,stroke:#8c959f,color:#24292f
-    classDef caution fill:#fff8c5,stroke:#d4a72c,color:#24292f
-    classDef data fill:#0969da,stroke:#0a3069,color:#fff
-
-    class A,C,E data
-    class N primary
-    class L,M,O,P negative
-    class J,K,Q caution
-```
-
-**Green** = primary result · **Yellow** = valid but easily misread ·
-**Grey** = negative or inconclusive, documented as such
-
 <p align="center">
   <img src="figures/pipeline.svg" alt="Analysis pipeline" width="100%">
 </p>
