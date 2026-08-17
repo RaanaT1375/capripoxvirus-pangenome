@@ -23,13 +23,23 @@ genes have fewer than five. Purifying selection dominates (median
 ω = 0.105) and there is no temporal signal in root-to-tip distance.
 
 **2. Adaptive divergence happened deep in the past.** A McDonald–Kreitman
-test polarized to the LSDV branch gives **α = 0.604** (CMH p = 0.009,
-MH odds ratio 1.98), i.e. roughly 60% of amino-acid substitutions fixed on
-that branch were driven by positive selection — during LSDV's divergence
-from the SPPV/GTPV ancestor, not during its recent clonal expansion. The
-estimate survives five independent robustness checks (two outgroups,
-vaccine-strain removal, SRA-genome removal, polarization, gap masking) and
-is a lower bound.
+test polarized to the LSDV branch gives **α = 0.604** (gene-level bootstrap
+95% CI 0.33–0.75; CMH p = 0.009; MH odds ratio 1.98), i.e. roughly 60% of
+the amino-acid differences *fixed* on that branch were driven by positive
+selection — during LSDV's divergence from the SPPV/GTPV ancestor, not during
+its recent clonal expansion. The interval is wide because polarization
+discards ~78% of fixed differences and 17 of 60 genes carry none at all on
+this branch; the lower bound of 0.33 is the conservative reading.
+
+The estimate survives seven independent robustness checks: two outgroups,
+vaccine-strain removal, SRA-genome removal, polarization, gap masking, an
+APOBEC3 mutational-context test, and reimplementation in a second codebase.
+Removing the 20 vaccine strains is the informative one — it raises α (0.393
+to 0.491 against SPPV) and abolishes the frequency-cutoff dependence
+entirely, showing that the excess of low-frequency non-synonymous variants
+is a property of the culture-passaged vaccine clade rather than of field
+isolates. Full interval table: [`14_MK_Test/STATUS.md`](14_MK_Test/STATUS.md).
+α is a lower bound, not a point estimate of the true adaptive fraction.
 
 **3. Codon substitution models break down on this dataset.** This is
 documented quantitatively rather than assumed — see below.

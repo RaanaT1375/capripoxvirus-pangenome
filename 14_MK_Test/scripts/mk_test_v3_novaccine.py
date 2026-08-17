@@ -80,6 +80,10 @@ def cmh(tables):
 if __name__ == "__main__":
     sp = pd.read_csv("00_Metadata/species_assignment.csv")
     grp = {s: sp.loc[sp.species == s, "Name"].tolist() for s in ["LSDV","SPPV","GTPV"]}
+    vacc = set(pd.read_csv("11_Scoary/01_inputs/traits.csv", index_col=0)
+                 .query("Vaccine == 1").index)
+    grp["LSDV"] = [g for g in grp["LSDV"] if g not in vacc]
+    print(f"درون‌گروه: {len(grp['LSDV'])} ژنوم LSDV (بدون {len(vacc)} واکسن)")
     ann = pd.read_csv("10_Selection_Pressure/04_summary_tables/orthogroup_annotations.csv")
     CUTS = [0.0, 0.01, 0.05, 0.10, 0.15]
 
@@ -113,7 +117,7 @@ if __name__ == "__main__":
             allrows.append(dict(Orthogroup=og, Pn=Pn, Ps=Ps,
                                 Dn=Dn_, Ds=Ds_, n_codons=L))
         pd.DataFrame(allrows).to_csv(
-            f"14_MK_Test/02_results/mk_v2_vs_{ogsp}_allgenes.csv", index=False)
+            f"14_MK_Test/02_results/mk_v3_novacc_vs_{ogsp}_allgenes.csv", index=False)
         print(f"  جدول کامل به‌ازای ژن: {len(allrows)} ژن")
 
         # آزمون علامت روی DoS در آستانهٔ ۵٪
@@ -130,7 +134,7 @@ if __name__ == "__main__":
         d = d.sort_values("fisher_p").reset_index(drop=True)
         _bh = d.fisher_p.values * len(d) / np.arange(1, len(d)+1)
         d["q_BH"] = np.clip(np.minimum.accumulate(_bh[::-1])[::-1], 0, 1)
-        d.to_csv(f"14_MK_Test/02_results/mk_v2_vs_{ogsp}.csv", index=False)
+        d.to_csv(f"14_MK_Test/02_results/mk_v3_novacc_vs_{ogsp}.csv", index=False)
 
         pos = int((d.DoS > 0).sum()); tot_n = int((d.DoS != 0).sum())
         bt = binomtest(pos, tot_n, 0.5)

@@ -1,0 +1,20 @@
+ستون‌های traits.csv: ['Africa', 'Asia', 'Europe', 'Host_Cattle', 'Host_Sheep', 'Host_Goat', 'Host_Giraffe', 'Host_Wildlife', 'Vaccine', 'Wild', 'Recombinant', 'Ancestral_recombinant', 'Independent_recombinant', 'No_recombination', 'BAPS_cluster_1', 'BAPS_cluster_2', 'BAPS_cluster_3', 'BAPS_cluster_4', 'BAPS_cluster_5']
+ستون واکسن: ['Vaccine'] → 20 سویه
+
+زیرمجموعه         n  outgrp   cut      Pn      Ps   alpha      CMH_p  MH_OR
+همه LSDV        240    SPPV  0.05   183.5   431.5   0.393   2.44e-05  1.705
+همه LSDV        240    SPPV  0.10   150.0   424.0   0.495   3.10e-07  1.952
+همه LSDV        240    GTPV  0.05   167.0   382.0   0.435   2.18e-04  1.750
+همه LSDV        240    GTPV  0.10   132.5   374.5   0.543   1.63e-05  1.948
+بدون واکسن      227    SPPV  0.05   151.0   424.0   0.491   3.96e-07  1.938
+بدون واکسن      227    SPPV  0.10   142.0   398.0   0.491   7.39e-07  1.943
+بدون واکسن      227    GTPV  0.05   133.5   374.5   0.540   1.91e-05  1.935
+بدون واکسن      227    GTPV  0.10   125.5   352.5   0.540   2.33e-05  1.957
+بدون SRA        187    SPPV  0.05   183.5   431.5   0.391   2.38e-05  1.706
+بدون SRA        187    SPPV  0.10   149.0   424.0   0.497   2.54e-07  1.962
+بدون SRA        187    GTPV  0.05   167.0   382.0   0.434   1.92e-04  1.758
+بدون SRA        187    GTPV  0.10   131.5   374.5   0.545   1.09e-05  1.978
+بدون هر دو      175    SPPV  0.05   181.5   432.5   0.399   1.26e-05  1.740
+بدون هر دو      175    SPPV  0.10   149.0   424.0   0.497   2.54e-07  1.962
+بدون هر دو      175    GTPV  0.05   165.0   383.0   0.442   1.13e-04  1.795
+بدون هر دو      175    GTPV  0.10   131.5   374.5   0.545   1.09e-05  1.978

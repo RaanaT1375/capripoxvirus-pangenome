@@ -1,0 +1,185 @@
+فایل‌های csv یافت‌شده زیر 14_MK_Test: 21
+  - رد شد (ستون MK ندارد): 14_MK_Test/01_inputs/alignment_species_composition.csv
+
+=== mk_gapmask01_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_gapmask01_allgenes.csv
+  ژن‌ها: 60 | Pn=105.5 Ps=292.5 Dn=69.8 Ds=83.2
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 17
+  alpha (pooled)       = 0.570
+  بوت‌استرپ ژنی 95% CI  = [0.281, 0.718]  (میانه 0.566, سوگیری -0.020)
+  سهم تکرارهای alpha<=0 = 0.0008 | نامعتبر: 0
+  alpha_MH             = 0.453  RBG 95% CI = [0.100, 0.668]
+  OR_MH                = 1.829  CI = [1.111, 3.011] (لایه: 56)
+
+=== mk_gapmask05_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_gapmask05_allgenes.csv
+  ژن‌ها: 60 | Pn=106.5 Ps=296.5 Dn=70.8 Ds=83.2
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 17
+  alpha (pooled)       = 0.577
+  بوت‌استرپ ژنی 95% CI  = [0.290, 0.723]  (میانه 0.572, سوگیری -0.022)
+  سهم تکرارهای alpha<=0 = 0.0001 | نامعتبر: 0
+  alpha_MH             = 0.477  RBG 95% CI = [0.143, 0.681]
+  OR_MH                = 1.912  CI = [1.167, 3.134] (لایه: 56)
+
+=== mk_gapmask100_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_gapmask100_allgenes.csv
+  ژن‌ها: 60 | Pn=106.5 Ps=299.5 Dn=74.8 Ds=83.2
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 17
+  alpha (pooled)       = 0.604
+  بوت‌استرپ ژنی 95% CI  = [0.329, 0.745]  (میانه 0.599, سوگیری -0.021)
+  سهم تکرارهای alpha<=0 = 0.0003 | نامعتبر: 0
+  alpha_MH             = 0.496  RBG 95% CI = [0.179, 0.691]
+  OR_MH                = 1.985  CI = [1.218, 3.237] (لایه: 56)
+
+=== mk_polarized_LSDV_branch_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_polarized_LSDV_branch_allgenes.csv
+  ژن‌ها: 60 | Pn=106.5 Ps=299.5 Dn=74.8 Ds=83.2
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 17
+  alpha (pooled)       = 0.604
+  بوت‌استرپ ژنی 95% CI  = [0.327, 0.744]  (میانه 0.601, سوگیری -0.021)
+  سهم تکرارهای alpha<=0 = 0.0004 | نامعتبر: 0
+  alpha_MH             = 0.496  RBG 95% CI = [0.179, 0.691]
+  OR_MH                = 1.985  CI = [1.218, 3.237] (لایه: 56)
+
+=== mk_subset_all_vs_GTPV_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_subset_all_vs_GTPV_allgenes.csv
+  ژن‌ها: 60 | Pn=167.0 Ps=382.0 Dn=221.2 Ds=285.8
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.435
+  بوت‌استرپ ژنی 95% CI  = [0.126, 0.622]  (میانه 0.441, سوگیری -0.011)
+  سهم تکرارهای alpha<=0 = 0.0050 | نامعتبر: 0
+  alpha_MH             = 0.429  RBG 95% CI = [0.234, 0.575]
+  OR_MH                = 1.752  CI = [1.305, 2.351] (لایه: 60)
+
+=== mk_subset_all_vs_SPPV_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_subset_all_vs_SPPV_allgenes.csv
+  ژن‌ها: 60 | Pn=183.5 Ps=431.5 Dn=343.1 Ds=489.9
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.393
+  بوت‌استرپ ژنی 95% CI  = [0.125, 0.571]  (میانه 0.398, سوگیری -0.006)
+  سهم تکرارهای alpha<=0 = 0.0035 | نامعتبر: 0
+  alpha_MH             = 0.409  RBG 95% CI = [0.243, 0.538]
+  OR_MH                = 1.692  CI = [1.322, 2.165] (لایه: 60)
+
+=== mk_subset_noboth_vs_GTPV_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_subset_noboth_vs_GTPV_allgenes.csv
+  ژن‌ها: 60 | Pn=165.0 Ps=383.0 Dn=222.2 Ds=287.8
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.442
+  بوت‌استرپ ژنی 95% CI  = [0.139, 0.628]  (میانه 0.450, سوگیری -0.010)
+  سهم تکرارهای alpha<=0 = 0.0050 | نامعتبر: 0
+  alpha_MH             = 0.444  RBG 95% CI = [0.252, 0.586]
+  OR_MH                = 1.797  CI = [1.338, 2.414] (لایه: 60)
+
+=== mk_subset_noboth_vs_SPPV_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_subset_noboth_vs_SPPV_allgenes.csv
+  ژن‌ها: 60 | Pn=181.5 Ps=432.5 Dn=344.1 Ds=492.9
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.399
+  بوت‌استرپ ژنی 95% CI  = [0.122, 0.580]  (میانه 0.407, سوگیری -0.006)
+  سهم تکرارهای alpha<=0 = 0.0043 | نامعتبر: 0
+  alpha_MH             = 0.421  RBG 95% CI = [0.258, 0.548]
+  OR_MH                = 1.726  CI = [1.347, 2.212] (لایه: 60)
+
+=== mk_subset_nosra_vs_GTPV_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_subset_nosra_vs_GTPV_allgenes.csv
+  ژن‌ها: 60 | Pn=167.0 Ps=382.0 Dn=222.2 Ds=287.8
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.434
+  بوت‌استرپ ژنی 95% CI  = [0.122, 0.619]  (میانه 0.438, سوگیری -0.013)
+  سهم تکرارهای alpha<=0 = 0.0060 | نامعتبر: 0
+  alpha_MH             = 0.432  RBG 95% CI = [0.237, 0.577]
+  OR_MH                = 1.760  CI = [1.311, 2.362] (لایه: 60)
+
+=== mk_subset_nosra_vs_SPPV_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_subset_nosra_vs_SPPV_allgenes.csv
+  ژن‌ها: 60 | Pn=183.5 Ps=431.5 Dn=344.1 Ds=492.9
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.391
+  بوت‌استرپ ژنی 95% CI  = [0.121, 0.573]  (میانه 0.400, سوگیری -0.005)
+  سهم تکرارهای alpha<=0 = 0.0047 | نامعتبر: 0
+  alpha_MH             = 0.409  RBG 95% CI = [0.244, 0.538]
+  OR_MH                = 1.693  CI = [1.323, 2.167] (لایه: 60)
+
+=== mk_subset_novacc_vs_GTPV_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_subset_novacc_vs_GTPV_allgenes.csv
+  ژن‌ها: 60 | Pn=133.5 Ps=374.5 Dn=221.2 Ds=285.8
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.540
+  بوت‌استرپ ژنی 95% CI  = [0.354, 0.664]  (میانه 0.537, سوگیری -0.011)
+  سهم تکرارهای alpha<=0 = 0.0000 | نامعتبر: 0
+  alpha_MH             = 0.485  RBG 95% CI = [0.303, 0.619]
+  OR_MH                = 1.940  CI = [1.435, 2.622] (لایه: 60)
+
+=== mk_subset_novacc_vs_SPPV_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_subset_novacc_vs_SPPV_allgenes.csv
+  ژن‌ها: 60 | Pn=151.0 Ps=424.0 Dn=343.1 Ds=489.9
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.491
+  بوت‌استرپ ژنی 95% CI  = [0.325, 0.614]  (میانه 0.493, سوگیری -0.004)
+  سهم تکرارهای alpha<=0 = 0.0000 | نامعتبر: 0
+  alpha_MH             = 0.480  RBG 95% CI = [0.329, 0.597]
+  OR_MH                = 1.922  CI = [1.489, 2.480] (لایه: 60)
+
+=== mk_v1_nocutoff_vs_GTPV ===
+  مسیر: 14_MK_Test/02_results/mk_v1_nocutoff_vs_GTPV.csv
+  ژن‌ها: 60 | Pn=263.0 Ps=440.0 Dn=221.2 Ds=285.8
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.228
+  بوت‌استرپ ژنی 95% CI  = [-0.131, 0.449]  (میانه 0.228, سوگیری -0.017)
+  سهم تکرارهای alpha<=0 = 0.0911 | نامعتبر: 0
+  alpha_MH             = 0.110  RBG 95% CI = [-0.157, 0.315]
+  OR_MH                = 1.123  CI = [0.864, 1.460] (لایه: 60)
+
+=== mk_v1_nocutoff_vs_SPPV ===
+  مسیر: 14_MK_Test/02_results/mk_v1_nocutoff_vs_SPPV.csv
+  ژن‌ها: 60 | Pn=285.5 Ps=496.5 Dn=343.1 Ds=489.9
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.179
+  بوت‌استرپ ژنی 95% CI  = [-0.146, 0.401]  (میانه 0.185, سوگیری -0.010)
+  سهم تکرارهای alpha<=0 = 0.1173 | نامعتبر: 0
+  alpha_MH             = 0.118  RBG 95% CI = [-0.096, 0.291]
+  OR_MH                = 1.134  CI = [0.912, 1.410] (لایه: 60)
+
+=== mk_v2_vs_GTPV_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_v2_vs_GTPV_allgenes.csv
+  ژن‌ها: 60 | Pn=167.0 Ps=382.0 Dn=221.2 Ds=285.8
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.435
+  بوت‌استرپ ژنی 95% CI  = [0.123, 0.621]  (میانه 0.440, سوگیری -0.013)
+  سهم تکرارهای alpha<=0 = 0.0066 | نامعتبر: 0
+  alpha_MH             = 0.429  RBG 95% CI = [0.234, 0.575]
+  OR_MH                = 1.752  CI = [1.305, 2.351] (لایه: 60)
+
+=== mk_v2_vs_SPPV_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_v2_vs_SPPV_allgenes.csv
+  ژن‌ها: 60 | Pn=183.5 Ps=431.5 Dn=343.1 Ds=489.9
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.393
+  بوت‌استرپ ژنی 95% CI  = [0.119, 0.573]  (میانه 0.400, سوگیری -0.007)
+  سهم تکرارهای alpha<=0 = 0.0059 | نامعتبر: 0
+  alpha_MH             = 0.409  RBG 95% CI = [0.243, 0.538]
+  OR_MH                = 1.692  CI = [1.322, 2.165] (لایه: 60)
+
+=== mk_v3_novacc_vs_GTPV_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_v3_novacc_vs_GTPV_allgenes.csv
+  ژن‌ها: 60 | Pn=133.5 Ps=374.5 Dn=221.2 Ds=285.8
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.540
+  بوت‌استرپ ژنی 95% CI  = [0.353, 0.663]  (میانه 0.538, سوگیری -0.010)
+  سهم تکرارهای alpha<=0 = 0.0000 | نامعتبر: 0
+  alpha_MH             = 0.485  RBG 95% CI = [0.303, 0.619]
+  OR_MH                = 1.940  CI = [1.435, 2.622] (لایه: 60)
+
+=== mk_v3_novacc_vs_SPPV_allgenes ===
+  مسیر: 14_MK_Test/02_results/mk_v3_novacc_vs_SPPV_allgenes.csv
+  ژن‌ها: 60 | Pn=151.0 Ps=424.0 Dn=343.1 Ds=489.9
+  ژن‌های بدون تفاوت ثابت (Dn+Ds=0): 0
+  alpha (pooled)       = 0.491
+  بوت‌استرپ ژنی 95% CI  = [0.324, 0.615]  (میانه 0.493, سوگیری -0.004)
+  سهم تکرارهای alpha<=0 = 0.0000 | نامعتبر: 0
+  alpha_MH             = 0.480  RBG 95% CI = [0.329, 0.597]
+  OR_MH                = 1.922  CI = [1.489, 2.480] (لایه: 60)
+  - رد شد (ستون MK ندارد): 14_MK_Test/03_apobec_diagnostic/apobec_per_gene.csv
+
+✓ 18 تحلیل ذخیره شد در 14_MK_Test/03_summary/alpha_confidence_intervals.csv (seed=20260817, B=10000)

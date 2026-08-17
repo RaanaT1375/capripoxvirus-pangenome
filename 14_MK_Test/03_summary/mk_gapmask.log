@@ -1,0 +1,6 @@
+  → mk_gapmask100_allgenes.csv (60 ژن)
+MAXGAP=1.00 | ماسک 0/16215 | Pn=106.5 Ps=299.5 Dn=74.8 Ds=83.2 | alpha=0.604 | CMH p=8.96e-03 | OR=1.979
+  → mk_gapmask05_allgenes.csv (60 ژن)
+MAXGAP=0.05 | ماسک 306/16215 | Pn=106.5 Ps=296.5 Dn=70.8 Ds=83.2 | alpha=0.577 | CMH p=1.55e-02 | OR=1.906
+  → mk_gapmask01_allgenes.csv (60 ژن)
+MAXGAP=0.01 | ماسک 614/16215 | Pn=105.5 Ps=292.5 Dn=69.8 Ds=83.2 | alpha=0.570 | CMH p=2.69e-02 | OR=1.823

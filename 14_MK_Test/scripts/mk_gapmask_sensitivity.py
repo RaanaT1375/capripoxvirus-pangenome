@@ -7,6 +7,7 @@ sys.path.insert(0, "14_MK_Test/scripts")
 from mk_test_v2 import path_counts, clean, cmh
 from Bio import SeqIO
 import pandas as pd, numpy as np
+import os
 
 ALN = "10_Selection_Pressure/01_codon_alignments"
 sp = pd.read_csv("00_Metadata/species_assignment.csv")
@@ -22,6 +23,7 @@ def cons(seqs, sl, thr=0.90):
 
 for MAXGAP in [1.00, 0.05, 0.01]:
     tot = np.zeros(4); tabs = []; nmask = ntot = 0
+    gene_rows = []
     for f in sorted(glob.glob(f"{ALN}/*_codon.fasta")):
         r = {x.id: str(x.seq).upper() for x in SeqIO.parse(f, "fasta")}
         ing = [r[i] for i in ing_ids if i in r]
@@ -47,8 +49,14 @@ for MAXGAP in [1.00, 0.05, 0.01]:
                 s_, n_ = path_counts(a1, major); Ds += s_; Dn += n_
         tot += [Pn, Ps, Dn, Ds]
         tabs.append([[round(Dn), round(Ds)], [round(Pn), round(Ps)]])
+        gene_rows.append(dict(Orthogroup=os.path.basename(f).replace("_codon.fasta",""),
+                              Pn=Pn, Ps=Ps, Dn=Dn, Ds=Ds, n_codons=L, MAXGAP=MAXGAP))
     Pn, Ps, Dn, Ds = tot
     NI = (Pn/Ps) / (Dn/Ds)
     p, orr, _ = cmh(tabs)
+    import pandas as _pd
+    _pd.DataFrame(gene_rows).to_csv(
+        f"14_MK_Test/02_results/mk_gapmask{int(MAXGAP*100):02d}_allgenes.csv", index=False)
+    print(f"  → mk_gapmask{int(MAXGAP*100):02d}_allgenes.csv ({len(gene_rows)} ژن)")
     print(f"MAXGAP={MAXGAP:.2f} | ماسک {nmask}/{ntot} | Pn={Pn:.1f} Ps={Ps:.1f} "
           f"Dn={Dn:.1f} Ds={Ds:.1f} | alpha={1-NI:.3f} | CMH p={p:.2e} | OR={orr:.3f}")

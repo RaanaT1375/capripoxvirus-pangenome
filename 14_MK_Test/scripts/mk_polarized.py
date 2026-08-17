@@ -54,6 +54,8 @@ for f in sorted(glob.glob(f"{ALN}/*_codon.fasta")):
     if d: d["Orthogroup"] = os.path.basename(f).replace("_codon.fasta",""); rows.append(d)
 
 df = pd.DataFrame(rows)
+df.to_csv("14_MK_Test/02_results/mk_polarized_LSDV_branch_allgenes.csv", index=False)
+print(f"  جدول کامل به‌ازای ژن نوشته شد: {len(df)} ژن")
 Pn, Ps, Dn, Ds = df[["Pn","Ps","Dn","Ds"]].sum()
 NI = (Pn/Ps)/(Dn/Ds)
 tabs = [[[round(r.Dn), round(r.Ds)], [round(r.Pn), round(r.Ps)]] for r in df.itertuples()]
