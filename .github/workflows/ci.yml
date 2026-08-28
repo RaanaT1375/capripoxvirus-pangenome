@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main]
+  release:
+    types: [published]
+
+jobs:
+  lint:
+    name: Lint the workflow
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Nextflow
+        uses: nf-core/setup-nextflow@v2
+        with:
+          version: "23.10.0"
+
+      - name: Check that the workflow parses
+        run: nextflow run . --help
+
+      - name: Lint Groovy and Nextflow formatting
+        run: |
+          # fail on tabs in .nf files, which break Groovy heredocs
+          ! grep -rP "\t" --include="*.nf" . || (echo "tabs found in .nf files"; exit 1)
+
+  test:
+    name: Run the test profile
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Nextflow
+        uses: nf-core/setup-nextflow@v2
+        with:
+          version: "23.10.0"
+
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          miniforge-version: latest
+          auto-activate-base: true
+
+      - name: Run the test profile
+        run: nextflow run . -profile test,conda --outdir results_test
+
+      - name: Upload the execution report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: execution-report
+          path: results_test/pipeline_info/

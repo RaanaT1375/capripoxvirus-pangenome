@@ -1,151 +1,157 @@
-# Pan-genome and selection analysis of 290 Capripoxvirus genomes
-
-Reproducible pipeline, intermediate results and documentation for a
-comparative genomic analysis of the genus *Capripoxvirus*: **240 lumpy skin
-disease virus (LSDV), 34 sheeppox virus (SPPV) and 16 goatpox virus (GTPV)**
-genomes assembled from GenBank and SRA.
-
-> **Read [`ANALYSIS_STATUS.md`](ANALYSIS_STATUS.md) before citing any number
-> from this repository.** Several analyses were superseded during the project
-> and each stage carries an explicit verdict.
-
-## Pipeline
-
 <p align="center">
-  <img src="figures/pipeline.svg" alt="Analysis pipeline" width="100%">
+  <img src="assets/hero.svg" alt="Capripoxvirus pangenome pipeline" width="100%">
 </p>
 
-## Headline results
+<p align="center">
+  <a href="https://www.nextflow.io/"><img src="https://img.shields.io/badge/nextflow-%E2%89%A523.10.0-0B1B2B?labelColor=871746" alt="Nextflow"></a>
+  <a href="https://docs.conda.io/"><img src="https://img.shields.io/badge/run%20with-conda-0B1B2B?labelColor=90A0BC" alt="conda"></a>
+  <a href="https://sylabs.io/"><img src="https://img.shields.io/badge/run%20with-singularity-0B1B2B?labelColor=90A0BC" alt="singularity"></a>
+  <a href="https://doi.org/10.5281/zenodo.21996311"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21996311-0B1B2B?labelColor=CB9A9F" alt="DOI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-0B1B2B?labelColor=585D26" alt="MIT"></a>
+</p>
 
-**1. Present-day LSDV is evolutionarily static.** Across 240 genomes the
-median number of distinct protein sequences per core gene is **6**; 27 of 60
-genes have fewer than five. Purifying selection dominates (median
-ω = 0.105) and there is no temporal signal in root-to-tip distance.
+---
 
-**2. Adaptive divergence happened deep in the past.** A McDonald–Kreitman
-test polarized to the LSDV branch gives **α = 0.604** (gene-level bootstrap
-95% CI 0.33–0.75; CMH p = 0.009; MH odds ratio 1.98), i.e. roughly 60% of
-the amino-acid differences *fixed* on that branch were driven by positive
-selection — during LSDV's divergence from the SPPV/GTPV ancestor, not during
-its recent clonal expansion. The interval is wide because polarization
-discards ~78% of fixed differences and 17 of 60 genes carry none at all on
-this branch; the lower bound of 0.33 is the conservative reading.
+## What this pipeline does
 
-The estimate survives seven independent robustness checks: two outgroups,
-vaccine-strain removal, SRA-genome removal, polarization, gap masking, an
-APOBEC3 mutational-context test, and reimplementation in a second codebase.
-Removing the 20 vaccine strains is the informative one — it raises α (0.393
-to 0.491 against SPPV) and abolishes the frequency-cutoff dependence
-entirely, showing that the excess of low-frequency non-synonymous variants
-is a property of the culture-passaged vaccine clade rather than of field
-isolates. Full interval table: [`14_MK_Test/STATUS.md`](14_MK_Test/STATUS.md).
-α is a lower bound, not a point estimate of the true adaptive fraction.
+Capripoxviruses have large, slowly evolving double-stranded DNA genomes, and
+that creates a specific analytical problem: the tools normally used to detect
+selection assume there is enough synonymous variation to calibrate against.
+Within Lumpy Skin Disease Virus there is not. Across 240 LSDV genomes the median
+core gene carries **six distinct protein sequences**, synonymous rates collapse
+towards zero at 88–96% of sites, and 30 of 56 testable genes return a
+likelihood-ratio statistic of exactly zero.
 
-**3. Codon substitution models break down on this dataset.** This is
-documented quantitatively rather than assumed — see below.
+This pipeline is built around that constraint. It reconstructs the pangenome,
+maps recombination and population structure, and then deliberately runs the
+codon-model scans **as a diagnostic** before falling back to a population-genetic
+framework — a polarised McDonald-Kreitman test — that does not require
+intra-population synonymous variation to be interpretable.
 
-## Why codon models fail here — and how we caught it
-
-Three independent failures, each quantified:
-
-| Method | Failure mode | Evidence |
-|---|---|---|
-| BUSTED (240 LSDV) | dS collapses to zero | `prop_dS_near_zero` is 0.88–0.96 for **all 11** genes reaching q<0.05; LRT = 0 for 30 of 56 testable genes |
-| RELAX | rate distribution collapses | 24 of 59 genes (41%) fail to converge; the survivors are not a random subset |
-| aBSREL | mistakes an indel block for selection | see below |
-
-The aBSREL case is the instructive one. `OG0000120` (Ig domain OX-2-like)
-looked compelling from several angles: under the plain nucleotide GTR model
-its LSDV stem branch is the longest of 300 branches in the tree, holding
-43.7% of total tree length against a median of 0.082 across genes — and it
-inverts the genome-wide pattern, where the LSDV stem is the *shortest* of
-the three species stems. aBSREL returned a positively selected rate class at
-ω = 697.6, LRT = 103.5, corrected p = 0, while the SPPV and GTPV stems gave
-a single rate class and LRT = 0.
-
-It is nonetheless an artefact. All 14 fixed differences fall in codons
-174–202 of 217 (KS D = 0.802, p < 1e-9). The weight of the "positively
-selected" class (0.141) matches that block's share of the gene
-(29/217 = 0.134) almost exactly — the rate class *is* the block. And the
-block sits on the gappiest part of the alignment (0% gaps in codons 20–160,
-36% in 200–217), where LSDV carries a seven-residue indel and a divergent
-hydrophobic C-terminal tail. dN/dS cannot be estimated across an indel-rich
-region.
-
-The clustering test that exposed this
-(`16_aBSREL_stem/scripts/divergence_clustering.py`) also shows the problem is
-gene-specific: of the nine genes with at least five fixed differences, only
-this one is significantly clustered after FDR correction. The MK result is
-therefore unaffected.
-
-## Repository layout
-
-Each stage directory contains `RESULTS_SUMMARY.txt` (key numbers, in Persian),
-`CODE_USED.md` (commands and design decisions) and, from stage 09 onward,
-`STATUS.md` (an English verdict: FINAL, SUPERSEDED, NEGATIVE or INCONCLUSIVE).
-
-| Stage | Content |
+| Stage | What it answers |
 |---|---|
-| `01`–`04` | QC and filtering (323 → 290), OrthoFinder input, 206 orthogroups, pan-genome statistics |
-| `05_Phylogeny` | ML tree from 60 single-copy genes (290 × 16,215, 1000 bootstraps) |
-| `06_Recombination` | Parsnp + Gubbins (r/m = 0.13, 29.2% of the genome) |
-| `07_Phylogeography` | PastML ancestral state reconstruction |
-| `08_Population_Structure` | fastBAPS (two of five clusters are species, not LSDV lineages) |
-| `09_Temporal_Signal` | root-to-tip regression — no temporal signal |
-| `10_Selection_Pressure` | BUSTED on 290 genomes; **genus-level, not within-LSDV** |
-| `11_Scoary` | gene–trait association; most hits are phylogenetic confounding |
-| `12_MEME` | site-level selection — negative |
-| `13_Selection_LSDV` | BUSTED on 240 LSDV genomes — negative + diagnostic |
-| `14_MK_Test` | **McDonald–Kreitman — the primary result** |
-| `15_RELAX` | selection intensity — inconclusive (41% non-convergence) |
-| `16_aBSREL_stem` | episodic selection on the LSDV stem — negative |
+| `01–04` Read QC, depletion, assembly, annotation | What is actually viral sequence, and what is host or bacterial carry-over |
+| `05–06` Proteome QC and pangenome | How large is the core, and how open is the accessory repertoire |
+| `07–08` Supermatrix and ML phylogeny | Does genomic structure follow host species |
+| `09–10` Recombination and Bayesian clustering | Are circulating recombinants one lineage or many independent events |
+| `11–12` Phylogeography and molecular clock | Can origin and timing be inferred, or does sampling bias forbid it |
+| `13` Pan-GWAS | Which accessory genes associate with phenotype rather than with ancestry |
+| `14–16` Selection scans, diagnostics, MK test | Where and when did adaptation actually occur |
 
-`metadata/` holds species assignments, genome lists and length statistics.
-
-## What is and is not included
-
-Included: all analysis scripts, summary tables, phylogenetic trees, codon
-alignments (stages 10 and 13), labelled trees, figures and documentation.
-
-Not included, for size reasons: raw genome assemblies and protein FASTA
-files, raw OrthoFinder and Gubbins output, raw HyPhy JSON results, and
-cluster logs. All of these are regenerable from the scripts and the accession
-lists in `metadata/`. Genome accessions are available from NCBI GenBank and
-SRA.
-
-## Reproducing an analysis
-
-Scripts are run from the project root. Two conda environments are used —
-`hyphy_env` for HyPhy analyses, `orthofinder_env` for everything else.
+## Quick start
 
 ```bash
-python3 13_Selection_LSDV/scripts/parse_and_diagnose.py
-python3 14_MK_Test/scripts/mk_polarized.py
-python3 16_aBSREL_stem/scripts/divergence_clustering.py
+# 1. install Nextflow
+curl -s https://get.nextflow.io | bash
+
+# 2. check the wiring on the bundled test data
+nextflow run RaanaT1375/capripoxvirus-pangenome -profile test,conda --outdir results_test
+
+# 3. run for real
+nextflow run RaanaT1375/capripoxvirus-pangenome \
+    -profile slurm,singularity \
+    --input samplesheet.csv \
+    --outdir results \
+    --host_bowtie2_index /path/to/host_indices \
+    --bacteria_mmi /path/to/Bacteria_Representative_DB.mmi
 ```
 
-Two practical notes that cost time during this project:
+Resume a failed or extended run with `-resume`; completed stages are not recomputed.
 
-- Four genes (`OG0000070`, `075`, `091`, `121`) fail in every HyPhy analysis.
-  The fix is `hyphy <analysis> ENV=TOLERATE_NUMERICAL_ERRORS=1 ...` **as a
-  command-line argument** — the exported environment variable does not work.
-- In SLURM scripts, `--output` must not point into a directory that does not
-  yet exist; SLURM opens the file before the script runs.
+## Samplesheet
 
-## Software versions
+One row per isolate. Provide **either** an assembly **or** FASTQ files, not both.
 
-HyPhy 2.5.101, OrthoFinder 3.1.5, IQ-TREE 3.0.1, MAFFT 7.526, pal2nal 14.1,
-Parsnp 2.1.5, Gubbins 3.4.3, PastML 1.9.50, fastBAPS 1.0.8, Scoary 1.6.16,
-Prokka 1.15.6, Python 3.14 (Biopython 1.87, pandas 3.0.3, NumPy 2.5.1,
-SciPy 1.18.0).
+```csv
+sample,species,host,country,year,condition,assembly,fastq_1,fastq_2
+AF325528.1,LSDV,Bos taurus,Africa,2001,vaccine,refs/AF325528.1.fasta,,
+SRR23419218,LSDV,Bos taurus,Europe,2021,field,,reads/SRR23419218_1.fq.gz,reads/SRR23419218_2.fq.gz
+NC_004002.1,SPPV,Ovis aries,Asia,2002,field,refs/NC_004002.1.fasta,,
+```
 
-## License
+`condition` is one of `field`, `vaccine`, `recombinant`. `country` may be a
+continent label if that is the resolution of your metadata; it is the trait used
+for the phylogeographic and association analyses.
 
-Source code (`scripts/`) is released under the MIT License (`LICENSE`).
-Data, result tables, alignments, trees and documentation are released under
-CC BY 4.0 (`LICENSE-DATA`). Underlying sequences remain subject to the terms
-of NCBI GenBank and SRA.
+## Design decisions worth knowing about
+
+These are choices, not defaults, and each of them changes the result.
+
+**Bacterial depletion is selective, not universal.** Filtering every dataset
+against a bacterial database also removes genuine lineage-specific accessory
+genes, which is precisely the compartment under study. Instead every dataset is
+assembled and annotated first; only assemblies whose predicted CDS count exceeds
+`--cds_flag_threshold` (default 200, against the ~156 ORFs expected) are sent
+back for depletion and re-assembly.
+
+**Reads are never positively selected against the LSDV reference.** Retaining
+only reference-matching reads biases recovered gene content towards the
+reference and preferentially depletes the divergent terminal regions that carry
+host-range and immunomodulatory loci. Depletion is therefore negative: a read
+pair survives only if *both* mates fail to align to the bacterial reference set.
+
+**Association significance requires two independent filters.** A gene-trait pair
+is reported only if it satisfies both the per-trait Bonferroni correction and the
+1,000-permutation empirical p-value. Either filter alone is substantially more
+permissive. Convergent associations additionally require at least three
+independent supporting evolutionary pairs, which is what separates adaptation
+from lineage expansion.
+
+**The MK frequency cutoff is swept, not assumed.** `--mk_freq_sweep` recomputes
+the test across six cutoffs so the dependence of α on the threshold is reported
+rather than hidden. Because divergence is defined against the outgroup
+consensus, Dn and Ds are invariant across the sweep, which isolates the effect
+on polymorphism alone.
+
+## Outputs
+
+```
+results/
+├── 01_read_qc/                fastp reports
+├── 02_host_depletion/         Bowtie2 logs
+├── 02_bacterial_depletion/    minimap2 retention statistics
+├── 03_assembly/               filtered contigs per isolate
+├── 04_annotation/             Prokka faa / ffn / gff / tsv
+├── 05_pangenome_qc/           contamination and completeness verdicts
+├── 06_pangenome/              orthogroups, presence/absence, Heaps' law fit
+├── 07_supermatrix/            concatenated alignment and partition file
+├── 08_phylogeny/              partitioned ML tree with bootstrap support
+├── 09_recombination/          Parsnp core alignment, Gubbins blocks, r/m
+├── 10_population_structure/   fastBAPS clusters and prior sensitivity
+├── 11_phylogeography/         PastML ancestral states, full and sub-sampled
+├── 12_temporal_signal/        root-to-tip distances and regression
+├── 13_pangwas/                per-trait summary and significant pairs
+├── 14_selection/              BUSTED, RELAX, aBSREL and dN/dS applicability
+├── 15_mk_test/                polarised MK, threshold sweep, APOBEC diagnostic
+└── pipeline_info/             timeline, report, trace, DAG, software versions
+```
+
+## Scripts
+
+`bin/` holds portable command-line tools called by the pipeline. `bin/legacy/`
+holds the scripts that produced the published results, preserved verbatim as the
+provenance record. The McDonald-Kreitman stage calls the archived implementation
+directly rather than a reimplementation, so that the published estimate is
+reproduced exactly. See [`docs/scripts.md`](docs/scripts.md) for which is which,
+and for the validation targets a full run should hit.
+
+## Reproducing the published analysis
+
+The dataset, parameters and results of the manuscript are archived at
+[10.5281/zenodo.21996311](https://doi.org/10.5281/zenodo.21996311). Accession
+numbers for all 290 genomes are in `Supplementary File S1`. Running this pipeline
+with the archived samplesheet and default parameters reproduces the reported
+core partition (132 strict-core orthogroups of 206), the recombination-to-mutation
+ratio (0.13) and the polarised MK estimate (α = 0.604, 95% CI 0.33–0.75).
 
 ## Citation
 
-See `CITATION.cff`, or use the GitHub "Cite this repository" button.
+If you use this pipeline, please cite the manuscript and the archived release.
+Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
+
+Tool citations for every stage are written to
+`results/pipeline_info/software_versions.yml` at the end of each run.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

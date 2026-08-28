@@ -1,0 +1,6 @@
+name: capripox-phylogeography
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - pastml=1.9.50
+  - python=3.10
+  - biopython=1.83

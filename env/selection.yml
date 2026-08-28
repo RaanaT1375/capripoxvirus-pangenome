@@ -1,0 +1,6 @@
+name: capripox-selection
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - hyphy=2.5.101
+  - pal2nal=14.1
+  - perl

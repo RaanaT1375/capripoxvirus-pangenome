@@ -1,0 +1,6 @@
+sample,species,host,country,year,condition,assembly,fastq_1,fastq_2
+TEST_LSDV_1,LSDV,Bos taurus,Africa,1958,field,assets/test_data/lsdv_1.fasta,,
+TEST_LSDV_2,LSDV,Bos taurus,Asia,2019,field,assets/test_data/lsdv_2.fasta,,
+TEST_LSDV_3,LSDV,Bos taurus,Europe,2016,vaccine,assets/test_data/lsdv_3.fasta,,
+TEST_SPPV_1,SPPV,Ovis aries,Asia,2002,field,assets/test_data/sppv_1.fasta,,
+TEST_GTPV_1,GTPV,Capra hircus,Asia,2002,field,assets/test_data/gtpv_1.fasta,,

@@ -1,0 +1,10 @@
+name: capripox-recombination
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - parsnp=2.1.5
+  - harvesttools=1.3
+  - gubbins=3.4.3
+  - raxml=8.2.12
+  - r-base=4.3
+  - bioconductor-ggtree
+  - r-fastbaps

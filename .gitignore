@@ -1,21 +1,7 @@
-# Python
+work/
+.nextflow*
+results*/
+*.log
+.DS_Store
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
-
-# cluster logs
-99_Cluster_Logs/
-*/logs/
-slurm-*.out
-slurm-*.err
-
-# backups and superseded working files
-99_Backups/
-*.bak
-*.bak_*
-
-# large regenerable intermediates
-*.npy
-OrthoFinder_graph.txt
-
-.DS_Store

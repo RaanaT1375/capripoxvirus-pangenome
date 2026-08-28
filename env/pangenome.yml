@@ -1,0 +1,5 @@
+name: capripox-pangenome
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - orthofinder=3.1.5
+  - diamond=2.1.10

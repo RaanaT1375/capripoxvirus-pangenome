@@ -1,0 +1,5 @@
+name: capripox-annotation
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - prokka=1.14.6
+  - diamond=2.1.10

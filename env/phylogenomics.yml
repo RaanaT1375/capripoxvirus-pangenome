@@ -1,0 +1,5 @@
+name: capripox-phylogenomics
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - mafft=7.526
+  - iqtree=3.0.1
