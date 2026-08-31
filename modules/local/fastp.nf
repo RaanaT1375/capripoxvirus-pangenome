@@ -42,4 +42,12 @@ process FASTP {
             fastp: \$(fastp --version 2>&1 | sed 's/fastp //')
         END_VERSIONS
         """
+
+    stub:
+    def r = meta.single_end ? "${meta.id}.trim.fastq.gz" : "${meta.id}_1.trim.fastq.gz ${meta.id}_2.trim.fastq.gz"
+    """
+    for f in ${r}; do echo | gzip > \$f; done
+    echo '{}' > ${meta.id}.fastp.json
+    touch ${meta.id}.fastp.html versions.yml
+    """
 }

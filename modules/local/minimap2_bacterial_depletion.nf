@@ -54,4 +54,11 @@ process MINIMAP2_BACTERIAL_DEPLETION {
             samtools: \$(samtools --version | head -1 | sed 's/samtools //')
         END_VERSIONS
         """
+
+    stub:
+    def r = meta.single_end ? "${meta.id}_pure_viral.fastq.gz" : "${meta.id}_pure_viral_R1.fastq.gz ${meta.id}_pure_viral_R2.fastq.gz"
+    """
+    for f in ${r}; do echo | gzip > \$f; done
+    touch ${meta.id}.depletion.stats versions.yml
+    """
 }

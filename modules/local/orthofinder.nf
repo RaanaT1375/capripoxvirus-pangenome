@@ -39,6 +39,17 @@ process ORTHOFINDER {
         diamond: \$(diamond --version 2>&1 | sed 's/.*version //')
     END_VERSIONS
     """
+
+    stub:
+    """
+    mkdir -p orthofinder_raw
+    printf 'Orthogroup\\tg1\\n' > Orthogroups.tsv
+    printf 'Orthogroup\\tg1\\n' > Orthogroups.GeneCount.tsv
+    printf 'Orthogroup,g1\\nOG0000001,1\\n' > gene_presence_absence.csv
+    printf 'OG0000001\\n' > single_copy_orthogroups.txt
+    printf 'orthogroup\\tpartition\\nOG0000001\\tcore\\n' > pangenome_partitions.tsv
+    touch versions.yml
+    """
 }
 
 process HEAPS_LAW {
@@ -57,5 +68,10 @@ process HEAPS_LAW {
     """
     heaps_law.py --matrix ${presence_absence} --permutations 100 \\
         --out-curve accumulation_curve.tsv --out-fit heaps_law_fit.tsv
+    """
+
+    stub:
+    """
+    touch accumulation_curve.tsv heaps_law_fit.tsv
     """
 }

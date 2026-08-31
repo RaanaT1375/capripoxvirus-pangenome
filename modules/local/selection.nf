@@ -19,6 +19,12 @@ process PAL2NAL {
         pal2nal: 14
     END_VERSIONS
     """
+
+    stub:
+    """
+    printf '>t1\\nATGTCA\\n>t2\\nATGTCA\\n' > ${og}_codon.fasta
+    touch versions.yml
+    """
 }
 
 process HYPHY_BUSTED {
@@ -52,6 +58,12 @@ process HYPHY_BUSTED {
         hyphy: \$(hyphy --version 2>&1 | grep -o '[0-9.]*' | head -1)
     END_VERSIONS
     """
+
+    stub:
+    """
+    echo '{}' > ${og}_BUSTED.json
+    touch ${og}_BUSTED.log versions.yml
+    """
 }
 
 process HYPHY_RELAX {
@@ -75,6 +87,12 @@ process HYPHY_RELAX {
         --output ${og}_RELAX.json \\
         CPU=${task.cpus} > ${og}_RELAX.log 2>&1 || true
     """
+
+    stub:
+    """
+    echo '{}' > ${og}_RELAX.json
+    touch ${og}_RELAX.log
+    """
 }
 
 process HYPHY_ABSREL {
@@ -96,6 +114,12 @@ process HYPHY_ABSREL {
         --branches Stem \\
         --output ${og}_ABSREL.json \\
         CPU=${task.cpus} > ${og}_ABSREL.log 2>&1 || true
+    """
+
+    stub:
+    """
+    echo '{}' > ${og}_ABSREL.json
+    touch ${og}_ABSREL.log
     """
 }
 
@@ -122,6 +146,11 @@ process SELECTION_DIAGNOSTICS {
         --fdr ${params.hyphy_fdr} \\
         --out-summary busted_summary.csv \\
         --out-diagnostics dnds_applicability.tsv
+    """
+
+    stub:
+    """
+    touch busted_summary.csv dnds_applicability.tsv
     """
 }
 
@@ -164,5 +193,10 @@ process MK_TEST {
     cp 14_MK_Test/03_summary/mk_threshold_sweep.csv       mk_threshold_sweep.csv
     cp 14_MK_Test/03_summary/apobec_diagnostic.tsv        apobec_diagnostic.tsv 2>/dev/null || touch apobec_diagnostic.tsv
     grep -m1 alpha 14_MK_Test/02_results/*.csv > mk_genome_wide.tsv || touch mk_genome_wide.tsv
+    """
+
+    stub:
+    """
+    touch mk_polarized_per_gene.csv mk_genome_wide.tsv mk_threshold_sweep.csv apobec_diagnostic.tsv
     """
 }

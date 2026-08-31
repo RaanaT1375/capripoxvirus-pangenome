@@ -19,6 +19,12 @@ process MAFFT_ALIGN {
         mafft: \$(mafft --version 2>&1 | sed 's/^v//;s/ .*//')
     END_VERSIONS
     """
+
+    stub:
+    """
+    printf '>t1\\nMSTN\\n>t2\\nMSTN\\n' > ${og}.aln.faa
+    touch versions.yml
+    """
 }
 
 process CONCAT_SUPERMATRIX {
@@ -40,6 +46,13 @@ process CONCAT_SUPERMATRIX {
         --out-fasta supermatrix.faa \\
         --out-partitions partitions.nex \\
         --out-stats supermatrix_stats.tsv
+    """
+
+    stub:
+    """
+    printf '>t1\\nMSTN\\n>t2\\nMSTN\\n' > supermatrix.faa
+    printf '#nexus\\nbegin sets;\\nend;\\n' > partitions.nex
+    touch supermatrix_stats.tsv
     """
 }
 
@@ -69,5 +82,12 @@ process IQTREE {
     "${task.process}":
         iqtree: \$(iqtree --version 2>&1 | grep -m1 -o 'version [0-9.]*' | sed 's/version //')
     END_VERSIONS
+    """
+
+    stub:
+    """
+    printf '(t1:0.1,t2:0.1);\\n' > core_genome_ML.contree
+    touch core_genome_ML.log
+    touch versions.yml
     """
 }

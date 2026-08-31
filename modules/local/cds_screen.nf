@@ -19,4 +19,10 @@ process CDS_SCREEN {
     if [ "\$N" -gt ${params.cds_flag_threshold} ]; then FLAG=flagged; else FLAG=clean; fi
     printf "%s\\t%s\\t%s\\n" "${meta.id}" "\$N" "\$FLAG" > ${meta.id}.cds_count.tsv
     """
+
+    stub:
+    """
+    FLAG=clean
+    printf '%s\\t1\\tclean\\n' "${meta.id}" > ${meta.id}.cds_count.tsv
+    """
 }

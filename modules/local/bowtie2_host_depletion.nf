@@ -43,4 +43,11 @@ process BOWTIE2_HOST_DEPLETION {
             bowtie2: \$(bowtie2 --version | head -1 | sed 's/.*version //')
         END_VERSIONS
         """
+
+    stub:
+    def r = meta.single_end ? "${meta.id}_host_removed.fastq.gz" : "${meta.id}_host_removed_R1.fastq.gz ${meta.id}_host_removed_R2.fastq.gz"
+    """
+    for f in ${r}; do echo | gzip > \$f; done
+    touch ${meta.id}.bowtie2.log versions.yml
+    """
 }

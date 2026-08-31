@@ -24,6 +24,12 @@ process SCOARY {
         scoary: \$(scoary --version 2>&1 | grep -o '[0-9.]*' | head -1)
     END_VERSIONS
     """
+
+    stub:
+    """
+    printf 'Gene,Odds_ratio,Naive_p,Bonferroni_p,Empirical_p,Max_supporting_pairs,Max_opposing_pairs\\n' > Trait.results.csv
+    touch versions.yml
+    """
 }
 
 process SCOARY_SUMMARISE {
@@ -53,5 +59,11 @@ process SCOARY_SUMMARISE {
         --min-pairs ${params.tier1_min_pairs} \\
         --out-summary S6_pangwas_per_trait_summary.csv \\
         --out-pairs   significant_pairs.csv
+    """
+
+    stub:
+    """
+    printf 'trait,n_significant\\n' > S6_pangwas_per_trait_summary.csv
+    touch significant_pairs.csv
     """
 }

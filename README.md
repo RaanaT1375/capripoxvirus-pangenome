@@ -44,8 +44,8 @@ intra-population synonymous variation to be interpretable.
 # 1. install Nextflow
 curl -s https://get.nextflow.io | bash
 
-# 2. check the wiring on the bundled test data
-nextflow run RaanaT1375/capripoxvirus-pangenome -profile test,conda --outdir results_test
+# 2. check the wiring on the bundled synthetic data (seconds, no tools needed)
+nextflow run RaanaT1375/capripoxvirus-pangenome -profile test -stub-run --outdir results_test
 
 # 3. run for real
 nextflow run RaanaT1375/capripoxvirus-pangenome \

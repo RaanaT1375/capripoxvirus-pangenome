@@ -26,6 +26,14 @@ process PASTML {
         pastml: \$(pastml --version 2>&1 | grep -o '[0-9.]*' | head -1)
     END_VERSIONS
     """
+
+    stub:
+    """
+    mkdir -p ${label}_pastml
+    printf 'node\\tAfrica\\tAsia\\tEurope\\nroot\\t0.33\\t0.34\\t0.33\\n' > ${label}_pastml/marginal_probabilities.character_Continent.model_F81.tab
+    printf 'node\\tContinent\\nroot\\tAsia\\n' > ${label}_pastml/combined_ancestral_states.tab
+    touch versions.yml
+    """
 }
 
 process SUBSAMPLE_TREES {
@@ -48,6 +56,14 @@ process SUBSAMPLE_TREES {
         --replicates ${params.subsampling_replicates} \\
         --column Continent --seed ${params.mk_seed}
     """
+
+    stub:
+    """
+    for i in 0 1; do
+      printf '(t1:0.1,t2:0.1);\\n' > rep\${i}_tree.nwk
+      printf 'id\\tContinent\\nt1\\tAsia\\n' > rep\${i}_metadata.tsv
+    done
+    """
 }
 
 process ROOT_TO_TIP {
@@ -68,5 +84,10 @@ process ROOT_TO_TIP {
     root_to_tip.py --tree ${tree} --metadata ${metadata} \\
         --out-distances root_to_tip_distances.tsv \\
         --out-regression regression_summary.tsv
+    """
+
+    stub:
+    """
+    touch root_to_tip_distances.tsv regression_summary.tsv
     """
 }

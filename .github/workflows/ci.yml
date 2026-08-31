@@ -10,7 +10,7 @@ on:
 
 jobs:
   lint:
-    name: Lint the workflow
+    name: Parse and lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,16 +20,21 @@ jobs:
         with:
           version: "23.10.0"
 
-      - name: Check that the workflow parses
+      - name: Workflow parses and help renders
         run: nextflow run . --help
 
-      - name: Lint Groovy and Nextflow formatting
+      - name: No tabs in Nextflow files
         run: |
-          # fail on tabs in .nf files, which break Groovy heredocs
-          ! grep -rP "\t" --include="*.nf" . || (echo "tabs found in .nf files"; exit 1)
+          if grep -rlP "\t" --include="*.nf" .; then
+            echo "Tabs found in .nf files; they break Groovy heredocs."
+            exit 1
+          fi
 
-  test:
-    name: Run the test profile
+      - name: Python scripts compile
+        run: python3 -m compileall -q bin/
+
+  stub:
+    name: Stub run
     runs-on: ubuntu-latest
     needs: lint
     steps:
@@ -40,15 +45,13 @@ jobs:
         with:
           version: "23.10.0"
 
-      - uses: conda-incubator/setup-miniconda@v3
-        with:
-          miniforge-version: latest
-          auto-activate-base: true
+      # -stub-run executes each process's stub block instead of the real
+      # command, so the whole workflow graph is exercised without installing
+      # any bioinformatics software. This checks the wiring, not the science.
+      - name: Verify the workflow wiring
+        run: nextflow run . -profile test -stub-run --outdir results_test
 
-      - name: Run the test profile
-        run: nextflow run . -profile test,conda --outdir results_test
-
-      - name: Upload the execution report
+      - name: Upload execution report
         if: always()
         uses: actions/upload-artifact@v4
         with:

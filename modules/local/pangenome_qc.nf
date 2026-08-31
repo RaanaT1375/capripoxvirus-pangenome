@@ -28,6 +28,12 @@ process DIAMOND_CONTAMINATION {
         diamond: \$(diamond --version 2>&1 | sed 's/.*version //')
     END_VERSIONS
     """
+
+    stub:
+    """
+    printf '%s\\t1\\t1\\t0.0000\\n' "${meta.id}" > ${meta.id}.contamination.tsv
+    touch versions.yml
+    """
 }
 
 process PANGENOME_QC_FILTER {
@@ -57,5 +63,11 @@ process PANGENOME_QC_FILTER {
         --out-retained retained_genomes.txt \\
         --out-excluded excluded_genomes.tsv \\
         --out-summary  qc_summary.tsv
+    """
+
+    stub:
+    """
+    cut -f1 ${contamination_reports} | sort -u > retained_genomes.txt
+    touch excluded_genomes.tsv qc_summary.tsv
     """
 }

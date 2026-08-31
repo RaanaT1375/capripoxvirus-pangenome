@@ -25,6 +25,13 @@ process PARSNP {
         parsnp: \$(parsnp --version 2>&1 | grep -o '[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+' | head -1)
     END_VERSIONS
     """
+
+    stub:
+    """
+    mkdir -p parsnp_raw
+    printf '>t1\\nACGT\\n>t2\\nACGT\\n' > core_alignment.fasta
+    touch versions.yml
+    """
 }
 
 process GUBBINS {
@@ -61,6 +68,14 @@ process GUBBINS {
         gubbins: \$(run_gubbins.py --version 2>&1)
     END_VERSIONS
     """
+
+    stub:
+    """
+    touch capripox.recombination_predictions.gff
+    printf '(t1:0.1,t2:0.1);\\n' > capripox.node_labelled.final_tree.tre
+    printf '>t1\\nAC\\n>t2\\nAT\\n' > capripox.filtered_polymorphic_sites.fasta
+    touch rm_ratio.tsv versions.yml
+    """
 }
 
 process FASTBAPS {
@@ -86,5 +101,11 @@ process FASTBAPS {
     "${task.process}":
         fastbaps: \$(Rscript -e 'cat(as.character(packageVersion("fastbaps")))')
     END_VERSIONS
+    """
+
+    stub:
+    """
+    printf 'genome_id,cluster\\nt1,1\\nt2,1\\n' > fastbaps_clusters.csv
+    touch fastbaps_priors.tsv versions.yml
     """
 }

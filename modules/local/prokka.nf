@@ -34,4 +34,12 @@ process PROKKA {
         annotation_mode: with_reference_proteome
     END_VERSIONS
     """
+
+    stub:
+    """
+    printf '>${meta.id}_00001 hypothetical protein\\nMSTNPKPQR\\n' > ${meta.id}.faa
+    printf '>${meta.id}_00001\\nATGTCAACTAATCCAAAACCACAACGT\\n' > ${meta.id}.ffn
+    printf 'locus_tag\\tftype\\tgene\\tproduct\\n${meta.id}_00001\\tCDS\\t-\\thypothetical protein\\n' > ${meta.id}.tsv
+    touch ${meta.id}.gff versions.yml
+    """
 }

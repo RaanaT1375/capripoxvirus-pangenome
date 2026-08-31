@@ -39,4 +39,10 @@ process SPADES {
         mode: ${spades_mode}
     END_VERSIONS
     """
+
+    stub:
+    """
+    printf '>contig_1\\nACGTACGTACGT\\n' > ${meta.id}_contigs.fasta
+    touch ${meta.id}.spades.log versions.yml
+    """
 }
