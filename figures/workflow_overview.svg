@@ -1,94 +1,72 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 340" width="1120" height="340">
-  <defs>
-    <style>
-      .title { font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #0F172A; }
-      .subtitle { font: 400 12.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #64748B; }
-      .step-num { font: 700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; letter-spacing: 0.8px; }
-      .card-title { font: 700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #0F172A; }
-      .metric { font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #1E293B; }
-      .detail { font: 400 11.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #475569; }
-      .footer { font: 500 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #64748B; }
-    </style>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#94A3B8"/>
-    </marker>
-  </defs>
-
-  <!-- Clean white background -->
+  <defs><style>
+    .t { font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #0F172A; }
+    .s { font: 400 12.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #64748B; }
+    .n { font: 700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; letter-spacing: 0.8px; }
+    .c { font: 700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #0F172A; }
+    .m { font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #1E293B; }
+    .d { font: 400 11.5px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #475569; }
+    .f { font: 500 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #64748B; }
+  </style>
+  <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#94A3B8"/>
+  </marker></defs>
   <rect x="1" y="1" width="1118" height="338" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
-
-  <!-- Header -->
-  <text x="560" y="42" text-anchor="middle" class="title">Capripoxvirus Pan-Genomic &amp; Population-Genetic Workflow</text>
-  <text x="560" y="64" text-anchor="middle" class="subtitle">290 Curated Genomes (240 LSDV · 34 SPPV · 16 GTPV)  |  60 Single-Copy Core Genes  |  Nextflow Pipeline</text>
-
-  <!-- Card 1 -->
+  <text x="560" y="42" text-anchor="middle" class="t">Capripoxvirus Pan-Genomic &amp; Population-Genetic Workflow</text>
+  <text x="560" y="64" text-anchor="middle" class="s">290 Curated Genomes (240 LSDV · 34 SPPV · 16 GTPV)  |  60 Single-Copy Core Genes  |  Nextflow Pipeline</text>
   <rect x="30" y="96" width="192" height="190" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
   <rect x="30" y="96" width="192" height="5" rx="2.5" fill="#002F57"/>
-  <text x="46" y="122" class="step-num" fill="#002F57">STEP 01</text>
-  <text x="46" y="144" class="card-title">Curation &amp; QC</text>
+  <text x="46" y="122" class="n" fill="#002F57">STEP 01</text>
+  <text x="46" y="144" class="c">Curation &amp; QC</text>
   <line x1="46" y1="156" x2="206" y2="156" stroke="#E2E8F0" stroke-width="1"/>
-  <text x="46" y="180" class="metric">381 → 290 Genomes</text>
-  <text x="46" y="204" class="detail">• Completeness &amp; purity</text>
-  <text x="46" y="224" class="detail">• 32 contaminated removed</text>
-  <text x="46" y="244" class="detail">• 4 chimeric merges audited</text>
-  <text x="46" y="268" class="detail" fill="#002F57">fastp · SPAdes · Prokka</text>
-
-  <line x1="226" y1="191" x2="246" y2="191" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#arrow)"/>
-
-  <!-- Card 2 -->
+  <text x="46" y="180" class="m">381 → 290 Genomes</text>
+  <text x="46" y="204" class="d">• Completeness &amp; purity</text>
+  <text x="46" y="224" class="d">• 32 contaminated removed</text>
+  <text x="46" y="244" class="d">• 4 chimeric merges audited</text>
+  <text x="46" y="268" class="d" fill="#002F57">fastp · SPAdes · Prokka</text>
+  <line x1="226" y1="191" x2="246" y2="191" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#a)"/>
   <rect x="250" y="96" width="192" height="190" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
   <rect x="250" y="96" width="192" height="5" rx="2.5" fill="#002F57"/>
-  <text x="266" y="122" class="step-num" fill="#002F57">STEP 02</text>
-  <text x="266" y="144" class="card-title">Pan-Genome</text>
+  <text x="266" y="122" class="n" fill="#002F57">STEP 02</text>
+  <text x="266" y="144" class="c">Pan-Genome</text>
   <line x1="266" y1="156" x2="426" y2="156" stroke="#E2E8F0" stroke-width="1"/>
-  <text x="266" y="180" class="metric">206 Orthogroups</text>
-  <text x="266" y="204" class="detail">• Closed (Heaps γ = 0.068)</text>
-  <text x="266" y="224" class="detail">• 132 strict · 60 single-copy</text>
-  <text x="266" y="244" class="detail">• Terminal synteny variation</text>
-  <text x="266" y="268" class="detail" fill="#002F57">OrthoFinder · Proksee</text>
-
-  <line x1="446" y1="191" x2="466" y2="191" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#arrow)"/>
-
-  <!-- Card 3 -->
+  <text x="266" y="180" class="m">206 Orthogroups</text>
+  <text x="266" y="204" class="d">• Closed (Heaps γ = 0.068)</text>
+  <text x="266" y="224" class="d">• 132 strict · 60 single-copy</text>
+  <text x="266" y="244" class="d">• Terminal synteny variation</text>
+  <text x="266" y="268" class="d" fill="#002F57">OrthoFinder · Proksee</text>
+  <line x1="446" y1="191" x2="466" y2="191" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#a)"/>
   <rect x="470" y="96" width="192" height="190" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
   <rect x="470" y="96" width="192" height="5" rx="2.5" fill="#495C7C"/>
-  <text x="486" y="122" class="step-num" fill="#495C7C">STEP 03</text>
-  <text x="486" y="144" class="card-title">Phylogeny &amp; Clones</text>
+  <text x="486" y="122" class="n" fill="#495C7C">STEP 03</text>
+  <text x="486" y="144" class="c">Phylogeny &amp; Clones</text>
   <line x1="486" y1="156" x2="646" y2="156" stroke="#E2E8F0" stroke-width="1"/>
-  <text x="486" y="180" class="metric">Outgroup-Free Root</text>
-  <text x="486" y="204" class="detail">• LSDV basal (10/10 reps)</text>
-  <text x="486" y="224" class="detail">• Clonal core (r/m = 0.13)</text>
-  <text x="486" y="244" class="detail">• Node_147 (100 genomes)</text>
-  <text x="486" y="268" class="detail" fill="#495C7C">IQ-TREE · Gubbins · BAPS</text>
-
-  <line x1="666" y1="191" x2="686" y2="191" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#arrow)"/>
-
-  <!-- Card 4 -->
+  <text x="486" y="180" class="m">Outgroup-Free Root</text>
+  <text x="486" y="204" class="d">• LSDV basal (10/10 reps)</text>
+  <text x="486" y="224" class="d">• Clonal core (r/m = 0.13)</text>
+  <text x="486" y="244" class="d">• Node_147 (100 genomes)</text>
+  <text x="486" y="268" class="d" fill="#495C7C">IQ-TREE · Gubbins · BAPS</text>
+  <line x1="666" y1="191" x2="686" y2="191" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#a)"/>
   <rect x="690" y="96" width="192" height="190" rx="10" fill="#FDF7F9" stroke="#E2CBD3" stroke-width="1"/>
   <rect x="690" y="96" width="192" height="5" rx="2.5" fill="#871746"/>
-  <text x="706" y="122" class="step-num" fill="#871746">STEP 04</text>
-  <text x="706" y="144" class="card-title">Ancestral Selection</text>
+  <text x="706" y="122" class="n" fill="#871746">STEP 04</text>
+  <text x="706" y="144" class="c">Ancestral Selection</text>
   <line x1="706" y1="156" x2="866" y2="156" stroke="#EBD8DF" stroke-width="1"/>
-  <text x="706" y="180" class="metric">MK α = 0.63 (p = 0.009)</text>
-  <text x="706" y="204" class="detail">• Masked rec. (α = 0.588)</text>
-  <text x="706" y="224" class="detail">• 40 clean sites / 18 genes</text>
-  <text x="706" y="244" class="detail">• Functional ω (p = 0.0024)</text>
-  <text x="706" y="268" class="detail" fill="#871746">HyPhy · ML ASR · MK Test</text>
-
-  <line x1="886" y1="191" x2="906" y2="191" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#arrow)"/>
-
-  <!-- Card 5 -->
+  <text x="706" y="180" class="m">MK α = 0.63 (p = 0.009)</text>
+  <text x="706" y="204" class="d">• Masked rec. (α = 0.588)</text>
+  <text x="706" y="224" class="d">• 40 clean sites / 18 genes</text>
+  <text x="706" y="244" class="d">• Functional ω (p = 0.0024)</text>
+  <text x="706" y="268" class="d" fill="#871746">HyPhy · ML ASR · MK Test</text>
+  <line x1="886" y1="191" x2="906" y2="191" stroke="#94A3B8" stroke-width="1.6" marker-end="url(#a)"/>
   <rect x="910" y="96" width="180" height="190" rx="10" fill="#F9FAF5" stroke="#D7DBC8" stroke-width="1"/>
   <rect x="910" y="96" width="180" height="5" rx="2.5" fill="#585D26"/>
-  <text x="926" y="122" class="step-num" fill="#585D26">STEP 05</text>
-  <text x="926" y="144" class="card-title">Validation &amp; Markers</text>
+  <text x="926" y="122" class="n" fill="#585D26">STEP 05</text>
+  <text x="926" y="144" class="c">Validation &amp; Markers</text>
   <line x1="926" y1="156" x2="1074" y2="156" stroke="#E3E6D8" stroke-width="1"/>
-  <text x="926" y="180" class="metric">35 Diagnostic SNPs</text>
-  <text x="926" y="204" class="detail">• DNA-level pan-GWAS</text>
-  <text x="926" y="224" class="detail">• Provenance audit</text>
-  <text x="926" y="244" class="detail">• Temporal power test</text>
-  <text x="926" y="268" class="detail" fill="#585D26">tblastn · Scoary · PastML</text>
-
-  <!-- Minimal footer -->
-  <text x="560" y="316" text-anchor="middle" class="footer">All code, summary tables, and Supplementary Files S1–S16 are archived at Zenodo (DOI: 10.5281/zenodo.22202951)</text>
+  <text x="926" y="180" class="m">35 Diagnostic SNPs</text>
+  <text x="926" y="204" class="d">• DNA-level pan-GWAS</text>
+  <text x="926" y="224" class="d">• Provenance audit</text>
+  <text x="926" y="244" class="d">• Temporal power test</text>
+  <text x="926" y="268" class="d" fill="#585D26">tblastn · Scoary · PastML</text>
+  <text x="560" y="316" text-anchor="middle" class="f">All code, summary tables, and Supplementary Files S1–S16 are archived at Zenodo (DOI: 10.5281/zenodo.22202951)</text>
 </svg>
