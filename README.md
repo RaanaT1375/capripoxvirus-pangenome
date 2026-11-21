@@ -6,7 +6,7 @@
   <a href="https://www.nextflow.io/"><img src="https://img.shields.io/badge/nextflow-%E2%89%A523.10.0-0B1B2B?labelColor=871746" alt="Nextflow"></a>
   <a href="https://docs.conda.io/"><img src="https://img.shields.io/badge/run%20with-conda-0B1B2B?labelColor=90A0BC" alt="conda"></a>
   <a href="https://sylabs.io/"><img src="https://img.shields.io/badge/run%20with-singularity-0B1B2B?labelColor=90A0BC" alt="singularity"></a>
-  <a href="https://doi.org/10.5281/zenodo.22202951"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22202951-0B1B2B?labelColor=CB9A9F" alt="DOI"></a>
+  <a href="https://doi.org/10.5281/zenodo.24420766"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24420766-0B1B2B?labelColor=CB9A9F" alt="DOI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-0B1B2B?labelColor=585D26" alt="MIT"></a>
 </p>
 

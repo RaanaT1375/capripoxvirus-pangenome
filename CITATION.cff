@@ -14,7 +14,7 @@ authors:
     family-names: Masoudi
 repository-code: https://github.com/RaanaT1375/capripoxvirus-pangenome
 license: MIT
-version: 2.0.0
+version: 2.1.0
 doi: 10.5281/zenodo.21996311
 keywords:
   - pangenomics
