@@ -1,0 +1,11 @@
+name: capripox-python
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - python=3.10
+  - pandas=2.2
+  - numpy=1.26
+  - scipy=1.12
+  - biopython=1.83
+  - statsmodels=0.14
+  - matplotlib-base=3.8
+  - openpyxl=3.1

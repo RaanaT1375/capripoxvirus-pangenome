@@ -1,0 +1,5 @@
+name: capripox-assembly
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - spades=4.0.0
+  - quast=5.2.0

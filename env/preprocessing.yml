@@ -1,0 +1,7 @@
+name: capripox-preprocessing
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - fastp=0.23.2
+  - bowtie2=2.4.5
+  - minimap2=2.28
+  - samtools=1.19

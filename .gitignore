@@ -1,8 +1,7 @@
+work/
+.nextflow*
+results*/
+*.log
+.DS_Store
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
-99_Cluster_Logs/
-*/logs/
-slurm-*.out
-slurm-*.err
-.DS_Store
