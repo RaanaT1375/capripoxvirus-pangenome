@@ -1,0 +1,100 @@
+note: /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/22_Scoary_Vaccine is not a directory, skipped
+38 Scoary result files found
+
+19 trait(s) have more than one result file:
+  primary_290 / Africa
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Africa.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Africa.results.csv   <- looks superseded
+  primary_290 / Ancestral_recombinant
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Ancestral_recombinant.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Ancestral_recombinant.results.csv   <- looks superseded
+  primary_290 / Asia
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Asia.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Asia.results.csv   <- looks superseded
+  primary_290 / BAPS_cluster_1
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/BAPS_cluster_1.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/BAPS_cluster_1.results.csv   <- looks superseded
+  primary_290 / BAPS_cluster_2
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/BAPS_cluster_2.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/BAPS_cluster_2.results.csv   <- looks superseded
+  primary_290 / BAPS_cluster_3
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/BAPS_cluster_3.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/BAPS_cluster_3.results.csv   <- looks superseded
+  primary_290 / BAPS_cluster_4
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/BAPS_cluster_4.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/BAPS_cluster_4.results.csv   <- looks superseded
+  primary_290 / BAPS_cluster_5
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/BAPS_cluster_5.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/BAPS_cluster_5.results.csv   <- looks superseded
+  primary_290 / Europe
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Europe.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Europe.results.csv   <- looks superseded
+  primary_290 / Host_Cattle
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Host_Cattle.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Host_Cattle.results.csv   <- looks superseded
+  primary_290 / Host_Giraffe
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Host_Giraffe.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Host_Giraffe.results.csv   <- looks superseded
+  primary_290 / Host_Goat
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Host_Goat.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Host_Goat.results.csv   <- looks superseded
+  primary_290 / Host_Sheep
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Host_Sheep.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Host_Sheep.results.csv   <- looks superseded
+  primary_290 / Host_Wildlife
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Host_Wildlife.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Host_Wildlife.results.csv   <- looks superseded
+  primary_290 / Independent_recombinant
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Independent_recombinant.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Independent_recombinant.results.csv   <- looks superseded
+  primary_290 / No_recombination
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/No_recombination.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/No_recombination.results.csv   <- looks superseded
+  primary_290 / Recombinant
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Recombinant.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Recombinant.results.csv   <- looks superseded
+  primary_290 / Vaccine
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Vaccine.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Vaccine.results.csv   <- looks superseded
+  primary_290 / Wild
+    KEEP (no timestamp)  11_Scoary/scoary_results_tree/Wild.results.csv
+         (no timestamp)  11_Scoary/_SUPERSEDED_scoary_results_notree/Wild.results.csv   <- looks superseded
+
+Using the newest file per trait. To see the undeduplicated numbers instead:  SCOARY_KEEP=all python3 scripts/04_scoary_table.py
+
+19 files used, covering 19 trait/run combinations
+251 rows parsed across 18 traits
+
+passing both filters (Bonferroni < 0.05, empirical < 0.05): 92 gene-trait pairs
+  primary_290: 92 pairs, 16 traits, 18 orthogroups
+manuscript states: 92 pairs, 16 traits, 18 orthogroups (primary 290-genome run)
+
+meeting the convergence criterion (>= 3 supporting pairs, net positive): 7
+  primary_290      Africa                 OG0000159    OR=7.713      emp_p=0.000999  8:4
+  primary_290      Africa                 OG0000161    OR=6.907      emp_p=0.000999  7:5
+  primary_290      Africa                 OG0000156    OR=6.907      emp_p=0.001998  6:5
+  primary_290      Asia                   OG0000157    OR=inf        emp_p=0.002997  9:0
+  primary_290      Asia                   OG0000155    OR=13.42      emp_p=0.005994  12:4
+  primary_290      Europe                 OG0000154    OR=0.3633     emp_p=0.01399   9:2
+  primary_290      Vaccine                OG0000152    OR=5.848      emp_p=0.01798   4:2
+
+======================================================================
+TABLE 5 ROWS — looked up by (orthogroup, trait), not by orthogroup
+======================================================================
+OG0000157    Asia                   OR=$\infty$   emp_p=0.002997  pairs=9:0  convergent  [passes both filters]
+OG0000155    Asia                   OR=13.42      emp_p=0.005994  pairs=12:4  convergent  [passes both filters]
+OG0000154    Europe                 OR=0.36       emp_p=0.01399   pairs=9:2  convergent  [passes both filters]
+OG0000159    Africa                 OR=7.71       emp_p=0.000999  pairs=8:4  convergent  [passes both filters]
+OG0000161    Africa                 OR=6.91       emp_p=0.000999  pairs=7:5  convergent  [passes both filters]
+OG0000156    Africa                 OR=6.91       emp_p=0.001998  pairs=6:5  convergent  [passes both filters]
+OG0000152    Vaccine                OR=5.85       emp_p=0.01798   pairs=4:2  convergent  [passes both filters]
+OG0000151    Vaccine                OR=8.61       emp_p=0.03696   pairs=4:2  convergent  [present but does NOT pass both filters]
+OG0000004    Wild                   OR=4.84       emp_p=0.02398   pairs=6:6  NOT convergent  [passes both filters]
+
+written: 03_summary/table5_rows.csv
+
+Check before using any of this:
+  - the pair/trait/orthogroup counts above against 92 / 16 / 18
+  - that every Table 5 row says 'convergent'
+  - 03_summary/scoary_convergent.csv is the authoritative tier-1 list;
+    if it disagrees with Table 5 in the manuscript, the table is wrong.

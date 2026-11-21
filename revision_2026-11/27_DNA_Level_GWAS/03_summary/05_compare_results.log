@@ -1,0 +1,34 @@
+19 result files
+267 rows across 17 traits
+
+passing both filters: 49 pairs, 14 traits, 13 orthogroups
+annotation-based matrix gave: 92 pairs, 16 traits, 18 orthogroups
+
+meeting the convergence criterion: 6
+annotation-based matrix gave: 7
+
+  Trait                   Orthogroup           OR      emp p  pairs
+  Africa                  OG0000168         7.857   0.000999  8:3
+  Africa                  OG0000179         6.845   0.000999  8:4
+  Africa                  OG0000184         5.537   0.000999  8:4
+  Africa                  OG0000196         6.058   0.000999  8:3
+  Asia                    OG0000155         10.66    0.02398  10:5
+  Recombinant             OG0000155         13.22   0.001998  6:2
+
+======================================================================
+THE SEVEN ANNOTATION-BASED ASSOCIATIONS, RE-TESTED
+======================================================================
+OG0000157    Asia       absent from the DNA-level output (no variance left to test)
+OG0000155    Asia       OR=10.66      emp_p=0.02398   bonf=3.682e-07  10:5  still convergent
+OG0000154    Europe     absent from the DNA-level output (no variance left to test)
+OG0000159    Africa     OR=5.429      emp_p=0.000999  bonf=0.07258    8:3  no longer significant
+OG0000161    Africa     OR=3.547      emp_p=0.001998  bonf=1          7:5  no longer significant
+OG0000156    Africa     absent from the DNA-level output (no variance left to test)
+OG0000152    Vaccine    absent from the DNA-level output (no variance left to test)
+
+How to read this:
+  Any association that survives here is supported by sequence rather
+  than by gene calls, and can be reported as a biological result.
+  Any that disappears was an artefact of annotation. If none survives,
+  that is a clean negative result and the stronger claim is the
+  methodological one.

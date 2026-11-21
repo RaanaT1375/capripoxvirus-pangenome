@@ -1,0 +1,60 @@
+121 fixed differences read from step 2
+non-synonymous sites taken from column 'synonymous': 60
+60 codon alignments read for gene lengths and gap profiles
+
+20 genes carry a non-synonymous fixed difference; 8 have at least 3 and were tested
+deciding test: exact span probability, Holm-corrected over 8 genes
+gap rule: ratio > 2.0x AND local gap frequency >= 5%, tested genes only
+window statistic (30 codons, 20000 permutations, seed 20261120) reported for comparison only
+
+=== genes with at least 3 non-synonymous fixed differences ===
+  gene           n   len  span    p_span      Holm   p_win    p_KS   gap@   mean  flag
+  OG0000120     16   217    31  4.45e-14  3.56e-13   0.000   0.000   0.0%  14.5%  FLAGGED
+  OG0000067      4    89     6  3.46e-04  2.42e-03   0.102   0.027   0.0%  12.4%  FLAGGED
+  OG0000099      5   196   159  7.51e-01  1.00e+00   0.988   0.988   0.1%   0.2%  
+  OG0000104      4   149    47  8.76e-02  4.38e-01   0.972   0.188   0.2%   0.7%  
+  OG0000111      4   171    39  3.48e-02  2.09e-01   0.239   0.037   0.0%   0.8%  
+  OG0000084      3   150    38  1.51e-01  6.02e-01   0.769   0.122   0.0%   0.0%  
+  OG0000089      3   714   445  6.79e-01  1.00e+00   1.000   0.332   0.0%   0.0%  
+  OG0000122      3   240   154  7.02e-01  1.00e+00   0.568   0.223   0.2%   0.1%  
+
+=== 2 genes flagged as alignment-limited ===
+  OG0000120: 16 substitutions span only 31 codons of 217 (p=4.45e-14, Holm 3.56e-13)
+  OG0000067: 4 substitutions span only 6 codons of 89 (p=3.46e-04, Holm 2.42e-03)
+
+  These are not adaptive substitution lists. A dense run of changes
+  in a few dozen codons is one localized event however many codons
+  it spans, so each flagged gene contributes one uncertain event,
+  not n independent ones. Do not name their residues as candidate
+  adaptive sites.
+
+  Do NOT draw a mechanism from the gap columns below:
+    OG0000120: gaps at the substitution columns 0.0% against 14.5% for the gene.
+    OG0000067: gaps at the substitution columns 0.0% against 12.4% for the gene.
+    This is circular. Step 2 admits a site only when every codon
+    position reconstructs at PP >= 0.90 and the ingroup is
+    strictly monomorphic, which a column gapped in a third of
+    the taxa cannot satisfy, so the filter selects gap-free
+    columns and a low number here is guaranteed. It says nothing
+    about whether the surrounding block is well aligned.
+    Measure that over the block with a sliding window instead.
+
+=== effect on the counts ===
+  non-synonymous fixed differences, all genes : 60
+  in flagged genes                           : 20 (33%)
+  surviving                                  : 40 across 18 genes
+
+  largest single contributor removed: OG0000120 with 16 changes
+  Before this screen that one gene supplied 27% of the whole
+  non-synonymous total, which is the dominance step 2 flagged.
+
+=== what this does and does not change ===
+  The MK test itself is NOT affected: alpha is estimated from counts
+  over all sites, and removing sites post hoc because they cluster
+  would bias it. This screen governs which individual loci and
+  residues may be NAMED as candidates, which is a separate claim.
+  Report both numbers and the screen, so a reviewer can see that the
+  named candidates were filtered and the test statistic was not.
+
+written: 02_results/clustering_tests.csv
+        03_summary/substitutions_clean.csv, substitutions_flagged.csv

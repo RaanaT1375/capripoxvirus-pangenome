@@ -1,0 +1,345 @@
+IQ-TREE version 3.1.1 for Linux x86 64-bit built Apr  8 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    login02 (AVX2, FMA3, 62 GB RAM)
+Command: /cfs/earth/scratch/xpkk/.conda/envs/iqtree_env/bin/iqtree3 -s /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/18_Gene_Content_ASR/02_results/all290/pa.phy -te /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/18_Gene_Content_ASR/02_results/all290/tree.nwk -m GTR2+FO -asr -T 1 --prefix /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/18_Gene_Content_ASR/02_results/all290/pa --quiet -redo
+Seed:    331542 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Nov 20 12:30:11 2026
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/18_Gene_Content_ASR/02_results/all290/pa.phy ... Phylip format detected
+Alignment most likely contains binary sequences
+Constructing alignment: done in 0.000405649 secs using 92.44% CPU
+Alignment has 290 sequences with 206 columns, 75 distinct patterns
+70 parsimony-informative, 25 singleton sites, 111 constant sites
+                                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.989e-05 secs using 26.76% CPU
+   1  AF325528.1                        0.00%    passed     98.61%
+   2  AF409137.1                        0.00%    passed     98.61%
+   3  MW656253.1                        0.00%    passed     98.61%
+   4  KX894508.1                        0.00%    passed     98.61%
+   5  SRR28085238                       0.00%    passed     41.85%
+   6  SRR28085237                       0.00%    passed     14.92%
+   7  PV877838.1                        0.00%    passed     86.05%
+   8  SRR28085236                       0.00%    passed     14.92%
+   9  MN995838.1                        0.00%    passed     98.61%
+  10  ON005067.1                        0.00%    passed     43.89%
+  11  SRR28085235                       0.00%    passed     19.91%
+  12  SRR27563726                       0.00%    passed     14.92%
+  13  KY702007.1                        0.00%    passed     98.61%
+  14  OR134846.1                        0.00%    passed     98.61%
+  15  SRR26747374_SRR26747375_Merged    0.00%    passed     76.48%
+  16  OR134836.1                        0.00%    passed     98.61%
+  17  SRR26747364_SRR26747365_Merged    0.00%    passed     88.80%
+  18  OR134845.1                        0.00%    passed     98.61%
+  19  OR134841.1                        0.00%    passed     98.61%
+  20  SRR26747396_SRR26747397_Merged    0.00%    passed     76.48%
+  21  OR134834.1                        0.00%    passed     86.05%
+  22  SRR26747366_SRR26747367_Merged    0.00%    passed     76.48%
+  23  OR134849.1                        0.00%    passed     98.61%
+  24  OR134838.1                        0.00%    passed     98.61%
+  25  OR134839.1                        0.00%    passed     98.61%
+  26  SRR26747384_SRR26747383_Merged    0.00%    passed     76.48%
+  27  SRR26747386_SRR26747385_Merged    0.00%    passed     76.48%
+  28  SRR26747382_SRR26747381_Merged    0.00%    passed     76.48%
+  29  OR134835.1                        0.00%    passed     88.80%
+  30  SRR26747398_SRR26747399_Merged    0.00%    passed     76.48%
+  31  OR134843.1                        0.00%    passed     98.61%
+  32  OR134842.1                        0.00%    passed     86.05%
+  33  SRR26747388_SRR26747389_Merged    0.00%    passed     88.80%
+  34  SRR26747394_SRR26747395_Merged    0.00%    passed     76.48%
+  35  OR134837.1                        0.00%    passed     98.61%
+  36  OR134847.1                        0.00%    passed     98.61%
+  37  SRR26747378_SRR26747377_Merged    0.00%    passed     76.48%
+  38  SRR26747368_SRR26747369_Merged    0.00%    passed     76.48%
+  39  OR134844.1                        0.00%    passed     98.61%
+  40  OR134833.1                        0.00%    passed     98.61%
+  41  SRR26747380_SRR26747379_Merged    0.00%    passed     41.85%
+  42  OR134832.1                        0.00%    passed     98.61%
+  43  SRR26747387_SRR26747376_Merged    0.00%    passed     76.48%
+  44  KY829023.3                        0.00%    passed     98.61%
+  45  OR134840.1                        0.00%    passed     98.61%
+  46  SRR26747390_SRR26747391_Merged    0.00%    passed     88.80%
+  47  MT643825.1                        0.00%    passed     86.05%
+  48  OQ588787.1                        0.00%    passed     98.61%
+  49  OQ606832.1                        0.00%    passed     98.61%
+  50  OR393178.1                        0.00%    passed     98.61%
+  51  PV066182.1                        0.00%    passed     73.83%
+  52  SRR26792425                       0.00%    passed     88.80%
+  53  PP053747.1                        0.00%    passed     53.80%
+  54  SRR25046331                       0.00%    passed     64.73%
+  55  OR797612.1                        0.00%    passed     98.61%
+  56  OR393177.1                        0.00%    passed     98.61%
+  57  SRR21590382                       0.00%    passed     88.80%
+  58  OR393173.1                        0.00%    passed     98.61%
+  59  SRR25046328                       0.00%    passed     98.61%
+  60  SRR21590386                       0.00%    passed     88.80%
+  61  SRR24474207                       0.00%    passed     88.80%
+  62  SRR25461328                       0.00%    passed     88.80%
+  63  OR520147.1                        0.00%    passed     98.61%
+  64  OR983146.1                        0.00%    passed     73.83%
+  65  OR983149.1                        0.00%    passed     73.83%
+  66  OR983151.1                        0.00%    passed     73.83%
+  67  OR983148.1                        0.00%    passed     73.83%
+  68  OR983150.1                        0.00%    passed     73.83%
+  69  PQ472736.1                        0.00%    passed     51.52%
+  70  OR393167.1                        0.00%    passed     27.54%
+  71  PQ878211.1                        0.00%    passed     86.05%
+  72  SRR25461327                       0.00%    passed     14.92%
+  73  OR983147.1                        0.00%    passed     88.80%
+  74  OR393172.1                        0.00%    passed     98.61%
+  75  PV022135.1                        0.00%    passed     98.61%
+  76  PV835012.1                        0.00%    passed     98.61%
+  77  MT130502.2                        0.00%    passed     64.73%
+  78  SRR11470182                       0.00%    passed     64.73%
+  79  ON010590.1                        0.00%    passed     64.73%
+  80  MW030512.1                        0.00%    passed      8.47%
+  81  PX127681.1                        0.00%    passed     64.73%
+  82  MN642592.1                        0.00%    passed     98.61%
+  83  MH893760.2                        0.00%    passed     98.61%
+  84  MW699032.1                        0.00%    passed     98.61%
+  85  SRR27563731                       0.00%    passed      7.86%
+  86  MT007950.1                        0.00%    passed     98.61%
+  87  SRR12021190                       0.00%    failed      2.55%
+  88  SRR12021191                       0.00%    passed      5.52%
+  89  OR644282.1                        0.00%    passed     98.61%
+  90  OR644284.1                        0.00%    passed     98.61%
+  91  PP065788.1                        0.00%    passed     98.61%
+  92  PP065789.1                        0.00%    passed     98.61%
+  93  OR644283.1                        0.00%    passed     98.61%
+  94  OR644285.1                        0.00%    passed     98.61%
+  95  OK318001.1                        0.00%    passed     98.61%
+  96  SRR28085239                       0.00%    passed     26.03%
+  97  SRR34490579                       0.00%    passed     19.91%
+  98  SRR27563732                       0.00%    passed     86.05%
+  99  SRR27563735                       0.00%    passed     88.80%
+ 100  SRR27563723                       0.00%    passed     88.80%
+ 101  SRR27563734                       0.00%    passed     88.80%
+ 102  AF409138.1                        0.00%    passed     73.83%
+ 103  PQ824703.1                        0.00%    passed     73.83%
+ 104  PQ824704.1                        0.00%    passed     62.24%
+ 105  PQ824706.1                        0.00%    passed     62.24%
+ 106  PQ824707.1                        0.00%    passed     62.24%
+ 107  PQ824705.1                        0.00%    passed     73.83%
+ 108  KX764644.1                        0.00%    passed     86.05%
+ 109  KX764645.1                        0.00%    passed     73.83%
+ 110  OR134848.1                        0.00%    passed     86.05%
+ 111  OM793609.1                        0.00%    passed     73.83%
+ 112  KX764643.1                        0.00%    passed     73.83%
+ 113  MG972412.1                        0.00%    passed     73.83%
+ 114  MT134042.1                        0.00%    passed     86.05%
+ 115  MT992618.1                        0.00%    passed     43.89%
+ 116  OR194148.1                        0.00%    passed     86.05%
+ 117  SRR26283950                       0.00%    passed     76.48%
+ 118  OL542833.1                        0.00%    passed     73.83%
+ 119  MK441838.1                        0.00%    passed     73.83%
+ 120  MW656252.1                        0.00%    passed     86.05%
+ 121  MN636838.1                        0.00%    passed     86.05%
+ 122  MN636841.1                        0.00%    passed     86.05%
+ 123  MN636842.1                        0.00%    passed     86.05%
+ 124  MN636840.1                        0.00%    passed     86.05%
+ 125  MN636839.1                        0.00%    passed     86.05%
+ 126  MN636843.1                        0.00%    passed     86.05%
+ 127  MW435866.1                        0.00%    passed     86.05%
+ 128  SRR27563733                       0.00%    passed     86.05%
+ 129  OM793604.1                        0.00%    passed     86.05%
+ 130  OM793606.1                        0.00%    passed     86.05%
+ 131  OM793605.1                        0.00%    passed     86.05%
+ 132  OM793608.1                        0.00%    passed     86.05%
+ 133  OM793607.1                        0.00%    passed     86.05%
+ 134  MH646674.1                        0.00%    passed     98.61%
+ 135  OM530217.1                        0.00%    passed     98.61%
+ 136  OM105589.1                        0.00%    passed     86.05%
+ 137  OQ253250.1                        0.00%    passed     86.05%
+ 138  OQ267777.1                        0.00%    passed     86.05%
+ 139  MW355944.1                        0.00%    passed     73.83%
+ 140  OR347836.1                        0.00%    passed     86.05%
+ 141  OQ200493.1                        0.00%    passed     86.05%
+ 142  OQ253253.1                        0.00%    passed     86.05%
+ 143  OQ253254.1                        0.00%    passed     86.05%
+ 144  PP145891.1                        0.00%    passed     53.80%
+ 145  OR232414.1                        0.00%    passed     86.05%
+ 146  OQ253256.1                        0.00%    passed     86.05%
+ 147  OR735987.1                        0.00%    passed     86.05%
+ 148  OQ349695.1                        0.00%    passed     86.05%
+ 149  OP752701.1                        0.00%    passed     98.61%
+ 150  PQ727632.1                        0.00%    passed     86.05%
+ 151  OQ267778.1                        0.00%    passed     86.05%
+ 152  PV796583.1                        0.00%    passed     86.05%
+ 153  PQ727629.1                        0.00%    passed     86.05%
+ 154  OM793603.1                        0.00%    passed     86.05%
+ 155  OM984486.1                        0.00%    passed     73.83%
+ 156  OQ253252.1                        0.00%    passed     86.05%
+ 157  OM793602.1                        0.00%    passed     86.05%
+ 158  OQ253255.1                        0.00%    passed     86.05%
+ 159  OR347834.1                        0.00%    passed     88.80%
+ 160  OQ511520.1                        0.00%    passed     86.05%
+ 161  OR347837.1                        0.00%    passed     86.05%
+ 162  ON152411.1                        0.00%    passed     98.61%
+ 163  PQ727628.1                        0.00%    passed     86.05%
+ 164  PQ682462.1                        0.00%    passed     86.05%
+ 165  PP894832.1                        0.00%    passed     86.05%
+ 166  OM373209.1                        0.00%    passed     86.05%
+ 167  OR232413.1                        0.00%    passed     86.05%
+ 168  OQ253251.1                        0.00%    passed     86.05%
+ 169  PQ727633.1                        0.00%    passed     86.05%
+ 170  OR347835.1                        0.00%    passed     98.61%
+ 171  OP922506.1                        0.00%    passed     98.61%
+ 172  OM033705.1                        0.00%    passed     86.05%
+ 173  PP145892.1                        0.00%    passed     53.80%
+ 174  OP654649.1                        0.00%    passed     98.61%
+ 175  PQ037207.1                        0.00%    passed     86.05%
+ 176  MW732649.1                        0.00%    passed     73.83%
+ 177  MZ577073.1                        0.00%    passed     98.61%
+ 178  SRR15145279_SRR15145280_Merged    0.00%    passed     88.80%
+ 179  OM803092.1                        0.00%    passed     88.80%
+ 180  MZ577075.1                        0.00%    passed     98.61%
+ 181  OL752713.2                        0.00%    passed     86.05%
+ 182  OM803091.1                        0.00%    passed     98.61%
+ 183  OP985536.1                        0.00%    passed     86.05%
+ 184  SRR15145277_SRR15145278_Merged    0.00%    passed     76.48%
+ 185  SRR15145275_SRR15145276_Merged    0.00%    passed     88.80%
+ 186  MZ577076.1                        0.00%    passed     98.61%
+ 187  MZ577074.1                        0.00%    passed     98.61%
+ 188  ON616408.1                        0.00%    passed     98.61%
+ 189  PX127682.1                        0.00%    passed     64.73%
+ 190  PX127683.1                        0.00%    passed     64.73%
+ 191  OQ555660.1                        0.00%    passed     86.05%
+ 192  SRR28085241                       0.00%    passed     19.91%
+ 193  SRR28085240                       0.00%    passed     26.03%
+ 194  PQ682461.1                        0.00%    passed     86.05%
+ 195  OR567413.1                        0.00%    passed     98.61%
+ 196  PQ727625.1                        0.00%    passed     98.61%
+ 197  PQ727630.1                        0.00%    passed     98.61%
+ 198  PQ727631.1                        0.00%    passed     86.05%
+ 199  PQ727626.1                        0.00%    passed     98.61%
+ 200  OM984485.1                        0.00%    passed     98.61%
+ 201  OP508345.1                        0.00%    passed     86.05%
+ 202  PQ727627.1                        0.00%    passed     98.61%
+ 203  AY077832.1                        0.00%    passed     35.11%
+ 204  NC_004002.1                       0.00%    passed     35.11%
+ 205  MW167071.1                        0.00%    passed     53.80%
+ 206  PP886239.1                        0.00%    passed     53.80%
+ 207  PP886236.1                        0.00%    passed     43.89%
+ 208  PP886237.1                        0.00%    passed     43.89%
+ 209  PP886238.1                        0.00%    passed     35.11%
+ 210  PP843160.1                        0.00%    passed     43.89%
+ 211  MN072629.1                        0.00%    passed     43.89%
+ 212  OR239060.1                        0.00%    passed     53.80%
+ 213  AY077833.1                        0.00%    passed     53.80%
+ 214  AY077834.1                        0.00%    passed     76.48%
+ 215  MW020571.1                        0.00%    passed     64.73%
+ 216  MW167070.1                        0.00%    passed     64.73%
+ 217  PV167793.1                        0.00%    passed     43.89%
+ 218  MT137384.1                        0.00%    passed     53.80%
+ 219  PV434148.1                        0.00%    passed     43.89%
+ 220  ON961655.1                        0.00%    passed     43.89%
+ 221  PQ014465.1                        0.00%    passed     35.11%
+ 222  OQ434236.1                        0.00%    passed     43.89%
+ 223  OQ434237.1                        0.00%    passed     53.80%
+ 224  OQ434239.1                        0.00%    passed     35.11%
+ 225  OQ434238.1                        0.00%    passed     35.11%
+ 226  ON961657.1                        0.00%    passed     53.80%
+ 227  ON961656.1                        0.00%    passed     53.80%
+ 228  MN072630.1                        0.00%    passed     43.89%
+ 229  MN072631.1                        0.00%    passed     64.73%
+ 230  KT438550.1                        0.00%    passed     53.80%
+ 231  OQ434235.1                        0.00%    passed     53.80%
+ 232  KT438551.1                        0.00%    passed     53.80%
+ 233  MG000156.1                        0.00%    passed     15.93%
+ 234  MN072626.1                        0.00%    passed     43.89%
+ 235  MN072627.1                        0.00%    passed     43.89%
+ 236  MN072628.1                        0.00%    passed     43.89%
+ 237  AY077835.1                        0.00%    passed     64.73%
+ 238  NC_004003.1                       0.00%    passed     64.73%
+ 239  KX576657.1                        0.00%    passed     64.73%
+ 240  AY077836.1                        0.00%    passed     64.73%
+ 241  MN072622.1                        0.00%    passed     53.80%
+ 242  KC951854.1                        0.00%    passed     64.73%
+ 243  MN072621.1                        0.00%    passed     76.48%
+ 244  MH381810.1                        0.00%    passed     64.73%
+ 245  MN072620.1                        0.00%    passed     64.73%
+ 246  MW020570.1                        0.00%    passed     64.73%
+ 247  PV167794.1                        0.00%    passed     53.80%
+ 248  PX497580.1                        0.00%    passed     64.73%
+ 249  PX499192.1                        0.00%    passed     64.73%
+ 250  MN072623.1                        0.00%    passed     43.89%
+ 251  MN072625.1                        0.00%    passed     64.73%
+ 252  MN072624.1                        0.00%    passed     53.80%
+ 253  SRR27563725                       0.00%    passed     14.92%
+ 254  MW631933.1                        0.00%    passed     53.80%
+ 255  SRR27563724                       0.00%    passed     51.52%
+ 256  MW883897.1                        0.00%    passed     98.61%
+ 257  OK422492.1                        0.00%    passed     64.73%
+ 258  PQ005629.1                        0.00%    passed     86.05%
+ 259  OR393176.1                        0.00%    passed     86.05%
+ 260  OR393170.1                        0.00%    passed     86.05%
+ 261  PV066181.1                        0.00%    passed     86.05%
+ 262  PQ201927.1                        0.00%    passed     73.83%
+ 263  SRR27563730                       0.00%    passed     10.95%
+ 264  OP297402.1                        0.00%    passed     73.83%
+ 265  PP979138.1                        0.00%    passed     86.05%
+ 266  SRR27563729                       0.00%    passed     62.24%
+ 267  OR393175.1                        0.00%    passed     86.05%
+ 268  OP688129.1                        0.00%    passed     98.61%
+ 269  SRR27563728                       0.00%    passed     14.92%
+ 270  SRR25461324                       0.00%    passed     98.61%
+ 271  OR393169.1                        0.00%    passed     86.05%
+ 272  SRR29762742                       0.00%    passed     98.61%
+ 273  ON400507.1                        0.00%    passed     98.61%
+ 274  OR863389.1                        0.00%    passed     86.05%
+ 275  PQ179265.1                        0.00%    passed     86.05%
+ 276  OR393171.1                        0.00%    passed     86.05%
+ 277  OK422493.1                        0.00%    passed     88.80%
+ 278  PP746705.1                        0.00%    passed     86.05%
+ 279  PP756497.1                        0.00%    passed     62.24%
+ 280  OR983152.1                        0.00%    passed     51.52%
+ 281  PQ510117.1                        0.00%    passed     86.05%
+ 282  OK422494.1                        0.00%    passed     35.11%
+ 283  OR393174.1                        0.00%    passed     64.73%
+ 284  OP688128.1                        0.00%    passed     86.05%
+ 285  PQ510118.1                        0.00%    passed     86.05%
+ 286  OQ427097.1                        0.00%    passed     86.05%
+ 287  SRR27563727                       0.00%    passed     14.92%
+ 288  MN072619.1                        0.00%    passed     98.61%
+ 289  KX683219.1                        0.00%    passed     86.05%
+ 290  NC_003027.1                       0.00%    passed     98.61%
+****  TOTAL                             0.00%  1 sequences failed composition chi2 test (p-value<5%; df=1)
+Reading input tree file /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/18_Gene_Content_ASR/02_results/all290/tree.nwk ...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6003.134
+2. Current log-likelihood: -3324.838
+3. Current log-likelihood: -3277.500
+4. Current log-likelihood: -3275.330
+5. Current log-likelihood: -3274.829
+6. Current log-likelihood: -3274.633
+7. Current log-likelihood: -3274.560
+8. Current log-likelihood: -3274.543
+Optimal log-likelihood: -3274.538
+State frequencies:  0: 0.140  1: 0.860
+Parameters optimization took 8 rounds (0.069 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -3274.538
+Ancestral state probabilities printed to /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/18_Gene_Content_ASR/02_results/all290/pa.state
+Total tree length: 1.544
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.107 sec (0h:0m:0s)
+Total wall-clock time used: 0.158 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/18_Gene_Content_ASR/02_results/all290/pa.iqtree
+  Maximum-likelihood tree:       /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/18_Gene_Content_ASR/02_results/all290/pa.treefile
+  Ancestral state:               /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/18_Gene_Content_ASR/02_results/all290/pa.state
+  Screen log file:               /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/18_Gene_Content_ASR/02_results/all290/pa.log
+
+Date and Time: Fri Nov 20 12:30:11 2026

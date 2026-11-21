@@ -1,0 +1,24 @@
+matrix before exclusion: 206 orthogroups x 290 genomes
+matrix after excluding 30 non-viral: 176 x 290
+genomes per species: LSDV=240, SPPV=34, GTPV=16, other=0
+
+partition:
+  core        132  (75.0%)
+  soft-core    10  (5.7%)
+  shell        14  (8.0%)
+  cloud        20  (11.4%)
+  total       176
+manuscript states: core 132, soft-core 10, shell 14, cloud 22 = 178
+  *** MISMATCH with the manuscript. Report before drawing. ***
+
+panel A: 174 of 176 orthogroups (present in >= 2 genomes), 2 ultra-rare excluded from the heatmap
+panel A long format: 43866 present cells written
+
+panel E: 44 accessory orthogroups, PC1=32.5% PC2=19.7%
+
+Figure 1 caption numbers:
+  panel A: 174 orthogroups shown, 2 ultra-rare cloud excluded
+  panel D: core 132, soft-core 10, shell 14, cloud 20
+  panel E: PC1 = 32.5%, PC2 = 19.7%
+
+now draw it:  Rscript R/figure1.R

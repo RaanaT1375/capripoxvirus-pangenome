@@ -1,0 +1,17 @@
+comparison,statistic,p_raw,p_holm,n1,n2
+Kruskal-Wallis (all classes),18.529083319780966,0.0023514380273068525,0.0023514380273068525,43,
+Host interaction vs Transcription,72.0,8.227067050596462e-05,0.0012340600575894691,9,8.0
+Host interaction vs Virion assembly,102.0,0.004085851125205444,0.05720191575287621,9,13.0
+DNA replication vs Host interaction,0.0,0.00909090909090909,0.11818181818181818,3,9.0
+Host interaction vs Redox / metabolism,34.0,0.011188811188811189,0.13426573426573427,9,4.0
+Membrane / EEV vs Transcription,42.0,0.01998001998001998,0.21978021978021978,6,8.0
+Membrane / EEV vs Redox / metabolism,21.0,0.06666666666666667,0.6666666666666666,6,4.0
+Membrane / EEV vs Virion assembly,59.0,0.08742444346159517,0.7868199911543565,6,13.0
+DNA replication vs Membrane / EEV,2.0,0.09523809523809523,0.7868199911543565,3,6.0
+Host interaction vs Membrane / EEV,36.0,0.3276723276723276,1.0,9,6.0
+Transcription vs Virion assembly,44.0,0.5950660966140843,1.0,8,13.0
+Redox / metabolism vs Transcription,19.0,0.6828282828282828,1.0,4,8.0
+DNA replication vs Virion assembly,18.0,0.9,1.0,3,13.0
+DNA replication vs Transcription,13.0,0.9212121212121214,1.0,3,8.0
+DNA replication vs Redox / metabolism,6.0,1.0,1.0,3,4.0
+Redox / metabolism vs Virion assembly,26.0,1.0,1.0,4,13.0

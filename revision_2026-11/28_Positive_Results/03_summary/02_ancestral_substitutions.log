@@ -1,0 +1,68 @@
+ingroup: 227 non-vaccine LSDV genomes
+outgroup: 50 SPPV + GTPV genomes
+ancestral posterior probability threshold: 0.9
+
+60 genes analysed
+121 fixed differences on the LSDV branch
+  non-synonymous 60
+  synonymous     61
+
+Against the MK test: Dn 74.8 + Ds 83.2 = 158.0 substitutions,
+versus 121 changed codons here, a ratio of 1.31 substitutions per codon. Nei-Gojobori
+averages over pathways, so a codon differing at two or three positions
+contributes more than one; a ratio between 1 and 2 is expected and
+means the two counts agree. A ratio near 1 or above 2 would not.
+
+=== genes with the most non-synonymous fixed differences ===
+  orthogroup     Dn  Ds   substitutions
+  OG0000120      16   2   C180L;F189S;F191Y;F193T;F203Y;F204Y;H179S;I194L;L200I;L205V;N178E;Q177
+  OG0000099       5   0   F126S;I114S;L56R;R190K;S32A
+  OG0000067       4   0   I61L;I65R;K64R;N60K
+  OG0000111       4   2   I23M;L26S;N61D;S31G
+  OG0000104       4   1   D29E;D42E;N69D;N75D
+  OG0000084       3   3   L21S;N58I;S37P
+  OG0000089       3   2   H462Y;K18E;S119N
+  OG0000122       3   2   I28V;K177E;S24A
+  OG0000065       2   2   I156M;K142E
+  OG0000119       2   0   I136M;Y122C
+  OG0000106       2   3   L227S;S86T
+  OG0000057       2   6   I252V;T95A
+  OG0000061       2   1   E9D;R40K
+  OG0000075       2   1   E68A;F48L
+  OG0000092       1  10   F322L
+
+=== how the 60 genes divide ===
+  no fixed difference of any kind     : 28
+  fixed differences, none amino-acid  : 12
+  at least one amino-acid change      : 20
+
+The manuscript reports 17 of 60 genes with no fixed difference at
+all. This run gives 28, because a site is used here only when
+the ingroup is strictly monomorphic and every ancestral codon position
+reaches PP >= 0.9, which is stricter than the MK counting. Reconcile
+the two before quoting either number.
+
+=== OG0000120 dominates the amino-acid count ===
+  it contributes Dn = 16 of 60 (27%)
+  excluding it: Dn = 44, Ds = 59
+  This is the OX-2/CD200 locus whose aBSREL signal the manuscript
+  already attributes to a 29-codon unalignable block. Its
+  substitutions are in the output table but should be reported
+  separately, not pooled with the rest.
+
+=== character of the 60 non-synonymous changes ===
+  change physicochemical class : 34 (56.7%)
+  conservative within class    : 26
+
+  internal null: 143 non-synonymous changes segregating
+  as polymorphism within LSDV (>= 5% minor allele), of which
+  82 (57.3%) are radical
+
+  fixed 56.7% vs polymorphic 57.3%  OR = 0.97, Fisher p = 1.000
+  No difference. The fixed changes are no more radical than the
+  ones still segregating, so this gives no additional evidence
+  either way. Report it as such.
+
+written: 02_results/fixed_substitutions.csv
+        02_results/polymorphic_nonsyn.csv
+        03_summary/substitutions_by_gene.csv

@@ -1,0 +1,75 @@
+90 recombination blocks parsed
+  total span 48914 bp, median block 306 bp
+  alignment length implied by the intervals: 110662
+
+180 breakpoints (90 blocks x 2 edges)
+
+=== is the distribution uniform? ===
+  chi-square over 50 bins : chi2 = 221.1, p = 1.029e-23
+  Kolmogorov-Smirnov           : D = 0.2107, p = 1.733e-07
+  breakpoints are NOT uniformly distributed
+
+  outer thirds 131 breakpoints, central third 49
+  ratio 2.67 against the 2.0 expected if uniform
+  binomial test against 2/3 expectation: p = 8.255e-02
+
+=== densest bins ===
+  interval               observed  expected
+  108448-110662                19      3.60
+  106235-108448                14      3.60
+  101809-104022                13      3.60
+  44264-46478                  10      3.60
+  73036-75250                  10      3.60
+  97382-99595                   8      3.60
+  2213-4426                     7      3.60
+  15492-17705                   7      3.60
+
+=== intervals covered by two or more independent blocks ===
+  18 such intervals
+  interval                max blocks
+  102000-111000                    9
+  73000-75000                      5
+  15000-19000                      4
+  97000-99000                      4
+  3000-4000                        3
+  6000-7000                        3
+  42000-43000                      3
+  48000-49000                      3
+  83000-84000                      3
+  11000-12000                      2
+
+  These are candidate hotspots. A region used repeatedly by
+  independent events is more interesting than a long tract used
+  once, and it is the kind of claim a reviewer will accept from
+  this dataset.
+
+=== blocks relating to Node_147 ===
+  on the branch INTO it   : 7 blocks  (Node_148->Node_147)
+  on branches OUT of it   : 12 blocks  (Node_147->Node_114, Node_147->Node_146)
+
+=== the ancestral event on the branch into Node_147 ===
+  7 blocks, 3370 bp total
+  branch                      start       end   length   SNPs   taxa
+  Node_148->Node_147           3424      3492       69      5    100
+  Node_148->Node_147          18491     18794      304      8    100
+  Node_148->Node_147          21852     22722      871     11    100
+  Node_148->Node_147          30395     31547     1153     13    100
+  Node_148->Node_147          44604     44651       48      5    100
+  Node_148->Node_147          83088     83396      309      9    100
+  Node_148->Node_147         110014    110629      616     12    100
+
+  All 7 blocks apply to the same 100 taxa, which is what a single event on one branch should look like.
+
+  These junctions are the DIVA targets: carried by every
+  descendant of the event, so an assay spanning one separates the
+  recombinant lineage from the clonal backbone without depending
+  on a tract confined to a sub-lineage.
+
+  The 12 blocks on branches out of Node_147 are NOT
+  suitable: each is confined to part of the clade. An earlier
+  version of this script lumped them in with the ancestral
+  blocks, which would have produced unusable assay targets.
+
+written: 02_results/breakpoint_positions.csv, breakpoint_density.csv
+        03_summary/recurrent_intervals.csv
+        03_summary/ancestral_breakpoints.csv

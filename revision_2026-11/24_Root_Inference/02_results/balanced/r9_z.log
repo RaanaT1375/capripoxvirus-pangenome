@@ -1,0 +1,131 @@
+IQ-TREE version 3.1.1 for Linux x86 64-bit built Apr  8 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    login02 (AVX2, FMA3, 62 GB RAM)
+Command: /cfs/earth/scratch/xpkk/.conda/envs/iqtree_env/bin/iqtree3 -s /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r9.fa -m UNREST+G4 -z /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r9_three.nwk -n 0 -zb 10000 -au --prefix /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r9_z -T 2 -redo
+Seed:    869454 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Nov 21 00:12:25 2026
+Kernel:  AVX+FMA - 2 threads (12 CPU cores detected)
+
+Reading alignment file /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r9.fa ... Fasta format detected
+Reading fasta file: done in 0.0310524 secs using 68.22% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.0216856 secs using 103.2% CPU
+WARNING: 93 sites contain only gaps or ambiguous characters.
+Alignment has 48 sequences with 48645 columns, 971 distinct patterns
+2370 parsimony-informative, 345 singleton sites, 45930 constant sites
+                                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.34089e-05 secs using 99.06% CPU
+   1  OL542833.1                        1.13%    passed     19.68%
+   2  KX683219.1                        0.76%    passed      9.15%
+   3  OR393174.1                        0.76%    passed      9.60%
+   4  MN636842.1                        0.80%    passed     10.79%
+   5  SRR12021191                       0.89%    passed     10.03%
+   6  OR644284.1                        0.77%    passed      8.65%
+   7  OR393172.1                        0.78%    passed     10.43%
+   8  SRR28085239                       0.78%    passed      8.35%
+   9  SRR27563725                       1.07%    passed     10.49%
+  10  SRR27563729                       0.76%    passed      9.38%
+  11  OK318001.1                        0.76%    passed      7.86%
+  12  OR393178.1                        0.78%    passed     10.43%
+  13  SRR25046328                       0.78%    passed     10.43%
+  14  SRR26747382_SRR26747381_Merged    0.78%    passed      9.11%
+  15  SRR26747378_SRR26747377_Merged    0.78%    passed      9.11%
+  16  OM803091.1                        0.74%    passed      7.65%
+  17  MW020571.1                        1.32%    passed     23.30%
+  18  ON961655.1                        1.31%    passed     22.37%
+  19  MG000156.1                        1.59%    passed     28.40%
+  20  AY077833.1                        1.31%    passed     24.17%
+  21  MN072626.1                        1.10%    passed     24.57%
+  22  PP886238.1                        1.21%    passed     22.65%
+  23  ON961656.1                        1.31%    passed     22.74%
+  24  AY077834.1                        1.32%    passed     23.30%
+  25  OQ434236.1                        2.39%    passed     25.13%
+  26  MW167071.1                        1.32%    passed     23.50%
+  27  PQ014465.1                        1.36%    passed     25.64%
+  28  NC_004002.1                       1.32%    passed     26.13%
+  29  KT438550.1                        1.31%    passed     21.27%
+  30  PP886236.1                        1.32%    passed     23.90%
+  31  MN072630.1                        1.02%    passed     20.60%
+  32  MW167070.1                        1.31%    passed     21.73%
+  33  AY077835.1                        0.83%    passed     97.28%
+  34  MN072623.1                        1.08%    passed     84.27%
+  35  KC951854.1                        1.17%    passed     98.98%
+  36  MN072624.1                        1.13%    passed     88.21%
+  37  MN072620.1                        1.14%    passed     98.90%
+  38  MN072625.1                        1.14%    passed     81.44%
+  39  PV167794.1                        2.21%    passed     96.66%
+  40  NC_004003.1                       0.83%    passed     97.28%
+  41  MN072622.1                        1.11%    passed     98.25%
+  42  MN072621.1                        1.13%    passed     98.58%
+  43  AY077836.1                        0.83%    passed     97.32%
+  44  KX576657.1                        0.83%    passed     97.28%
+  45  PX499192.1                        1.19%    passed     98.80%
+  46  MH381810.1                        1.15%    passed     99.13%
+  47  MW020570.1                        1.14%    passed     98.90%
+  48  PX497580.1                        1.19%    passed     98.80%
+****  TOTAL                             1.11%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: OR393178.1 is identical to OR393172.1 but kept for subsequent analysis
+NOTE: SRR26747378_SRR26747377_Merged is identical to SRR26747382_SRR26747381_Merged but kept for subsequent analysis
+NOTE: AY077834.1 is identical to MW020571.1 but kept for subsequent analysis
+NOTE: NC_004003.1 is identical to AY077835.1 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.00017008 secs using 99.37% CPU
+Identifying sites to remove: done in 0.015115 secs using 161.9% CPU
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: SRR25046328 (identical to OR393172.1) is ignored but added at the end
+NOTE: KX576657.1 (identical to AY077835.1) is ignored but added at the end
+Alignment was printed to /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r9_z.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r9_z.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.006 seconds
+
+NOTE: 5 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -92560.967
+2. Current log-likelihood: -84976.188
+3. Current log-likelihood: -84966.615
+Optimal log-likelihood: -84966.605
+UNREST rate values:  A-C: 0.866  A-G: 5.710  A-T: 1.266  C-A: 8.324  C-G: 0.659  C-T: 14.347  G-A: 11.772  G-C: 0.938  G-T: 5.431  T-A: 1.359  T-C: 6.400  T-G: 1.000
+Gamma shape alpha: 0.020
+Parameters optimization took 3 rounds (0.701 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -84966.605
+Total tree length: 0.072
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 1.428 sec (0h:0m:1s)
+Total wall-clock time used: 0.737 sec (0h:0m:0s)
+Reading trees in /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r9_three.nwk ...
+
+3 trees detected
+Note: 37.430 MB of RAM required!
+Creating 10000 bootstrap replicates...
+done
+Tree 1 / LogL: -84909.195
+Tree 2 / LogL: -84915.092
+Tree 3 / LogL: -84915.084
+Performing RELL-BP test...
+Performing KH and SH test...
+Performing ELW test...
+Performing approximately unbiased (AU) test...
+2 MB required for AU test
+Generating 10 x 10000 multiscale bootstrap replicates... 22.663 seconds
+TreeID	AU	RSS	d	c
+1	0.961	6.075	-1.728	0.037
+2	0.054	8.702	1.605	-0.001
+3	0.051	7.486	1.619	-0.012
+Time for AU test: 22.663 seconds
+Time for evaluating all trees: 23.581 sec.
+
+Analysis results written to: 
+  IQ-TREE report:                /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r9_z.iqtree
+  Maximum-likelihood tree:       /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r9_z.treefile
+  Evaluated user trees:          /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r9_z.trees
+  Screen log file:               /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r9_z.log
+
+Date and Time: Sat Nov 21 00:12:50 2026

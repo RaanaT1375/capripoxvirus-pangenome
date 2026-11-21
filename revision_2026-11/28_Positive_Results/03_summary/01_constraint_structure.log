@@ -1,0 +1,61 @@
+selection table: 10_Selection_Pressure/04_summary_tables/busted_annotated.csv
+  orthogroup column = Orthogroup, omega column = omega_MG94
+60 genes with an omega estimate
+  median 0.1689, range 0.0000-0.7911
+206 product annotations collected
+using the override for 8 genes
+
+=== genes per class ===
+  Unassigned              17   median omega 0.1678
+  Virion assembly         13   median omega 0.1296
+  Host interaction         9   median omega 0.2727
+  Transcription            8   median omega 0.1052
+  Membrane / EEV           6   median omega 0.2380
+  Redox / metabolism       4   median omega 0.1070
+  DNA replication          3   median omega 0.1093
+
+17 genes could not be classified from their annotation. They are kept in the table but excluded from the test.
+  OG0000101    LSDV111 hypothetical protein [Lumpy skin disease virus NI-24
+  OG0000119    LSDV137 hypothetical protein [Lumpy skin disease virus NI-24
+  OG0000074    hypothetical protein LSDVgp029 [Lumpy skin disease virus NI-
+  OG0000093    LSDV102 hypothetical protein [Lumpy skin disease virus NI-24
+  OG0000115    hypothetical protein LSDVgp129 [Lumpy skin disease virus NI-
+  OG0000105    LSDV118 hypothetical protein [Lumpy skin disease virus NI-24
+  OG0000088    LSDV097 hypothetical protein [Lumpy skin disease virus NI-24
+  OG0000113    hypothetical protein LSDVgp125 [Lumpy skin disease virus NI-
+  OG0000104    Hypothetical protein LSDVgp117 [Lumpy skin disease virus NI-
+  OG0000085    LSDV093 hypothetical protein [Lumpy skin disease virus NI-24
+  OG0000108    hypothetical protein
+  OG0000073    hypothetical protein
+  OG0000097    LSDV107 hypothetical protein [Lumpy skin disease virus NI-24
+  OG0000112    hypothetical protein LSDVgp124 [Lumpy skin disease virus NI-
+  OG0000103    LSDV114 hypothetical protein [Lumpy skin disease virus NI-24
+  OG0000068    hypothetical protein LSDVgp022 [Lumpy skin disease virus NI-
+  OG0000067    hypothetical protein LSDVgp021 [Lumpy skin disease virus NI-
+Classify them by hand in 01_inputs/functional_categories.csv if you want them included.
+
+=== Kruskal-Wallis across 6 classes (DNA replication, Host interaction, Membrane / EEV, Redox / metabolism, Transcription, Virion assembly) ===
+  H = 18.529, p = 2.351e-03
+  constraint differs significantly among functional classes
+
+=== pairwise Mann-Whitney, Holm-corrected ===
+  Host interaction       vs Transcription          p = 0.0001  Holm 0.0012 *
+  Host interaction       vs Virion assembly        p = 0.0041  Holm 0.0572
+  DNA replication        vs Host interaction       p = 0.0091  Holm 0.1182
+  Host interaction       vs Redox / metabolism     p = 0.0112  Holm 0.1343
+  Membrane / EEV         vs Transcription          p = 0.0200  Holm 0.2198
+  Membrane / EEV         vs Redox / metabolism     p = 0.0667  Holm 0.6667
+  Membrane / EEV         vs Virion assembly        p = 0.0874  Holm 0.7868
+  DNA replication        vs Membrane / EEV         p = 0.0952  Holm 0.7868
+  Host interaction       vs Membrane / EEV         p = 0.3277  Holm 1.0000
+  Transcription          vs Virion assembly        p = 0.5951  Holm 1.0000
+  Redox / metabolism     vs Transcription          p = 0.6828  Holm 1.0000
+  DNA replication        vs Virion assembly        p = 0.9000  Holm 1.0000
+  DNA replication        vs Transcription          p = 0.9212  Holm 1.0000
+  DNA replication        vs Redox / metabolism     p = 1.0000  Holm 1.0000
+  Redox / metabolism     vs Virion assembly        p = 1.0000  Holm 1.0000
+
+written: 03_summary/constraint_by_class.csv, constraint_tests.csv
+        02_results/gene_constraint.csv
+
+The R script R/constraint.R draws the figure from 02_results/gene_constraint.csv.

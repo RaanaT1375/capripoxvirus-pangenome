@@ -1,0 +1,95 @@
+stage 29 - temporal reconciliation and power analysis
+mu=1.00e-05  alignment=110321 bp  pi=4.87e-03  epoch>=2000  permutations=10000
+temporal table: /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/09_Temporal_Signal/root_to_tip_LSDV_only.csv
+  date column      : year
+  root-to-tip column: root_to_tip
+  205 rows
+  columns present    : genome, year, root_to_tip
+  205 rows with both values, years 1954-2025
+
+========================================================================
+1. EXPECTED SUBSTITUTIONS -- the manuscript's arithmetic corrected
+========================================================================
+alignment 110321 bp, dated span 71 years
+
+  at the published mu = 1.0e-05 substitutions/site/year:
+    over 25 years    :   27.6 substitutions
+    over 71 years    :   78.0 substitutions
+
+  the manuscript states 'about 5' over 25 years and 'about 15' over 71.
+  correct values are 27.6 and 78.3: low by 5.5x.
+  the quoted pair is internally consistent with a rate of 1.81e-06,
+  which is 5.5x below the rate the Methods cite.
+
+  structural divergence across Node_147: 100-250 substitutions
+  ratio to the 25-year temporal expectation: 3.6-9.1x
+  (the manuscript's figures imply 20-50x)
+
+  The conclusion that structure dominates time survives. Its margin
+  does not: state it as a few-fold excess, not an order of magnitude.
+
+========================================================================
+2. ROOT-TO-TIP REGRESSION, REFITTED
+========================================================================
+  all dated isolates         n=205   slope=-4.871e-05  R2=0.1113  p=1.02e-06
+  post-2000 only             n=185   slope=-5.403e-06  R2=0.0001  p=0.887
+
+  published: all dated -4.87e-05, R2 0.111; post-2000 -5.40e-06, R2 <0.001, p 0.887
+  compare the refit above against those; a mismatch means this table is
+  not the one the manuscript used and the rest of this run is void.
+
+  residual SD (post-2000)      : 1.907e-03 substitutions/site
+  SD of collection year          : 3.70 years
+  that residual scatter is 210.4 substitutions across the alignment
+
+========================================================================
+3. DATE RANDOMISATION
+========================================================================
+  10000 permutations of collection date across tips
+  observed slope          : -5.403e-06
+  null slope mean, SD     : -1.428e-07, 3.791e-05
+  null 95% interval       : -8.230e-05 to +6.578e-05
+  empirical two-sided p   : 0.8875
+  the observed slope sits inside the null distribution
+
+========================================================================
+4. POWER -- would a clock of the published strength have been seen?
+========================================================================
+  standard error of the slope      : 3.799e-05
+  minimum slope detectable at 80%  : 1.069e-04 substitutions/site/year
+  published genus rate mu          : 1.000e-05
+  ratio mu / minimum detectable    : 0.09
+
+  power to detect a slope of exactly mu : 5.6%
+
+  --- how to read this ---
+  Power is 5.6%. A clock running at the published genus
+  rate would NOT reliably have been detected in these data, so the
+  absent signal is consistent with that rate rather than evidence
+  against it. This is the result that makes the negative finding
+  informative: say that the data cannot resolve a clock of this
+  strength, not that no clock exists.
+
+  CAVEAT, which must be stated wherever this number is reported:
+  root-to-tip distances are not independent -- tips sharing ancestry
+  share branches -- so the effective sample size is below n and the
+  true standard error is larger than the one above. This power estimate
+  is therefore an UPPER bound, and the real power is lower. That makes
+  a low-power verdict safe and a high-power verdict provisional.
+
+========================================================================
+5. WHAT THE STANDING DIVERSITY CORRESPONDS TO IN TIME
+========================================================================
+  within-LSDV diversity pi         : 4.870e-03
+  pi / 2mu                         : 244 years
+  pi across the alignment          : 537 pairwise differences
+
+  Two mean pairwise differences of 537 substitutions at 1.10
+  substitutions per year place the common ancestor of sampled LSDV
+  diversity on the order of 244 years ago.
+  This is a back-of-envelope conversion under a strict clock and
+  constant population size, neither of which holds here. Report it as
+  an order of magnitude, with those assumptions named, or not at all.
+
+written: 02_results/rate_expectations.csv, temporal_refit.csv
+        03_summary/power_summary.csv

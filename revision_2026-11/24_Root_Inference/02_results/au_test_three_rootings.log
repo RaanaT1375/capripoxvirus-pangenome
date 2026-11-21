@@ -1,0 +1,502 @@
+IQ-TREE version 3.1.1 for Linux x86 64-bit built Apr  8 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    login02 (AVX2, FMA3, 62 GB RAM)
+Command: /cfs/earth/scratch/xpkk/.conda/envs/iqtree_env/bin/iqtree3 -s /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/01_inputs/super_nt.fasta -m UNREST+G4 -z /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/01_inputs/three_rootings.nwk -n 0 -zb 10000 -au --prefix /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/au_test_three_rootings -T 2 -redo
+Seed:    782128 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Nov 21 00:08:01 2026
+Kernel:  AVX+FMA - 2 threads (12 CPU cores detected)
+
+Reading alignment file /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/01_inputs/super_nt.fasta ... Fasta format detected
+Reading fasta file: done in 0.180901 secs using 77.04% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.06886 secs using 87.57% CPU
+WARNING: 9 sites contain only gaps or ambiguous characters.
+Alignment has 290 sequences with 48645 columns, 2219 distinct patterns
+2543 parsimony-informative, 348 singleton sites, 45754 constant sites
+                                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000856888 secs using 213.7% CPU
+   1  AF325528.1                        0.76%    passed     91.27%
+   2  AF409137.1                        0.77%    passed     90.50%
+   3  MW656253.1                        0.77%    passed     91.51%
+   4  KX894508.1                        0.78%    passed     90.56%
+   5  SRR28085238                       0.78%    passed     90.56%
+   6  SRR28085237                       0.78%    passed     90.56%
+   7  PV877838.1                        0.78%    passed     90.56%
+   8  SRR28085236                       0.78%    passed     90.56%
+   9  MN995838.1                        0.78%    passed     90.56%
+  10  ON005067.1                        0.78%    passed     90.92%
+  11  SRR28085235                       0.78%    passed     90.56%
+  12  SRR27563726                       0.78%    passed     90.56%
+  13  KY702007.1                        0.78%    passed     91.26%
+  14  OR134846.1                        0.78%    passed     91.26%
+  15  SRR26747374_SRR26747375_Merged    0.78%    passed     91.26%
+  16  OR134836.1                        0.78%    passed     91.26%
+  17  SRR26747364_SRR26747365_Merged    0.78%    passed     91.26%
+  18  OR134845.1                        0.78%    passed     91.60%
+  19  OR134841.1                        0.78%    passed     91.26%
+  20  SRR26747396_SRR26747397_Merged    0.78%    passed     91.26%
+  21  OR134834.1                        0.78%    passed     91.26%
+  22  SRR26747366_SRR26747367_Merged    0.78%    passed     91.26%
+  23  OR134849.1                        0.78%    passed     91.26%
+  24  OR134838.1                        0.78%    passed     91.26%
+  25  OR134839.1                        0.78%    passed     91.26%
+  26  SRR26747384_SRR26747383_Merged    0.78%    passed     91.26%
+  27  SRR26747386_SRR26747385_Merged    0.78%    passed     91.26%
+  28  SRR26747382_SRR26747381_Merged    0.78%    passed     91.26%
+  29  OR134835.1                        0.78%    passed     91.26%
+  30  SRR26747398_SRR26747399_Merged    0.78%    passed     91.26%
+  31  OR134843.1                        0.78%    passed     91.26%
+  32  OR134842.1                        0.78%    passed     91.26%
+  33  SRR26747388_SRR26747389_Merged    0.78%    passed     91.26%
+  34  SRR26747394_SRR26747395_Merged    0.78%    passed     91.26%
+  35  OR134837.1                        0.78%    passed     91.26%
+  36  OR134847.1                        0.78%    passed     91.26%
+  37  SRR26747378_SRR26747377_Merged    0.78%    passed     91.26%
+  38  SRR26747368_SRR26747369_Merged    0.78%    passed     91.26%
+  39  OR134844.1                        0.78%    passed     91.26%
+  40  OR134833.1                        0.78%    passed     91.26%
+  41  SRR26747380_SRR26747379_Merged    0.83%    passed     91.74%
+  42  OR134832.1                        0.78%    passed     90.92%
+  43  SRR26747387_SRR26747376_Merged    0.78%    passed     90.92%
+  44  KY829023.3                        0.78%    passed     90.92%
+  45  OR134840.1                        0.78%    passed     90.92%
+  46  SRR26747390_SRR26747391_Merged    0.78%    passed     90.92%
+  47  MT643825.1                        0.78%    passed     90.92%
+  48  OQ588787.1                        0.79%    passed     92.93%
+  49  OQ606832.1                        0.78%    passed     93.39%
+  50  OR393178.1                        0.78%    passed     93.11%
+  51  PV066182.1                        0.78%    passed     93.11%
+  52  SRR26792425                       0.78%    passed     93.11%
+  53  PP053747.1                        0.78%    passed     93.11%
+  54  SRR25046331                       0.78%    passed     93.11%
+  55  OR797612.1                        0.78%    passed     93.11%
+  56  OR393177.1                        0.78%    passed     93.11%
+  57  SRR21590382                      16.07%    passed     90.81%
+  58  OR393173.1                        0.78%    passed     93.11%
+  59  SRR25046328                       0.78%    passed     93.11%
+  60  SRR21590386                      11.43%    passed     49.46%
+  61  SRR24474207                       5.08%    passed     82.69%
+  62  SRR25461328                      24.27%    passed     73.10%
+  63  OR520147.1                        1.42%    passed     96.00%
+  64  OR983146.1                        2.58%    passed     89.96%
+  65  OR983149.1                        2.58%    passed     89.96%
+  66  OR983151.1                        2.58%    passed     90.16%
+  67  OR983148.1                        2.58%    passed     89.43%
+  68  OR983150.1                        2.58%    passed     89.65%
+  69  PQ472736.1                        6.15%    passed     77.80%
+  70  OR393167.1                        1.37%    passed     83.57%
+  71  PQ878211.1                        0.78%    passed     93.41%
+  72  SRR25461327                       2.75%    passed     96.23%
+  73  OR983147.1                        1.16%    passed     99.72%
+  74  OR393172.1                        0.78%    passed     93.11%
+  75  PV022135.1                        0.76%    passed     93.77%
+  76  PV835012.1                        0.76%    passed     93.41%
+  77  MT130502.2                        0.82%    passed     89.56%
+  78  SRR11470182                       3.27%    passed     94.81%
+  79  ON010590.1                        0.82%    passed     90.63%
+  80  MW030512.1                        0.81%    passed     90.19%
+  81  PX127681.1                        0.78%    passed     90.63%
+  82  MN642592.1                        0.78%    passed     90.92%
+  83  MH893760.2                        0.77%    passed     90.50%
+  84  MW699032.1                        0.77%    passed     90.87%
+  85  SRR27563731                       0.78%    passed     89.86%
+  86  MT007950.1                        0.82%    passed     91.80%
+  87  SRR12021190                       1.10%    passed     95.29%
+  88  SRR12021191                       0.89%    passed     92.51%
+  89  OR644282.1                        0.77%    passed     90.87%
+  90  OR644284.1                        0.77%    passed     90.50%
+  91  PP065788.1                        0.77%    passed     91.13%
+  92  PP065789.1                        0.77%    passed     91.13%
+  93  OR644283.1                        0.77%    passed     90.46%
+  94  OR644285.1                        0.77%    passed     90.13%
+  95  OK318001.1                        0.76%    passed     89.01%
+  96  SRR28085239                       0.78%    passed     89.95%
+  97  SRR34490579                       1.63%    passed     98.83%
+  98  SRR27563732                       0.68%    passed     91.25%
+  99  SRR27563735                       0.78%    passed     88.38%
+ 100  SRR27563723                       0.78%    passed     88.74%
+ 101  SRR27563734                       2.60%    passed     71.69%
+ 102  AF409138.1                        1.04%    passed     95.26%
+ 103  PQ824703.1                        1.07%    passed     95.17%
+ 104  PQ824704.1                        1.07%    passed     95.29%
+ 105  PQ824706.1                        1.08%    passed     95.17%
+ 106  PQ824707.1                        1.08%    passed     95.25%
+ 107  PQ824705.1                        1.06%    passed     95.03%
+ 108  KX764644.1                        1.06%    passed     95.03%
+ 109  KX764645.1                        1.05%    passed     94.88%
+ 110  OR134848.1                        1.05%    passed     94.88%
+ 111  OM793609.1                        1.05%    passed     94.88%
+ 112  KX764643.1                        1.06%    passed     95.03%
+ 113  MG972412.1                        1.06%    passed     95.03%
+ 114  MT134042.1                        1.13%    passed     96.03%
+ 115  MT992618.1                        1.13%    passed     97.01%
+ 116  OR194148.1                        1.06%    passed     91.86%
+ 117  SRR26283950                      32.45%    passed     61.92%
+ 118  OL542833.1                        1.13%    passed     97.06%
+ 119  MK441838.1                        0.73%    passed     93.79%
+ 120  MW656252.1                        0.73%    passed     93.48%
+ 121  MN636838.1                        0.80%    passed     93.21%
+ 122  MN636841.1                        0.80%    passed     93.21%
+ 123  MN636842.1                        0.80%    passed     93.21%
+ 124  MN636840.1                        0.80%    passed     93.21%
+ 125  MN636839.1                        0.80%    passed     92.98%
+ 126  MN636843.1                        0.80%    passed     92.86%
+ 127  MW435866.1                        0.72%    passed     93.70%
+ 128  SRR27563733                       1.47%    passed     87.56%
+ 129  OM793604.1                        0.73%    passed     93.79%
+ 130  OM793606.1                        0.73%    passed     93.48%
+ 131  OM793605.1                        0.73%    passed     93.70%
+ 132  OM793608.1                        0.73%    passed     93.70%
+ 133  OM793607.1                        0.73%    passed     93.70%
+ 134  MH646674.1                        0.84%    passed     91.22%
+ 135  OM530217.1                        0.73%    passed     93.21%
+ 136  OM105589.1                        0.74%    passed     87.76%
+ 137  OQ253250.1                        0.74%    passed     88.57%
+ 138  OQ267777.1                        0.74%    passed     88.55%
+ 139  MW355944.1                        0.74%    passed     88.18%
+ 140  OR347836.1                        0.74%    passed     88.18%
+ 141  OQ200493.1                        0.74%    passed     88.18%
+ 142  OQ253253.1                        0.74%    passed     88.18%
+ 143  OQ253254.1                        0.74%    passed     88.18%
+ 144  PP145891.1                        0.74%    passed     88.18%
+ 145  OR232414.1                        0.74%    passed     88.18%
+ 146  OQ253256.1                        0.74%    passed     88.18%
+ 147  OR735987.1                        0.74%    passed     88.18%
+ 148  OQ349695.1                        0.74%    passed     88.18%
+ 149  OP752701.1                        0.74%    passed     88.18%
+ 150  PQ727632.1                        0.74%    passed     88.18%
+ 151  OQ267778.1                        0.74%    passed     88.18%
+ 152  PV796583.1                        0.74%    passed     88.18%
+ 153  PQ727629.1                        0.74%    passed     88.18%
+ 154  OM793603.1                        0.74%    passed     88.18%
+ 155  OM984486.1                        0.74%    passed     88.18%
+ 156  OQ253252.1                        0.74%    passed     88.55%
+ 157  OM793602.1                        0.74%    passed     88.18%
+ 158  OQ253255.1                        0.74%    passed     88.18%
+ 159  OR347834.1                        0.74%    passed     88.18%
+ 160  OQ511520.1                        0.74%    passed     88.18%
+ 161  OR347837.1                        0.74%    passed     88.18%
+ 162  ON152411.1                        0.74%    passed     88.18%
+ 163  PQ727628.1                        0.74%    passed     88.18%
+ 164  PQ682462.1                        0.74%    passed     88.18%
+ 165  PP894832.1                        0.74%    passed     88.18%
+ 166  OM373209.1                        0.74%    passed     88.18%
+ 167  OR232413.1                        0.74%    passed     88.18%
+ 168  OQ253251.1                        0.74%    passed     88.18%
+ 169  PQ727633.1                        0.74%    passed     88.18%
+ 170  OR347835.1                        0.74%    passed     88.18%
+ 171  OP922506.1                        0.74%    passed     88.18%
+ 172  OM033705.1                        0.74%    passed     88.18%
+ 173  PP145892.1                        0.75%    passed     88.25%
+ 174  OP654649.1                        0.74%    passed     88.72%
+ 175  PQ037207.1                        0.74%    passed     88.94%
+ 176  MW732649.1                        1.76%    passed     88.79%
+ 177  MZ577073.1                        0.74%    passed     88.57%
+ 178  SRR15145279_SRR15145280_Merged    0.74%    passed     88.57%
+ 179  OM803092.1                        0.74%    passed     88.57%
+ 180  MZ577075.1                        0.74%    passed     88.57%
+ 181  OL752713.2                        0.74%    passed     88.57%
+ 182  OM803091.1                        0.74%    passed     88.57%
+ 183  OP985536.1                        0.74%    passed     88.57%
+ 184  SRR15145277_SRR15145278_Merged    0.74%    passed     88.57%
+ 185  SRR15145275_SRR15145276_Merged    0.74%    passed     88.57%
+ 186  MZ577076.1                        0.74%    passed     88.57%
+ 187  MZ577074.1                        0.74%    passed     88.57%
+ 188  ON616408.1                        0.75%    passed     88.64%
+ 189  PX127682.1                        0.75%    passed     89.02%
+ 190  PX127683.1                        0.75%    passed     89.02%
+ 191  OQ555660.1                        0.74%    passed     88.57%
+ 192  SRR28085241                       0.74%    passed     88.94%
+ 193  SRR28085240                       0.74%    passed     88.57%
+ 194  PQ682461.1                        0.74%    passed     88.57%
+ 195  OR567413.1                        0.74%    passed     88.96%
+ 196  PQ727625.1                        0.74%    passed     87.78%
+ 197  PQ727630.1                        0.74%    passed     87.78%
+ 198  PQ727631.1                        0.74%    passed     87.78%
+ 199  PQ727626.1                        0.74%    passed     87.78%
+ 200  OM984485.1                        0.69%    passed     88.48%
+ 201  OP508345.1                        0.92%    passed     86.13%
+ 202  PQ727627.1                        0.68%    passed     86.92%
+ 203  AY077832.1                        1.32%    failed      0.25%
+ 204  NC_004002.1                       1.32%    failed      0.25%
+ 205  MW167071.1                        1.32%    failed      0.20%
+ 206  PP886239.1                        1.38%    failed      0.25%
+ 207  PP886236.1                        1.32%    failed      0.20%
+ 208  PP886237.1                        1.32%    failed      0.20%
+ 209  PP886238.1                        1.21%    failed      0.18%
+ 210  PP843160.1                        1.23%    failed      0.19%
+ 211  MN072629.1                        1.22%    failed      0.18%
+ 212  OR239060.1                        1.31%    failed      0.19%
+ 213  AY077833.1                        1.31%    failed      0.21%
+ 214  AY077834.1                        1.32%    failed      0.19%
+ 215  MW020571.1                        1.32%    failed      0.19%
+ 216  MW167070.1                        1.31%    failed      0.17%
+ 217  PV167793.1                        1.32%    failed      0.14%
+ 218  MT137384.1                        1.32%    failed      0.17%
+ 219  PV434148.1                        1.32%    failed      0.18%
+ 220  ON961655.1                        1.31%    failed      0.18%
+ 221  PQ014465.1                        1.36%    failed      0.23%
+ 222  OQ434236.1                        2.39%    failed      0.24%
+ 223  OQ434237.1                        1.34%    failed      0.18%
+ 224  OQ434239.1                        1.34%    failed      0.19%
+ 225  OQ434238.1                        1.34%    failed      0.19%
+ 226  ON961657.1                        1.31%    failed      0.18%
+ 227  ON961656.1                        1.31%    failed      0.18%
+ 228  MN072630.1                        1.02%    failed      0.15%
+ 229  MN072631.1                        1.06%    failed      0.20%
+ 230  KT438550.1                        1.31%    failed      0.16%
+ 231  OQ434235.1                        1.31%    failed      0.15%
+ 232  KT438551.1                        1.02%    failed      0.15%
+ 233  MG000156.1                        1.59%    failed      0.30%
+ 234  MN072626.1                        1.10%    failed      0.22%
+ 235  MN072627.1                        1.03%    failed      0.17%
+ 236  MN072628.1                        1.32%    failed      0.19%
+ 237  AY077835.1                        0.83%    passed     18.17%
+ 238  NC_004003.1                       0.83%    passed     18.17%
+ 239  KX576657.1                        0.83%    passed     18.17%
+ 240  AY077836.1                        0.83%    passed     18.47%
+ 241  MN072622.1                        1.11%    passed     18.84%
+ 242  KC951854.1                        1.17%    passed     21.61%
+ 243  MN072621.1                        1.13%    passed     20.07%
+ 244  MH381810.1                        1.15%    passed     22.30%
+ 245  MN072620.1                        1.14%    passed     20.52%
+ 246  MW020570.1                        1.14%    passed     20.52%
+ 247  PV167794.1                        2.21%    passed     17.37%
+ 248  PX497580.1                        1.19%    passed     20.29%
+ 249  PX499192.1                        1.19%    passed     20.31%
+ 250  MN072623.1                        1.08%    passed      6.50%
+ 251  MN072625.1                        1.14%    passed      5.46%
+ 252  MN072624.1                        1.13%    passed      7.82%
+ 253  SRR27563725                       1.07%    passed     92.93%
+ 254  MW631933.1                        0.76%    passed     91.59%
+ 255  SRR27563724                       0.76%    passed     91.94%
+ 256  MW883897.1                        0.78%    passed     91.36%
+ 257  OK422492.1                        0.76%    passed     91.61%
+ 258  PQ005629.1                        0.76%    passed     91.61%
+ 259  OR393176.1                        0.76%    passed     91.61%
+ 260  OR393170.1                        0.76%    passed     91.61%
+ 261  PV066181.1                        0.76%    passed     91.32%
+ 262  PQ201927.1                        0.76%    passed     91.61%
+ 263  SRR27563730                       0.76%    passed     91.96%
+ 264  OP297402.1                        0.76%    passed     91.61%
+ 265  PP979138.1                        0.76%    passed     91.61%
+ 266  SRR27563729                       0.76%    passed     91.61%
+ 267  OR393175.1                        0.76%    passed     91.61%
+ 268  OP688129.1                        0.76%    passed     91.61%
+ 269  SRR27563728                       0.76%    passed     91.61%
+ 270  SRR25461324                       6.65%    passed     91.51%
+ 271  OR393169.1                        0.76%    passed     91.61%
+ 272  SRR29762742                       0.76%    passed     91.61%
+ 273  ON400507.1                        0.76%    passed     91.61%
+ 274  OR863389.1                        0.76%    passed     91.61%
+ 275  PQ179265.1                        0.76%    passed     91.61%
+ 276  OR393171.1                        0.76%    passed     91.89%
+ 277  OK422493.1                        0.76%    passed     91.61%
+ 278  PP746705.1                        0.75%    passed     92.14%
+ 279  PP756497.1                        0.75%    passed     92.43%
+ 280  OR983152.1                        2.55%    passed     86.70%
+ 281  PQ510117.1                        0.76%    passed     92.08%
+ 282  OK422494.1                        0.76%    passed     91.96%
+ 283  OR393174.1                        0.76%    passed     91.96%
+ 284  OP688128.1                        0.76%    passed     91.94%
+ 285  PQ510118.1                        0.77%    passed     92.17%
+ 286  OQ427097.1                        2.49%    passed     80.88%
+ 287  SRR27563727                       1.48%    passed     94.05%
+ 288  MN072619.1                        0.76%    passed     90.61%
+ 289  KX683219.1                        0.76%    passed     91.27%
+ 290  NC_003027.1                       0.76%    passed     91.27%
+****  TOTAL                             1.28%  34 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: KX683219.1 is identical to AF325528.1 but kept for subsequent analysis
+NOTE: SRR28085238 is identical to KX894508.1 but kept for subsequent analysis
+NOTE: MN642592.1 is identical to ON005067.1 but kept for subsequent analysis
+NOTE: OR134846.1 is identical to KY702007.1 but kept for subsequent analysis
+NOTE: SRR26747387_SRR26747376_Merged is identical to OR134832.1 but kept for subsequent analysis
+NOTE: OR134840.1 is identical to KY829023.3 but kept for subsequent analysis
+NOTE: PV066182.1 is identical to OR393178.1 but kept for subsequent analysis
+NOTE: OR983149.1 is identical to OR983146.1 but kept for subsequent analysis
+NOTE: PP065789.1 is identical to PP065788.1 but kept for subsequent analysis
+NOTE: KX764643.1 is identical to KX764644.1 but kept for subsequent analysis
+NOTE: OR134848.1 is identical to KX764645.1 but kept for subsequent analysis
+NOTE: MN636841.1 is identical to MN636838.1 but kept for subsequent analysis
+NOTE: OM793608.1 is identical to OM793605.1 but kept for subsequent analysis
+NOTE: OR347836.1 is identical to MW355944.1 but kept for subsequent analysis
+NOTE: SRR15145279_SRR15145280_Merged is identical to MZ577073.1 but kept for subsequent analysis
+NOTE: PX127683.1 is identical to PX127682.1 but kept for subsequent analysis
+NOTE: SRR28085240 is identical to OQ555660.1 but kept for subsequent analysis
+NOTE: PQ727630.1 is identical to PQ727625.1 but kept for subsequent analysis
+NOTE: NC_004002.1 is identical to AY077832.1 but kept for subsequent analysis
+NOTE: PP886237.1 is identical to PP886236.1 but kept for subsequent analysis
+NOTE: MW020571.1 is identical to AY077834.1 but kept for subsequent analysis
+NOTE: OQ434238.1 is identical to OQ434239.1 but kept for subsequent analysis
+NOTE: ON961656.1 is identical to ON961657.1 but kept for subsequent analysis
+NOTE: NC_004003.1 is identical to AY077835.1 but kept for subsequent analysis
+NOTE: PQ005629.1 is identical to OK422492.1 but kept for subsequent analysis
+NOTE: OR393174.1 is identical to OK422494.1 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.00195223 secs using 196.9% CPU
+Identifying sites to remove: done in 0.0361965 secs using 124% CPU
+NOTE: 106 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: NC_003027.1 (identical to AF325528.1) is ignored but added at the end
+NOTE: SRR28085237 (identical to KX894508.1) is ignored but added at the end
+NOTE: PV877838.1 (identical to KX894508.1) is ignored but added at the end
+NOTE: SRR28085236 (identical to KX894508.1) is ignored but added at the end
+NOTE: MN995838.1 (identical to KX894508.1) is ignored but added at the end
+NOTE: SRR28085235 (identical to KX894508.1) is ignored but added at the end
+NOTE: SRR27563726 (identical to KX894508.1) is ignored but added at the end
+NOTE: SRR26747374_SRR26747375_Merged (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134836.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: SRR26747364_SRR26747365_Merged (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134841.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: SRR26747396_SRR26747397_Merged (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134834.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: SRR26747366_SRR26747367_Merged (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134849.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134838.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134839.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: SRR26747384_SRR26747383_Merged (identical to KY702007.1) is ignored but added at the end
+NOTE: SRR26747386_SRR26747385_Merged (identical to KY702007.1) is ignored but added at the end
+NOTE: SRR26747382_SRR26747381_Merged (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134835.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: SRR26747398_SRR26747399_Merged (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134843.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134842.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: SRR26747388_SRR26747389_Merged (identical to KY702007.1) is ignored but added at the end
+NOTE: SRR26747394_SRR26747395_Merged (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134837.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134847.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: SRR26747378_SRR26747377_Merged (identical to KY702007.1) is ignored but added at the end
+NOTE: SRR26747368_SRR26747369_Merged (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134844.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: OR134833.1 (identical to KY702007.1) is ignored but added at the end
+NOTE: SRR26747390_SRR26747391_Merged (identical to KY829023.3) is ignored but added at the end
+NOTE: MT643825.1 (identical to KY829023.3) is ignored but added at the end
+NOTE: SRR26792425 (identical to OR393178.1) is ignored but added at the end
+NOTE: PP053747.1 (identical to OR393178.1) is ignored but added at the end
+NOTE: SRR25046331 (identical to OR393178.1) is ignored but added at the end
+NOTE: OR797612.1 (identical to OR393178.1) is ignored but added at the end
+NOTE: OR393177.1 (identical to OR393178.1) is ignored but added at the end
+NOTE: OR393173.1 (identical to OR393178.1) is ignored but added at the end
+NOTE: SRR25046328 (identical to OR393178.1) is ignored but added at the end
+NOTE: OR393172.1 (identical to OR393178.1) is ignored but added at the end
+NOTE: MG972412.1 (identical to KX764644.1) is ignored but added at the end
+NOTE: OM793609.1 (identical to KX764645.1) is ignored but added at the end
+NOTE: MN636842.1 (identical to MN636838.1) is ignored but added at the end
+NOTE: MN636840.1 (identical to MN636838.1) is ignored but added at the end
+NOTE: OM793607.1 (identical to OM793605.1) is ignored but added at the end
+NOTE: OQ200493.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OQ253253.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OQ253254.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: PP145891.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OR232414.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OQ253256.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OR735987.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OQ349695.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OP752701.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: PQ727632.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OQ267778.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: PV796583.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: PQ727629.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OM793603.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OM984486.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OM793602.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OQ253255.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OR347834.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OQ511520.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OR347837.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: ON152411.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: PQ727628.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: PQ682462.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: PP894832.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OM373209.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OR232413.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OQ253251.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: PQ727633.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OR347835.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OP922506.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OM033705.1 (identical to MW355944.1) is ignored but added at the end
+NOTE: OM803092.1 (identical to MZ577073.1) is ignored but added at the end
+NOTE: MZ577075.1 (identical to MZ577073.1) is ignored but added at the end
+NOTE: OL752713.2 (identical to MZ577073.1) is ignored but added at the end
+NOTE: OM803091.1 (identical to MZ577073.1) is ignored but added at the end
+NOTE: OP985536.1 (identical to MZ577073.1) is ignored but added at the end
+NOTE: SRR15145277_SRR15145278_Merged (identical to MZ577073.1) is ignored but added at the end
+NOTE: SRR15145275_SRR15145276_Merged (identical to MZ577073.1) is ignored but added at the end
+NOTE: MZ577076.1 (identical to MZ577073.1) is ignored but added at the end
+NOTE: MZ577074.1 (identical to MZ577073.1) is ignored but added at the end
+NOTE: PQ682461.1 (identical to OQ555660.1) is ignored but added at the end
+NOTE: PQ727631.1 (identical to PQ727625.1) is ignored but added at the end
+NOTE: PQ727626.1 (identical to PQ727625.1) is ignored but added at the end
+NOTE: KX576657.1 (identical to AY077835.1) is ignored but added at the end
+NOTE: OR393176.1 (identical to OK422492.1) is ignored but added at the end
+NOTE: OR393170.1 (identical to OK422492.1) is ignored but added at the end
+NOTE: PQ201927.1 (identical to OK422492.1) is ignored but added at the end
+NOTE: OP297402.1 (identical to OK422492.1) is ignored but added at the end
+NOTE: PP979138.1 (identical to OK422492.1) is ignored but added at the end
+NOTE: SRR27563729 (identical to OK422492.1) is ignored but added at the end
+NOTE: OR393175.1 (identical to OK422492.1) is ignored but added at the end
+NOTE: OP688129.1 (identical to OK422492.1) is ignored but added at the end
+NOTE: SRR27563728 (identical to OK422492.1) is ignored but added at the end
+NOTE: OR393169.1 (identical to OK422492.1) is ignored but added at the end
+NOTE: SRR29762742 (identical to OK422492.1) is ignored but added at the end
+NOTE: ON400507.1 (identical to OK422492.1) is ignored but added at the end
+NOTE: OR863389.1 (identical to OK422492.1) is ignored but added at the end
+NOTE: PQ179265.1 (identical to OK422492.1) is ignored but added at the end
+NOTE: OK422493.1 (identical to OK422492.1) is ignored but added at the end
+Alignment was printed to /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/au_test_three_rootings.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/au_test_three_rootings.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.042 seconds
+
+NOTE: 53 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -100240.170
+2. Current log-likelihood: -91854.237
+3. Current log-likelihood: -91843.337
+4. Current log-likelihood: -91842.950
+5. Current log-likelihood: -91842.811
+6. Current log-likelihood: -91842.770
+Optimal log-likelihood: -91842.757
+UNREST rate values:  A-C: 0.803  A-G: 5.238  A-T: 1.309  C-A: 7.706  C-G: 0.673  C-T: 13.892  G-A: 11.030  G-C: 0.980  G-T: 4.945  T-A: 1.365  T-C: 6.017  T-G: 1.000
+Gamma shape alpha: 0.020
+Parameters optimization took 6 rounds (6.804 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -91842.757
+Total tree length: 0.093
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 13.667 sec (0h:0m:13s)
+Total wall-clock time used: 6.884 sec (0h:0m:6s)
+Reading trees in /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/01_inputs/three_rootings.nwk ...
+
+3 trees detected
+Note: 85.047 MB of RAM required!
+Creating 10000 bootstrap replicates...
+done
+Tree 1 / LogL: -92012.621
+Tree 2 / LogL: -92017.995
+Tree 3 / LogL: -92017.986
+Performing RELL-BP test...
+Performing KH and SH test...
+Performing ELW test...
+Performing approximately unbiased (AU) test...
+2 MB required for AU test
+Generating 10 x 10000 multiscale bootstrap replicates... 22.701 seconds
+TreeID	AU	RSS	d	c
+1	0.950	6.909	-1.626	0.015
+2	0.068	15.934	1.514	0.023
+3	0.066	15.180	1.511	0.009
+Time for AU test: 22.701 seconds
+Time for evaluating all trees: 25.887 sec.
+
+Analysis results written to: 
+  IQ-TREE report:                /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/au_test_three_rootings.iqtree
+  Maximum-likelihood tree:       /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/au_test_three_rootings.treefile
+  Evaluated user trees:          /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/au_test_three_rootings.trees
+  Screen log file:               /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/au_test_three_rootings.log
+
+Date and Time: Sat Nov 21 00:08:35 2026

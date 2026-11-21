@@ -1,0 +1,8 @@
+Orthogroup,trait,n_sra,n_genbank,pct_sra,pct_genbank,fisher_p,sra_exclusive,product
+OG0000159,Africa,19,0,35.8,0.0,4.334187011580166e-16,True,hypothetical protein
+OG0000156,Africa,16,0,30.2,0.0,1.8915485426971195e-13,True,hypothetical protein
+OG0000161,Africa,16,0,30.2,0.0,1.8915485426971195e-13,True,hypothetical protein
+OG0000155,Asia,1,47,1.9,19.8,0.0007421041590407928,False,hypothetical protein
+OG0000157,Asia,0,26,0.0,11.0,0.006456214424389366,False,kelch-like protein [Lumpy skin disease virus NI-2490]
+OG0000154,Europe,15,99,28.3,41.8,0.08677218345561827,False,kelch-like protein [Lumpy skin disease virus NI-2490]
+OG0000152,Vaccine,3,88,5.7,37.1,1.214356460658669e-06,False,LSDV154 putative ER-localized apoptosis regulator [Lumpy ski

@@ -1,0 +1,68 @@
+computing SRA-exclusive orthogroups from the presence/absence matrix
+290 genomes: 53 SRA-derived (SRR/ERR/DRR), 237 GenBank
+
+30 orthogroups are SRA-exclusive (present in at least one SRA assembly, absent from every GenBank genome)
+
+by pan-genome compartment:
+  cloud        30
+
+The manuscript states that all 28 fall in the cloud compartment.
+
+To restrict to the cloud compartment instead:
+  NONVIRAL_RULE=sra_exclusive_cloud FORCE_REDERIVE=1 \
+    python3 scripts/01_nonviral_screen.py
+
+source: SRA-exclusive orthogroups, computed from the presence/absence matrix
+candidates: 30
+
+  orthogroup    genomes  annotation
+  OG0000156          16  
+  OG0000159          19  
+  OG0000160          16  
+  OG0000161          16  
+  OG0000162          14  
+  OG0000163          13  
+  OG0000164          13  
+  OG0000165           1  
+  OG0000166          12  
+  OG0000168           9  
+  OG0000172           7  
+  OG0000175           4  
+  OG0000179           4  
+  OG0000180           1  
+  OG0000181           4  
+  OG0000184           3  
+  OG0000185           3  
+  OG0000186           3  
+  OG0000187           2  
+  OG0000188           3  
+  OG0000196           2  
+  OG0000197           2  
+  OG0000198           2  
+  OG0000199           2  
+  OG0000200           1  
+  OG0000201           2  
+  OG0000202           2  
+  OG0000203           2  
+  OG0000204           1  
+  OG0000205           1  
+
+  * = annotation contains a host, retroviral or bacterial term (0 of 30)
+  NOTE: none of the annotations looks non-viral. If they are all
+  'hypothetical protein' that is expected, since contaminant
+  fragments often go unannotated; but it means the annotation
+  gives no independent support for calling them non-viral.
+
+================================================================
+  pan-genome before exclusion : 206
+  non-viral orthogroups       : 30
+  pan-genome after exclusion  : 176
+================================================================
+  THE MANUSCRIPT SAYS 206 - 28 = 178.
+  This run says 206 - 30 = 176.
+  The manuscript must be changed to match this, not the reverse.
+  Send this output before using the figures.
+================================================================
+
+written: /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/26_Figure_Regeneration/01_inputs/nonviral_orthogroups.txt
+written: /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/26_Figure_Regeneration/02_results/nonviral_candidates.csv

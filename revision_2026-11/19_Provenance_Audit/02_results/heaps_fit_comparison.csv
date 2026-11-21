@@ -1,0 +1,4 @@
+dataset,n_genomes,n_orthogroups,k,gamma,r_squared,verdict,strict_core
+all290,290,206,139.51,0.0698,0.9945,open,111
+genbank237,237,176,147.163,0.0325,0.9861,closed,118
+sra53,53,191,150.046,0.0613,0.9987,open,137

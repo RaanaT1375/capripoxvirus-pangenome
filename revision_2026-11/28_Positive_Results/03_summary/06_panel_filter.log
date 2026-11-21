@@ -1,0 +1,68 @@
+4963 candidate sites across 9 groupings
+  baps:BAPS_cluster_2 and species:SPPV: 100% of sites identical -> dropping baps:BAPS_cluster_2
+  baps:BAPS_cluster_3 and species:GTPV: 100% of sites identical -> dropping baps:BAPS_cluster_3
+
+2403 perfectly diagnostic sites retained
+90 recombination intervals read from the Gubbins GFF
+masked span including 200 bp flanks: 47132 of 110662 columns (42.6%)
+
+sites inside or near a recombinant tract: 1099 of 2403 (45.7%)
+  baps:BAPS_cluster_4                  9 of 17     removed
+  baps:BAPS_cluster_5                  5 of 22     removed
+  recombinant:Node_147                25 of 46     removed
+  recombinant:clonal_backbone         15 of 63     removed
+  species:GTPV                       301 of 711    removed
+  species:LSDV                       189 of 368    removed
+  species:SPPV                       555 of 1176   removed
+
+1304 sites survive the recombination screen
+
+=== final panel: up to 5 sites per grouping, outside recombinant tracts, spread along the alignment ===
+  grouping                           column  group  other
+  baps:BAPS_cluster_4                  7951      C      T
+  baps:BAPS_cluster_4                 23889      A      C
+  baps:BAPS_cluster_4                 66177      C      A
+  baps:BAPS_cluster_4                 68738      T      G
+  baps:BAPS_cluster_4                 95058      T      C
+                                   spacing: 15938, 42288, 2561, 26320
+  baps:BAPS_cluster_5                  5171      C      T
+  baps:BAPS_cluster_5                 47001      C      T
+  baps:BAPS_cluster_5                 48068      G      A
+  baps:BAPS_cluster_5                 76119      A      G
+  baps:BAPS_cluster_5                 96836      G      A
+                                   spacing: 41830, 1067, 28051, 20717
+  recombinant:Node_147                 2931      G      A
+  recombinant:Node_147                24385      A      G
+  recombinant:Node_147                33019      T      C
+  recombinant:Node_147                94502      G      A
+  recombinant:Node_147                98997      C      A
+                                   spacing: 21454, 8634, 61483, 4495
+  recombinant:clonal_backbone          4629      A      G
+  recombinant:clonal_backbone         31764      T      C
+  recombinant:clonal_backbone         55318      C      T
+  recombinant:clonal_backbone         76119      A      G
+  recombinant:clonal_backbone         99174      T      C
+                                   spacing: 27135, 23554, 20801, 23055
+  species:GTPV                           22      T      G
+  species:GTPV                        25541      G      A
+  species:GTPV                        49882      C      A
+  species:GTPV                        76623      T      C
+  species:GTPV                       102137      A      T
+                                   spacing: 25519, 24341, 26741, 25514
+  species:LSDV                         2856      T      G
+  species:LSDV                        27514      G      T
+  species:LSDV                        54568      G      A
+  species:LSDV                        77456      C      A
+  species:LSDV                       102236      T      G
+                                   spacing: 24658, 27054, 22888, 24780
+  species:SPPV                          117      G      C
+  species:SPPV                        25659      G      A
+  species:SPPV                        49925      G      A
+  species:SPPV                        76656      A      G
+  species:SPPV                       102284      T      G
+                                   spacing: 25542, 24266, 26731, 25628
+
+35 sites in the panel across 7 groupings
+
+written: 03_summary/panel_final.csv
+        02_results/sites_recombination_ok.csv

@@ -1,0 +1,207 @@
+Orthogroup,representative,length_aa,n_members,product
+OG0000000,LBNKNOHP_00018,569,498,kelch-like protein [Lumpy skin disease virus NI-2490]
+OG0000001,BFAOMBID_00151,163,466,hypothetical protein LSDVgp156 [Lumpy skin disease virus NI-2490]
+OG0000002,JPENGCNB_00002,137,419,Hypothetical protein LSDVgp155 [Lumpy skin disease virus NI-2490]
+OG0000003,LBNKNOHP_00025,302,375,LSDV026 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000004,LBNKNOHP_00003,240,324,LSDV154 putative ER-localized apoptosis regulator [Lumpy skin disease virus NI-2
+OG0000005,LBNKNOHP_00086,253,320,LSDV087 mutT motif putative gene expression regulator [Lumpy skin disease virus 
+OG0000006,LBNKNOHP_00113,385,299,LSDV115 putative intermediate transcription factor subunit [Lumpy skin disease v
+OG0000007,LBNKNOHP_00042,684,295,Hypothetical protein LSDVgp042 [Lumpy skin disease virus NI-2490]
+OG0000008,ICFFCLFB_00146,648,295,ankyrin repeat protein [Lumpy skin disease virus NI-2490]
+OG0000009,LBNKNOHP_00066,177,293,LSDV066 thymidine kinase [Lumpy skin disease virus NI-2490]
+OG0000010,LBNKNOHP_00049,676,292,RNA helicase NPH-II [Lumpy skin disease virus NI-2490]
+OG0000011,LBNKNOHP_00005,231,292,IL-1 receptor-like protein [Lumpy skin disease virus NI-2490]
+OG0000012,DBCEGPHB_00033,377,292,Hypothetical protein LSDVgp036 [Lumpy skin disease virus NI-2490]
+OG0000013,LBNKNOHP_00039,1010,292,DNA polymerase [Lumpy skin disease virus NI-2490]
+OG0000014,LBNKNOHP_00050,596,292,putative metalloprotease [Lumpy skin disease virus NI-2490]
+OG0000015,DBCEGPHB_00061,132,292,LSDV064 putative membrane protein [Lumpy skin disease virus NI-2490]
+OG0000016,LJBGJCLO_00066,148,292,LSDV065 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000017,LBNKNOHP_00032,474,291,poly(A) polymerase large subunit [Lumpy skin disease virus NI-2490]
+OG0000018,HDPKCBKI_00034,192,291,double-strand RNA-binding protein [Lumpy skin disease virus NI-2490]
+OG0000019,BAIPLLJK_00035,203,291,RNA polymerase subunit [Lumpy skin disease virus NI-2490]
+OG0000020,LBNKNOHP_00037,566,291,Hypothetical protein LSDVgp037 [Lumpy skin disease virus NI-2490]
+OG0000021,LBNKNOHP_00038,266,291,hypothetical protein LSDVgp038 [Lumpy skin disease virus NI-2490]
+OG0000022,LBNKNOHP_00040,95,291,sulfhydryl oxidase [Lumpy skin disease virus NI-2490]
+OG0000023,LBNKNOHP_00041,130,291,putative virion core protein [Lumpy skin disease virus NI-2490]
+OG0000024,LBNKNOHP_00043,314,291,putative DNA-binding virion core protein [Lumpy skin disease virus NI-2490]
+OG0000025,LBNKNOHP_00044,72,291,hypothetical protein LSDVgp044 [Lumpy skin disease virus NI-2490]
+OG0000026,JPENGCNB_00046,289,291,DNA-binding phosphoprotein [Lumpy skin disease virus NI-2490]
+OG0000027,LBNKNOHP_00048,433,291,LSDV048 putative virion core protein [Lumpy skin disease virus NI-2490]
+OG0000028,LBNKNOHP_00051,81,291,Hypothetical protein LSDVgp051 [Lumpy skin disease virus NI-2490]
+OG0000029,LBNKNOHP_00052,222,291,transcriptional elongation factor [Lumpy skin disease virus NI-2490]
+OG0000030,LBNKNOHP_00053,126,291,glutaredoxin-like protein [Lumpy skin disease virus NI-2490]
+OG0000031,LBNKNOHP_00054,437,291,Hypothetical protein LSDVgp054 [Lumpy skin disease virus NI-2490]
+OG0000032,LBNKNOHP_00055,63,291,RNA polymerase [Lumpy skin disease virus NI-2490]
+OG0000033,LBNKNOHP_00056,174,291,LSDV056 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000034,LBNKNOHP_00057,373,291,putative virion core protein [Lumpy skin disease virus NI-2490]
+OG0000035,LBNKNOHP_00058,260,291,late transcription factor VLTF-1 [Lumpy skin disease virus NI-2490]
+OG0000036,DBCEGPHB_00056,337,291,poxvirus myristoylprotein [Lumpy skin disease virus NI-2490]
+OG0000037,LBNKNOHP_00060,245,291,LSDV060 putative myristylated IMV envelope protein [Lumpy skin disease virus NI-
+OG0000038,LBNKNOHP_00061,92,291,hypothetical protein LSDVgp061 [Lumpy skin disease virus NI-2490]
+OG0000039,LBNKNOHP_00062,318,291,LSDV062 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000040,LBNKNOHP_00067,198,291,putative host range protein [Lumpy skin disease virus NI-2490]
+OG0000041,HLJBBEAK_00066,333,291,poly(A) polymerase small subunit [Lumpy skin disease virus NI-2490]
+OG0000042,LBNKNOHP_00069,133,291,LSDV070 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000043,DBCEGPHB_00070,323,291,LSDV074 putative IMV envelope protein [Lumpy skin disease virus NI-2490]
+OG0000044,LBNKNOHP_00074,798,291,LSDV075 RNA polymerase-associated protein [Lumpy skin disease virus NI-2490]
+OG0000045,HDPKCBKI_00075,240,291,late transcription factor VLTF-4 [Lumpy skin disease virus NI-2490]
+OG0000046,LBNKNOHP_00076,317,291,DNA topoisomerase type I [Lumpy skin disease virus NI-2490]
+OG0000047,LBNKNOHP_00078,842,291,LSDV079 mRNA capping enzyme large subunit [Lumpy skin disease virus NI-2490]
+OG0000048,LCHLKBBL_00080,156,291,hypothetical protein LSDVgp080 [Lumpy skin disease virus NI-2490]
+OG0000049,LBNKNOHP_00080,245,291,LSDV081 putative virion protein [Lumpy skin disease virus NI-2490]
+OG0000050,LBNKNOHP_00081,218,291,LSDV082 uracil DNA glycosylase [Lumpy skin disease virus NI-2490]
+OG0000051,LBNKNOHP_00082,786,291,LSDV083 putative NTPase [Lumpy skin disease virus NI-2490]
+OG0000052,LBNKNOHP_00084,163,291,LSDV085 RNA polymerase subunit [Lumpy skin disease virus NI-2490]
+OG0000053,DBCEGPHB_00082,226,291,LSDV086 mutT motif [Lumpy skin disease virus NI-2490]
+OG0000054,LBNKNOHP_00087,635,291,LSDV088 putative transcription termination factor [Lumpy skin disease virus NI-2
+OG0000055,LBNKNOHP_00088,287,291,LSDV089 mRNA capping enzyme small subunit [Lumpy skin disease virus NI-2490]
+OG0000056,LBNKNOHP_00089,549,291,LSDV090 putative rifampicin resistance protein [Lumpy skin disease virus NI-2490
+OG0000057,LBNKNOHP_00093,661,290,LSDV094 putative virion core protein [Lumpy skin disease virus NI-2490]
+OG0000058,LBNKNOHP_00114,1156,290,LSDV116 RNA polymerase subunit [Lumpy skin disease virus NI-2490]
+OG0000059,IEFPEDNL_00009,164,290,LAP/PHD finger-like protein [Lumpy skin disease virus NI-2490]
+OG0000060,LBNKNOHP_00010,381,290,G protein-coupled chemokine receptor-like protein [Lumpy skin disease virus NI-2
+OG0000061,LBNKNOHP_00011,211,290,ankyrin repeat protein [Lumpy skin disease virus NI-2490]
+OG0000062,LBNKNOHP_00013,89,290,EIF2a-like PKR inhibitor [Lumpy skin disease virus NI-2490]
+OG0000063,LBNKNOHP_00014,161,290,IL-18 binding protein [Lumpy skin disease virus NI-2490]
+OG0000064,IOENONFF_00015,101,290,LSDV016 EGF-like growth factor [Lumpy skin disease virus NI-2490]
+OG0000065,LBNKNOHP_00016,176,290,anti-apoptotic membrane protein [Lumpy skin disease virus NI-2490]
+OG0000066,LBNKNOHP_00019,321,290,LSDV020 ribonucleotide reductase small subunit [Lumpy skin disease virus NI-2490
+OG0000067,LBNKNOHP_00020,86,290,hypothetical protein LSDVgp021 [Lumpy skin disease virus NI-2490]
+OG0000068,FHJFELHH_00022,114,290,hypothetical protein LSDVgp022 [Lumpy skin disease virus NI-2490]
+OG0000069,LBNKNOHP_00023,216,290,S-S bond formation pathway protein [Lumpy skin disease virus NI-2490]
+OG0000070,LBNKNOHP_00024,447,290,Ser/Thr kinase [Lumpy skin disease virus NI-2490]
+OG0000071,HLJBBEAK_00024,640,290,EEV maturation protein [Lumpy skin disease virus NI-2490]
+OG0000072,LBNKNOHP_00027,370,290,palmytilated EEV membrane glycoprotein [Lumpy skin disease virus NI-2490]
+OG0000073,LJBGJCLO_00029,49,290,hypothetical protein
+OG0000074,LBNKNOHP_00029,145,290,hypothetical protein LSDVgp029 [Lumpy skin disease virus NI-2490]
+OG0000075,LBNKNOHP_00031,104,290,DNA-binding virion core protein [Lumpy skin disease virus NI-2490]
+OG0000076,LBNKNOHP_00033,735,290,hypothetical protein LSDVgp033 [Lumpy skin disease virus NI-2490]
+OG0000077,LBNKNOHP_00047,394,290,hypothetical protein LSDVgp047 [Lumpy skin disease virus NI-2490]
+OG0000078,LBNKNOHP_00063,253,290,DNA-binding virion core protein [Lumpy skin disease virus NI-2490]
+OG0000079,LBNKNOHP_00070,1285,290,LSDV071 RNA polymerase subunit [Lumpy skin disease virus NI-2490]
+OG0000080,LBNKNOHP_00071,171,290,LSDV072 putative protein-tyrosine phosphatase [Lumpy skin disease virus NI-2490]
+OG0000081,LBNKNOHP_00072,190,290,putative viral membrane protein [Lumpy skin disease virus NI-2490]
+OG0000082,LBNKNOHP_00077,147,290,LSDV078 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000083,LBNKNOHP_00083,635,290,LSDV084 putative early transcription factor small subunit [Lumpy skin disease vi
+OG0000084,LBNKNOHP_00090,150,290,late transcription factor VLTF-2 [Lumpy skin disease virus NI-2490]
+OG0000085,LBNKNOHP_00092,75,290,LSDV093 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000086,LBNKNOHP_00094,161,290,virion core protein [Lumpy skin disease virus NI-2490]
+OG0000087,JCEHMGNK_00142,172,290,LSDV096 RNA polymerase subunit [Lumpy skin disease virus NI-2490]
+OG0000088,LBNKNOHP_00096,375,290,LSDV097 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000089,LBNKNOHP_00097,714,290,LSDV098 putative early transcription factor large subunit [Lumpy skin disease vi
+OG0000090,PMDHMLNH_00097,292,290,LSDV099 putative intermediate transcription factor subunit [Lumpy skin disease v
+OG0000091,LBNKNOHP_00099,78,290,LSDV100 putative IMV membrane protein [Lumpy skin disease virus NI-2490]
+OG0000092,LBNKNOHP_00100,904,290,LSDV101 putative virion core protein [Lumpy skin disease virus NI-2490]
+OG0000093,LBNKNOHP_00101,317,290,LSDV102 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000094,LBNKNOHP_00102,190,290,LSDV103 putative virion core protein [Lumpy skin disease virus NI-2490]
+OG0000095,ADEPMALJ_00104,74,290,IMV membrane protein [Lumpy skin disease virus NI-2490]
+OG0000096,LBNKNOHP_00104,95,290,IMV membrane protein [Lumpy skin disease virus NI-2490]
+OG0000097,LBNKNOHP_00105,95,290,LSDV107 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000098,LBNKNOHP_00106,377,290,LSDV108 putative myristylated membrane protein [Lumpy skin disease virus NI-2490
+OG0000099,LBNKNOHP_00107,196,290,LSDV109 putative phosphorylated IMV membrane protein [Lumpy skin disease virus N
+OG0000100,LBNKNOHP_00108,480,290,LSDV110 putative DNA helicase transcriptional elongation factor [Lumpy skin dise
+OG0000101,LBNKNOHP_00109,74,290,LSDV111 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000102,LBNKNOHP_00111,430,290,LSDV112 putative DNA polymerase processivity factor [Lumpy skin disease virus NI
+OG0000103,LJBGJCLO_00113,179,290,LSDV114 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000104,DBCEGPHB_00112,149,290,Hypothetical protein LSDVgp117 [Lumpy skin disease virus NI-2490]
+OG0000105,LBNKNOHP_00116,140,290,LSDV118 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000106,FHJFELHH_00119,303,290,LSDV119 RNA polymerase subunit [Lumpy skin disease virus NI-2490]
+OG0000107,LBNKNOHP_00118,74,290,IMV membrane protein [Lumpy skin disease virus NI-2490]
+OG0000108,LBNKNOHP_00119,41,290,hypothetical protein
+OG0000109,DBCEGPHB_00117,256,290,LSDV121 putative DNA packaging protein [Lumpy skin disease virus NI-2490]
+OG0000110,ACABNNGD_00031,212,290,EEV glycoprotein [Lumpy skin disease virus NI-2490]
+OG0000111,LBNKNOHP_00122,171,290,IEV and EEV membrane glycoprotein [Lumpy skin disease virus NI-2490]
+OG0000112,LBNKNOHP_00123,191,290,hypothetical protein LSDVgp124 [Lumpy skin disease virus NI-2490]
+OG0000113,LBNKNOHP_00124,288,290,hypothetical protein LSDVgp125 [Lumpy skin disease virus NI-2490]
+OG0000114,LBNKNOHP_00125,181,290,EEV glycoprotein [Lumpy skin disease virus NI-2490]
+OG0000115,LBNKNOHP_00128,123,290,hypothetical protein LSDVgp129 [Lumpy skin disease virus NI-2490]
+OG0000116,LOBLEEJJ_00133,171,290,superoxide dismutase precursor [Lumpy skin disease virus NI-2490]
+OG0000117,LJBGJCLO_00133,559,290,LSDV133 DNA ligase-like protein [Lumpy skin disease virus NI-2490]
+OG0000118,OOEFBNNE_00131,361,290,LSDV135 putative IFN-alpha/beta binding protein [Lumpy skin disease virus NI-249
+OG0000119,LBNKNOHP_00136,335,290,LSDV137 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000120,OOEFBNNE_00134,205,290,Ig domain OX-2-like protein [Lumpy skin disease virus NI-2490]
+OG0000121,LBNKNOHP_00138,305,290,LSDV139 putative ser/thr protein kinase [Lumpy skin disease virus NI-2490]
+OG0000122,LBNKNOHP_00139,240,290,N1R/p28-like protein [Lumpy skin disease virus NI-2490]
+OG0000123,DBCEGPHB_00135,226,290,EEV Host range protein [Lumpy skin disease virus NI-2490]
+OG0000124,LBNKNOHP_00145,413,290,phospholipase-D-like protein [Lumpy skin disease virus NI-2490]
+OG0000125,LBNKNOHP_00148,337,290,LSDV149 serpin-like protein [Lumpy skin disease virus NI-2490]
+OG0000126,LBNKNOHP_00006,355,289,hypothetical protein LSDVgp007 [Lumpy skin disease virus NI-2490]
+OG0000127,LBNKNOHP_00007,275,289,LSDV008 putative soluble interferon gamma receptor [Lumpy skin disease virus NI-
+OG0000128,LBNKNOHP_00030,219,289,hypothetical protein LSDVgp030 [Lumpy skin disease virus NI-2490]
+OG0000129,KMBLINFF_00091,232,289,late transcription factor VLTF-3 [Lumpy skin disease virus NI-2490]
+OG0000130,LBNKNOHP_00126,273,289,hypothetical protein LSDVgp127 [Lumpy skin disease virus NI-2490]
+OG0000131,FHJFELHH_00129,301,289,CD47-like protein [Lumpy skin disease virus NI-2490]
+OG0000132,DBCEGPHB_00136,135,289,hypothetical protein LSDVgp142 [Lumpy skin disease virus NI-2490]
+OG0000133,BBJECDIA_00144,311,289,hypothetical protein LSDVgp143 [Lumpy skin disease virus NI-2490]
+OG0000134,LJBGJCLO_00004,171,288,LSDV005 interleukin-10-like protein [Lumpy skin disease virus NI-2490]
+OG0000135,LBNKNOHP_00017,146,288,dUTPase [Lumpy skin disease virus NI-2490]
+OG0000136,LBNKNOHP_00146,498,288,ankyrin repeat protein [Lumpy skin disease virus NI-2490]
+OG0000137,LBNKNOHP_00147,447,288,ankyrin-like protein [Lumpy skin disease virus NI-2490]
+OG0000138,OMENGDKN_00146,167,287,hypothetical protein LSDVgp150 [Lumpy skin disease virus NI-2490]
+OG0000139,DBCEGPHB_00145,552,287,kelch-like protein [Lumpy skin disease virus NI-2490]
+OG0000140,LBNKNOHP_00022,72,286,Hypothetical protein LSDVgp023 [Lumpy skin disease virus NI-2490]
+OG0000141,LBNKNOHP_00046,78,284,putative IMV membrane protein [Lumpy skin disease virus NI-2490]
+OG0000142,BAIPLLJK_00129,82,283,hypothetical protein LSDVgp130 [Lumpy skin disease virus NI-2490]
+OG0000143,DHOGEJMI_00154,490,283,ankyrin-like protein [Lumpy skin disease virus NI-2490]
+OG0000144,LBNKNOHP_00008,230,280,putative alpha aminitin-sensitive protein [Lumpy skin disease virus NI-2490]
+OG0000145,HDOCNMML_00150,115,278,IMV membrane protein [Lumpy skin disease virus NI-2490]
+OG0000146,LBNKNOHP_00012,341,264,LSDV013 interleukin-1 receptor-like protein [Lumpy skin disease virus NI-2490]
+OG0000147,LBNKNOHP_00135,153,258,LSDV136 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000148,LOBLEEJJ_00134,177,246,LSDV132 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000149,DNLAEAKH_00145,555,202,kelch-like protein [Lumpy skin disease virus NI-2490]
+OG0000150,LBNKNOHP_00152,91,193,LSDV153 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000151,OOEFBNNE_00130,2024,164,LSDV134 variola virus B22R-like protein [Lumpy skin disease virus NI-2490]
+OG0000152,DBCEGPHB_00002,311,162,LSDV154 putative ER-localized apoptosis regulator [Lumpy skin disease virus NI-2
+OG0000153,FHJFELHH_00135,2025,151,LSDV134 variola virus B22R-like protein [Lumpy skin disease virus NI-2490]
+OG0000154,EDLGHCJO_00144,555,114,kelch-like protein [Lumpy skin disease virus NI-2490]
+OG0000155,CEEBPDAN_00001,130,61,hypothetical protein
+OG0000156,MFFENFGF_00167,1172,39,hypothetical protein
+OG0000157,EEPAEAMF_00145,550,26,kelch-like protein [Lumpy skin disease virus NI-2490]
+OG0000158,CCAMIBAJ_00126,34,20,hypothetical protein
+OG0000159,MFFENFGF_00157,118,19,hypothetical protein
+OG0000160,MFFENFGF_00174,74,16,hypothetical protein
+OG0000161,NJBKPBOG_00150,158,16,hypothetical protein
+OG0000162,FCBHKLOK_00162,151,14,hypothetical protein
+OG0000163,NJBKPBOG_00142,135,13,hypothetical protein
+OG0000164,NJBKPBOG_00143,98,13,hypothetical protein
+OG0000165,IGKHPJMI_00157,31,12,hypothetical protein
+OG0000166,NJBKPBOG_00141,52,12,hypothetical protein
+OG0000167,IHICBBJN_00049,53,11,IMV membrane receptor-like protein [Lumpy skin disease virus NI-2490]
+OG0000168,DHMKGHIH_00157,152,9,hypothetical protein
+OG0000169,GFHJHDKH_00128,181,8,EEV maturation protein [Lumpy skin disease virus NI-2490]
+OG0000170,LCHLKBBL_00047,60,7,hypothetical protein
+OG0000171,GPKMOFOO_00128,48,7,IEV and EEV membrane glycoprotein [Lumpy skin disease virus NI-2490]
+OG0000172,DHMKGHIH_00163,85,7,hypothetical protein
+OG0000173,GFHJHDKH_00155,61,5,hypothetical protein
+OG0000174,AODGHJBP_00020,39,5,hypothetical protein
+OG0000175,FODNIOHK_00165,218,5,hypothetical protein
+OG0000176,PMDHMLNH_00003,73,4,hypothetical protein
+OG0000177,PEFHDLPH_00019,78,4,kelch-like protein [Lumpy skin disease virus NI-2490]
+OG0000178,BACCOBEM_00039,130,4,Hypothetical protein LSDVgp036 [Lumpy skin disease virus NI-2490]
+OG0000179,MFFENFGF_00150,64,4,hypothetical protein
+OG0000180,FODNIOHK_00158,127,4,hypothetical protein
+OG0000181,OAFDJBLK_00164,156,4,hypothetical protein
+OG0000182,OAPNEHBE_00146,116,3,ankyrin-like protein [Lumpy skin disease virus NI-2490]
+OG0000183,MNGBIENN_00027,38,3,hypothetical protein
+OG0000184,MFFENFGF_00156,79,3,hypothetical protein
+OG0000185,DDGFABII_00144,87,3,hypothetical protein
+OG0000186,MFFENFGF_00173,76,3,hypothetical protein
+OG0000187,LFEFPGPA_00152,66,3,hypothetical protein
+OG0000188,KOBHHGOP_00173,75,3,hypothetical protein
+OG0000189,GKMDINJC_00155,304,2,LSDV154 putative ER-localized apoptosis regulator [Lumpy skin disease virus NI-2
+OG0000190,PMCLPIEM_00135,1985,2,LSDV134 variola virus B22R-like protein [Lumpy skin disease virus NI-2490]
+OG0000191,BENIFPJH_00002,36,2,hypothetical protein
+OG0000192,NALPPOPC_00138,87,2,hypothetical protein
+OG0000193,KAOIFENE_00058,69,2,LSDV056 hypothetical protein [Lumpy skin disease virus NI-2490]
+OG0000194,GFHJHDKH_00031,42,2,EEV glycoprotein [Lumpy skin disease virus NI-2490]
+OG0000195,GFHJHDKH_00084,149,2,LSDV071 RNA polymerase subunit [Lumpy skin disease virus NI-2490]
+OG0000196,MFFENFGF_00151,86,2,hypothetical protein
+OG0000197,MFFENFGF_00153,117,2,hypothetical protein
+OG0000198,MFFENFGF_00154,56,2,hypothetical protein
+OG0000199,MFFENFGF_00178,77,2,hypothetical protein
+OG0000200,FEHNIPBD_00162,175,2,hypothetical protein
+OG0000201,JCEHMGNK_00232,102,2,hypothetical protein
+OG0000202,FODNIOHK_00095,29,2,hypothetical protein
+OG0000203,EPEBHOCP_00153,145,2,hypothetical protein
+OG0000204,JCEHMGNK_00048,29,2,Entry-fusion complex protein OPG076
+OG0000205,JCEHMGNK_00228,169,2,Gag-Pro-Pol polyprotein

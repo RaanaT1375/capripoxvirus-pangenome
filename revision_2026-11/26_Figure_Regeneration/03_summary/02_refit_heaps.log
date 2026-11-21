@@ -1,0 +1,37 @@
+presence/absence matrix: 206 orthogroups x 290 genomes
+excluding 30 non-viral orthogroups
+retained: 176 orthogroups
+
+partition of the retained matrix:
+  core        132  (75.0%)
+  soft-core    10  (5.7%)
+  shell        14  (8.0%)
+  cloud        20  (11.4%)
+  total       176
+
+manuscript states: core 132, soft-core 10, shell 14, cloud 22, total 178
+  *** MISMATCH: the partition above differs from the manuscript. ***
+  Report this before regenerating the figures.
+
+accumulation curves over 100 permutations written
+  pan-genome at N=290: 176.0
+  strict core at N=290: 111.0
+
+Heaps' law, log-log OLS:
+  k      = 148.267
+  gamma  = 0.0307
+  R^2    = 0.9898
+  k * 290^gamma = 176.4 (observed 176.0)
+
+Heaps' law, nonlinear least squares:
+  k      = 148.143
+  gamma  = 0.0308
+  R^2    = 0.9898
+
+manuscript states gamma = 0.0351 on this matrix.
+this run gives gamma = 0.0307 by the conventional log-log fit.
+
+For the Figure 1B caption, insert:
+  ($n = 148.267 \times N^{0.0307}$)
+
+written: 03_summary/heaps_fit.csv

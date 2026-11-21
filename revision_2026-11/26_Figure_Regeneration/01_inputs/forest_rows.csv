@@ -1,0 +1,14 @@
+label,group,alpha,lo,hi,cmh_p
+Outgroup consensus (primary),Polarization,0.604,0.33,0.75,0.0090
+ML ancestral state (PP >= 0.90),Polarization,0.629,0.26,0.77,0.0090
+Per-genome recombination mask,Recombination,0.588,,,0.0096
+Union mask (all branches),Recombination,0.454,,,0.043
+Non-recombinant genomes only (n = 133),Recombination,-0.104,,,0.914
+Recombinant-descended only (n = 94),Recombination,0.522,,,0.028
+Unpolarized vs GTPV,Outgroup,0.540,0.35,0.66,
+Unpolarized vs SPPV,Outgroup,0.491,0.32,0.61,
+Gap masking > 5%,Alignment,0.577,0.29,0.72,
+Gap masking > 1%,Alignment,0.570,0.28,0.72,
+Excluding OG0000120,Alignment,0.505,,,
+Vaccine included vs GTPV,Dataset,0.435,0.12,0.62,
+Vaccine included vs SPPV,Dataset,0.393,0.12,0.57,

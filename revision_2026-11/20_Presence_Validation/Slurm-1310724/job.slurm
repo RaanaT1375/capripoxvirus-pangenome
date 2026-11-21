@@ -1,0 +1,8 @@
+JobId='1310724'
+UserId='xpkk(529000430)'
+BatchHost='node036'
+NumNodes='1'
+WorkDir='/cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/20_Presence_Validation'
+StdErr='/cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/20_Presence_Validation/logs/tblastn_1310724.err'
+StdIn='/dev/null'
+StdOut='/cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/20_Presence_Validation/logs/tblastn_1310724.out'

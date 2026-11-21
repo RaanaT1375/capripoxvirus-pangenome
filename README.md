@@ -139,3 +139,15 @@ of NCBI GenBank and SRA.
 ## Citation
 
 See `CITATION.cff`, or use the GitHub "Cite this repository" button.
+
+---
+
+## Revision 1 Updates (`v2.0.1` — November 2026)
+
+This release accompanies the revised manuscript (*Scientific Reports*) and adds stages 17–29 (`revision_2026-11/`), standardized publication figures (`figures/revision_2026-11/`), and all 16 supplementary data files (`supplementary_files/Supplementary File S1.xlsx` – `S16.xlsx`):
+
+- **Outgroup-free non-reversible rooting (`24_Root_Inference`):** Unrestricted non-reversible nucleotide model (`UNREST+G4`) across the 60-gene supermatrix and 10 balanced replicates.
+- **ML ancestral-state polarization & recombination-masked MK tests (`17_ASR_MK`, `25_Recombination_Masked_MK`):** IQ-TREE ASR polarization ($PP \ge 0.90$) and per-genome/union Gubbins recombination masking.
+- **Nucleotide-level pan-GWAS validation (`19_Provenance_Audit`, `20_Presence_Validation`, `27_DNA_Level_GWAS`):** `tblastn` matrix reconstruction ($\ge 80\%$ coverage/identity) and assembly-provenance auditing.
+- **Functional constraint, positional substitution screening & diagnostic sites (`28_Positive_Results`):** Gene-level $\omega_{MG94}$ functional hierarchy, exact positional clustering tests, and 35 recombination-screened lineage-diagnostic core sites.
+- **Ancestral gene-content reconstruction & temporal power analysis (`18_Gene_Content_ASR`, `29_Temporal_Reconciliation`):** GTR2+FO gain/loss reconstruction and date-randomisation power analysis.

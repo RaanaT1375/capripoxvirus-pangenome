@@ -1,0 +1,20 @@
+IQ-TREE: /cfs/earth/scratch/xpkk/.conda/envs/iqtree_env/bin/iqtree3 | binary model: GTR2+FO
+presence/absence matrix: 206 orthogroups x 290 genomes
+
+=== all290: 290 genomes, 206 orthogroups present ===
+                dataset  n_orthogroups  gains  losses  gain_terminal  gain_internal  pct_gains_terminal
+pangenome_class                                                                                        
+cloud            all290             50    228      11            205             23                89.9
+core             all290            132      0      23              0              0                 NaN
+shell            all290             14     91     115             51             40                56.0
+soft_core        all290             10      4      39              1              3                25.0
+
+=== genbank237: 237 genomes, 176 orthogroups present ===
+                    dataset  n_orthogroups  gains  losses  gain_terminal  gain_internal  pct_gains_terminal
+pangenome_class                                                                                            
+cloud            genbank237             20     49      11             37             12                75.5
+core             genbank237            132      0      16              0              0                 NaN
+shell            genbank237             14     65      87             37             28                56.9
+soft_core        genbank237             10      5      32              1              4                20.0
+
+written: 03_summary/gene_content_summary.csv

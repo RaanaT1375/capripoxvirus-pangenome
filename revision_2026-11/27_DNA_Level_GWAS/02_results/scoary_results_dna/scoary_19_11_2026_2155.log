@@ -1,0 +1,7 @@
+11/19/2026 09:55:43 PM    ==== Scoary started ====
+11/19/2026 09:55:43 PM    Command: /cfs/earth/scratch/xpkk/.conda/envs/scoary_env/bin/scoary --genes /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/27_DNA_Level_GWAS/03_summary/gene_presence_absence_dna.csv --traits /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/27_DNA_Level_GWAS/03_summary/traits_matched.csv --newicktree /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/27_DNA_Level_GWAS/03_summary/core_tree_pruned.newick --start_col 15 -e 1000 --threads 16 --outdir /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/27_DNA_Level_GWAS/02_results/scoary_results_dna
+11/19/2026 09:55:43 PM    CRITICAL:
+Traceback (most recent call last):
+  File "/cfs/earth/scratch/xpkk/.local/lib/python3.6/site-packages/scoary/methods.py", line 132, in main
+    sys.exit("Could not find the traits file: %s" % args.traits)
+SystemExit: Could not find the traits file: /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/27_DNA_Level_GWAS/03_summary/traits_matched.csv

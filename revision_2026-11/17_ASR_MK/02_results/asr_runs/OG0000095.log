@@ -1,0 +1,346 @@
+IQ-TREE version 3.1.1 for Linux x86 64-bit built Apr  8 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    login02 (AVX2, FMA3, 62 GB RAM)
+Command: /cfs/earth/scratch/xpkk/.conda/envs/iqtree_env/bin/iqtree3 -s /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/10_Selection_Pressure/01_codon_alignments/OG0000095_codon.fasta -te /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/17_ASR_MK/02_results/asr_runs/OG0000095_rooted.nwk -m GTR+F+G4 -asr -T 1 --prefix /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/17_ASR_MK/02_results/asr_runs/OG0000095 --quiet -redo
+Seed:    78414 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Nov 20 00:13:43 2026
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/10_Selection_Pressure/01_codon_alignments/OG0000095_codon.fasta ... Fasta format detected
+Reading fasta file: done in 0.00212813 secs
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.000326109 secs using 99.66% CPU
+WARNING: 9 sites contain only gaps or ambiguous characters.
+Alignment has 290 sequences with 222 columns, 20 distinct patterns
+9 parsimony-informative, 1 singleton sites, 212 constant sites
+                                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.248e-05 secs using 96.15% CPU
+   1  AF325528.1                        9.46%    passed     99.96%
+   2  AF409137.1                        9.46%    passed     99.96%
+   3  AF409138.1                        9.46%    passed     99.96%
+   4  AY077832.1                        9.46%    passed     95.41%
+   5  AY077833.1                        9.46%    passed     88.64%
+   6  AY077834.1                        9.46%    passed     88.64%
+   7  AY077835.1                        9.46%    passed     97.71%
+   8  AY077836.1                        9.46%    passed     97.71%
+   9  KC951854.1                        9.46%    passed     99.88%
+  10  KT438550.1                        9.46%    passed     88.64%
+  11  KT438551.1                        9.46%    passed     88.64%
+  12  KX576657.1                        9.46%    passed     97.71%
+  13  KX683219.1                        9.46%    passed     99.96%
+  14  KX764643.1                        9.46%    passed     99.96%
+  15  KX764644.1                        9.46%    passed     99.96%
+  16  KX764645.1                        9.46%    passed     99.96%
+  17  KX894508.1                        9.46%    passed     99.96%
+  18  KY702007.1                        9.46%    passed     99.96%
+  19  KY829023.3                        9.46%    passed     99.96%
+  20  MG000156.1                        9.46%    passed     88.64%
+  21  MG972412.1                        9.46%    passed     99.96%
+  22  MH381810.1                        9.46%    passed     99.88%
+  23  MH646674.1                        9.46%    passed     99.96%
+  24  MH893760.2                        9.46%    passed     99.96%
+  25  MK441838.1                        9.46%    passed     99.96%
+  26  MN072619.1                        9.46%    passed     99.96%
+  27  MN072620.1                        9.46%    passed     99.88%
+  28  MN072621.1                        9.46%    passed     99.88%
+  29  MN072622.1                        9.46%    passed     97.71%
+  30  MN072623.1                        9.46%    passed     99.69%
+  31  MN072624.1                        9.46%    passed     99.69%
+  32  MN072625.1                        9.46%    passed     99.69%
+  33  MN072626.1                        9.46%    passed     95.41%
+  34  MN072627.1                        9.46%    passed     95.41%
+  35  MN072628.1                        9.46%    passed     90.83%
+  36  MN072629.1                        9.46%    passed     95.41%
+  37  MN072630.1                        9.46%    passed     88.64%
+  38  MN072631.1                        9.46%    passed     88.64%
+  39  MN636838.1                        9.46%    passed     99.96%
+  40  MN636839.1                        9.46%    passed     99.96%
+  41  MN636840.1                        9.46%    passed     99.96%
+  42  MN636841.1                        9.46%    passed     99.96%
+  43  MN636842.1                        9.46%    passed     99.96%
+  44  MN636843.1                        9.46%    passed     99.96%
+  45  MN642592.1                        9.46%    passed     99.96%
+  46  MN995838.1                        9.46%    passed     99.96%
+  47  MT007950.1                        9.46%    passed     99.96%
+  48  MT130502.2                        9.46%    passed     99.96%
+  49  MT134042.1                        9.46%    passed     99.96%
+  50  MT137384.1                        9.46%    passed     88.64%
+  51  MT643825.1                        9.46%    passed     99.96%
+  52  MT992618.1                        9.46%    passed     99.96%
+  53  MW020570.1                        9.46%    passed     99.88%
+  54  MW020571.1                        9.46%    passed     88.64%
+  55  MW030512.1                        9.46%    passed     99.96%
+  56  MW167070.1                        9.46%    passed     88.64%
+  57  MW167071.1                        9.46%    passed     95.41%
+  58  MW355944.1                        9.46%    passed     99.96%
+  59  MW435866.1                        9.46%    passed     99.96%
+  60  MW631933.1                        9.46%    passed     99.96%
+  61  MW656252.1                        9.46%    passed     99.96%
+  62  MW656253.1                        9.46%    passed     99.96%
+  63  MW699032.1                        9.46%    passed     99.96%
+  64  MW732649.1                        9.46%    passed     99.96%
+  65  MW883897.1                        9.46%    passed     99.96%
+  66  MZ577073.1                        9.46%    passed     99.96%
+  67  MZ577074.1                        9.46%    passed     99.96%
+  68  MZ577075.1                        9.46%    passed     99.96%
+  69  MZ577076.1                        9.46%    passed     99.96%
+  70  NC_003027.1                       9.46%    passed     99.96%
+  71  NC_004002.1                       9.46%    passed     95.41%
+  72  NC_004003.1                       9.46%    passed     97.71%
+  73  OK318001.1                        9.46%    passed     99.96%
+  74  OK422492.1                        9.46%    passed     99.96%
+  75  OK422493.1                        9.46%    passed     99.96%
+  76  OK422494.1                        9.46%    passed     99.96%
+  77  OL542833.1                        9.46%    passed     99.96%
+  78  OL752713.2                        9.46%    passed     99.96%
+  79  OM033705.1                        9.46%    passed     99.96%
+  80  OM105589.1                        9.46%    passed     99.96%
+  81  OM373209.1                        9.46%    passed     99.96%
+  82  OM530217.1                        9.46%    passed     99.96%
+  83  OM793602.1                        9.46%    passed     99.96%
+  84  OM793603.1                        9.46%    passed     99.96%
+  85  OM793604.1                        9.46%    passed     99.96%
+  86  OM793605.1                        9.46%    passed     99.96%
+  87  OM793606.1                        9.46%    passed     99.96%
+  88  OM793607.1                        9.46%    passed     99.96%
+  89  OM793608.1                        9.46%    passed     99.96%
+  90  OM793609.1                        9.46%    passed     99.96%
+  91  OM803091.1                        9.46%    passed     99.96%
+  92  OM803092.1                        9.46%    passed     99.96%
+  93  OM984485.1                        9.46%    passed     99.96%
+  94  OM984486.1                        9.46%    passed     99.96%
+  95  ON005067.1                        9.46%    passed     99.96%
+  96  ON010590.1                        9.46%    passed     99.96%
+  97  ON152411.1                        9.46%    passed     99.96%
+  98  ON400507.1                        9.46%    passed     99.96%
+  99  ON616408.1                        9.46%    passed     99.96%
+ 100  ON961655.1                        9.46%    passed     88.64%
+ 101  ON961656.1                        9.46%    passed     88.64%
+ 102  ON961657.1                        9.46%    passed     88.64%
+ 103  OP297402.1                        9.46%    passed     99.96%
+ 104  OP508345.1                        9.46%    passed     99.96%
+ 105  OP654649.1                        9.46%    passed     99.96%
+ 106  OP688128.1                        9.46%    passed     99.96%
+ 107  OP688129.1                        9.46%    passed     99.96%
+ 108  OP752701.1                        9.46%    passed     99.96%
+ 109  OP922506.1                        9.46%    passed     99.96%
+ 110  OP985536.1                        9.46%    passed     99.96%
+ 111  OQ200493.1                        9.46%    passed     99.96%
+ 112  OQ253250.1                        9.46%    passed     99.96%
+ 113  OQ253251.1                        9.46%    passed     99.96%
+ 114  OQ253252.1                        9.46%    passed     99.96%
+ 115  OQ253253.1                        9.46%    passed     99.96%
+ 116  OQ253254.1                        9.46%    passed     99.96%
+ 117  OQ253255.1                        9.46%    passed     99.96%
+ 118  OQ253256.1                        9.46%    passed     99.96%
+ 119  OQ267777.1                        9.46%    passed     99.96%
+ 120  OQ267778.1                        9.46%    passed     99.96%
+ 121  OQ349695.1                        9.46%    passed     99.96%
+ 122  OQ427097.1                        9.46%    passed     99.96%
+ 123  OQ434235.1                        9.46%    passed     88.64%
+ 124  OQ434236.1                        9.46%    passed     88.64%
+ 125  OQ434237.1                        9.46%    passed     88.64%
+ 126  OQ434238.1                        9.46%    passed     88.64%
+ 127  OQ434239.1                        9.46%    passed     88.64%
+ 128  OQ511520.1                        9.46%    passed     99.96%
+ 129  OQ555660.1                        9.46%    passed     99.96%
+ 130  OQ588787.1                        9.46%    passed     99.96%
+ 131  OQ606832.1                        9.46%    passed     99.96%
+ 132  OR134832.1                        9.46%    passed     99.96%
+ 133  OR134833.1                        9.46%    passed     99.96%
+ 134  OR134834.1                        9.46%    passed     99.96%
+ 135  OR134835.1                        9.46%    passed     99.96%
+ 136  OR134836.1                        9.46%    passed     99.96%
+ 137  OR134837.1                        9.46%    passed     99.96%
+ 138  OR134838.1                        9.46%    passed     99.96%
+ 139  OR134839.1                        9.46%    passed     99.96%
+ 140  OR134840.1                        9.46%    passed     99.96%
+ 141  OR134841.1                        9.46%    passed     99.96%
+ 142  OR134842.1                        9.46%    passed     99.96%
+ 143  OR134843.1                        9.46%    passed     99.96%
+ 144  OR134844.1                        9.46%    passed     99.96%
+ 145  OR134845.1                        9.46%    passed     99.96%
+ 146  OR134846.1                        9.46%    passed     99.96%
+ 147  OR134847.1                        9.46%    passed     99.96%
+ 148  OR134848.1                        9.46%    passed     99.96%
+ 149  OR134849.1                        9.46%    passed     99.96%
+ 150  OR194148.1                        9.46%    passed     99.96%
+ 151  OR232413.1                        9.46%    passed     99.96%
+ 152  OR232414.1                        9.46%    passed     99.96%
+ 153  OR239060.1                        9.46%    passed     95.41%
+ 154  OR347834.1                        9.46%    passed     99.96%
+ 155  OR347835.1                        9.46%    passed     99.96%
+ 156  OR347836.1                        9.46%    passed     99.96%
+ 157  OR347837.1                        9.46%    passed     99.96%
+ 158  OR393167.1                        6.31%    passed     97.93%
+ 159  OR393169.1                        9.46%    passed     99.96%
+ 160  OR393170.1                        9.46%    passed     99.96%
+ 161  OR393171.1                        9.46%    passed     99.96%
+ 162  OR393172.1                        9.46%    passed     99.96%
+ 163  OR393173.1                        9.46%    passed     99.96%
+ 164  OR393174.1                        9.46%    passed     99.96%
+ 165  OR393175.1                        9.46%    passed     99.96%
+ 166  OR393176.1                        9.46%    passed     99.96%
+ 167  OR393177.1                        9.46%    passed     99.96%
+ 168  OR393178.1                        9.46%    passed     99.96%
+ 169  OR520147.1                        9.46%    passed     99.96%
+ 170  OR567413.1                        9.46%    passed     99.96%
+ 171  OR644282.1                        9.46%    passed     99.96%
+ 172  OR644283.1                        9.46%    passed     99.96%
+ 173  OR644284.1                        9.46%    passed     99.96%
+ 174  OR644285.1                        9.46%    passed     99.96%
+ 175  OR735987.1                        9.46%    passed     99.96%
+ 176  OR797612.1                        9.46%    passed     99.96%
+ 177  OR863389.1                        9.46%    passed     99.96%
+ 178  OR983146.1                        9.46%    passed     99.96%
+ 179  OR983147.1                        9.46%    passed     99.96%
+ 180  OR983148.1                        9.46%    passed     99.96%
+ 181  OR983149.1                        9.46%    passed     99.96%
+ 182  OR983150.1                        9.46%    passed     99.96%
+ 183  OR983151.1                        9.46%    passed     99.96%
+ 184  OR983152.1                        9.46%    passed     99.96%
+ 185  PP053747.1                        9.46%    passed     99.96%
+ 186  PP065788.1                        9.46%    passed     99.96%
+ 187  PP065789.1                        9.46%    passed     99.96%
+ 188  PP145891.1                        9.46%    passed     99.96%
+ 189  PP145892.1                        9.46%    passed     99.96%
+ 190  PP746705.1                        9.46%    passed     99.96%
+ 191  PP756497.1                        9.46%    passed     99.96%
+ 192  PP843160.1                        9.46%    passed     95.41%
+ 193  PP886236.1                        9.46%    passed     95.41%
+ 194  PP886237.1                        9.46%    passed     95.41%
+ 195  PP886238.1                        9.46%    passed     95.41%
+ 196  PP886239.1                        9.46%    passed     95.41%
+ 197  PP894832.1                        9.46%    passed     99.96%
+ 198  PP979138.1                        9.46%    passed     99.96%
+ 199  PQ005629.1                        9.46%    passed     99.96%
+ 200  PQ014465.1                        9.46%    passed     88.64%
+ 201  PQ037207.1                        9.46%    passed     99.96%
+ 202  PQ179265.1                        9.46%    passed     99.96%
+ 203  PQ201927.1                        9.46%    passed     99.96%
+ 204  PQ472736.1                        9.46%    passed     99.96%
+ 205  PQ510117.1                        9.46%    passed     99.96%
+ 206  PQ510118.1                        9.46%    passed     99.96%
+ 207  PQ682461.1                        9.46%    passed     99.96%
+ 208  PQ682462.1                        9.46%    passed     99.96%
+ 209  PQ727625.1                        9.46%    passed     99.96%
+ 210  PQ727626.1                        9.46%    passed     99.96%
+ 211  PQ727627.1                        9.46%    passed     99.96%
+ 212  PQ727628.1                        9.46%    passed     99.96%
+ 213  PQ727629.1                        9.46%    passed     99.96%
+ 214  PQ727630.1                        9.46%    passed     99.96%
+ 215  PQ727631.1                        9.46%    passed     99.96%
+ 216  PQ727632.1                        9.46%    passed     99.96%
+ 217  PQ727633.1                        9.46%    passed     99.96%
+ 218  PQ824703.1                        9.46%    passed     99.96%
+ 219  PQ824704.1                        9.46%    passed     99.96%
+ 220  PQ824705.1                        9.46%    passed     99.96%
+ 221  PQ824706.1                        9.46%    passed     99.96%
+ 222  PQ824707.1                        9.46%    passed     99.96%
+ 223  PQ878211.1                        9.46%    passed     99.96%
+ 224  PV022135.1                        9.46%    passed     99.96%
+ 225  PV066181.1                        9.46%    passed     99.96%
+ 226  PV066182.1                        9.46%    passed     99.96%
+ 227  PV167793.1                        9.46%    passed     88.64%
+ 228  PV167794.1                        9.46%    passed     99.88%
+ 229  PV434148.1                        9.46%    passed     88.64%
+ 230  PV796583.1                        9.46%    passed     99.96%
+ 231  PV835012.1                        9.46%    passed     99.96%
+ 232  PV877838.1                        9.46%    passed     99.96%
+ 233  PX127681.1                        9.46%    passed     99.96%
+ 234  PX127682.1                        9.46%    passed     99.96%
+ 235  PX127683.1                        9.46%    passed     99.96%
+ 236  PX497580.1                        9.46%    passed     99.88%
+ 237  PX499192.1                        9.46%    passed     99.88%
+ 238  SRR11470182                       9.46%    passed     99.96%
+ 239  SRR12021190                       9.46%    passed     99.96%
+ 240  SRR12021191                       9.46%    passed     99.96%
+ 241  SRR15145275_SRR15145276_Merged    9.46%    passed     99.96%
+ 242  SRR15145277_SRR15145278_Merged    9.46%    passed     99.96%
+ 243  SRR15145279_SRR15145280_Merged    9.46%    passed     99.96%
+ 244  SRR21590382                       9.46%    passed     99.96%
+ 245  SRR21590386                       9.46%    passed     99.96%
+ 246  SRR24474207                       9.46%    passed     99.96%
+ 247  SRR25046328                       9.46%    passed     99.96%
+ 248  SRR25046331                       9.46%    passed     99.96%
+ 249  SRR25461324                       9.46%    passed     99.96%
+ 250  SRR25461327                       9.46%    passed     99.96%
+ 251  SRR25461328                       9.46%    passed     99.96%
+ 252  SRR26283950                       9.46%    passed     99.96%
+ 253  SRR26747364_SRR26747365_Merged    9.46%    passed     99.96%
+ 254  SRR26747366_SRR26747367_Merged    9.46%    passed     99.96%
+ 255  SRR26747368_SRR26747369_Merged    9.46%    passed     99.96%
+ 256  SRR26747374_SRR26747375_Merged    9.46%    passed     99.96%
+ 257  SRR26747378_SRR26747377_Merged    9.46%    passed     99.96%
+ 258  SRR26747380_SRR26747379_Merged    9.46%    passed     99.96%
+ 259  SRR26747382_SRR26747381_Merged    9.46%    passed     99.96%
+ 260  SRR26747384_SRR26747383_Merged    9.46%    passed     99.96%
+ 261  SRR26747386_SRR26747385_Merged    9.46%    passed     99.96%
+ 262  SRR26747387_SRR26747376_Merged    9.46%    passed     99.96%
+ 263  SRR26747388_SRR26747389_Merged    9.46%    passed     99.96%
+ 264  SRR26747390_SRR26747391_Merged    9.46%    passed     99.96%
+ 265  SRR26747394_SRR26747395_Merged    9.46%    passed     99.96%
+ 266  SRR26747396_SRR26747397_Merged    9.46%    passed     99.96%
+ 267  SRR26747398_SRR26747399_Merged    9.46%    passed     99.96%
+ 268  SRR26792425                       9.46%    passed     99.96%
+ 269  SRR27563723                       9.46%    passed     99.96%
+ 270  SRR27563724                       9.46%    passed     99.96%
+ 271  SRR27563725                       9.46%    passed     99.96%
+ 272  SRR27563726                       9.46%    passed     99.96%
+ 273  SRR27563727                       9.46%    passed     99.96%
+ 274  SRR27563728                       9.46%    passed     99.96%
+ 275  SRR27563729                       9.46%    passed     99.96%
+ 276  SRR27563730                       9.46%    passed     99.96%
+ 277  SRR27563731                       9.46%    passed     99.96%
+ 278  SRR27563732                       9.46%    passed     99.96%
+ 279  SRR27563733                       9.46%    passed     99.96%
+ 280  SRR27563734                       9.46%    passed     99.96%
+ 281  SRR27563735                       9.46%    passed     99.96%
+ 282  SRR28085235                       9.46%    passed     99.96%
+ 283  SRR28085236                       9.46%    passed     99.96%
+ 284  SRR28085237                       9.46%    passed     99.96%
+ 285  SRR28085238                       9.46%    passed     99.96%
+ 286  SRR28085239                       9.46%    passed     99.96%
+ 287  SRR28085240                       9.46%    passed     99.96%
+ 288  SRR28085241                       9.46%    passed     99.96%
+ 289  SRR29762742                       9.46%    passed     99.96%
+ 290  SRR34490579                       9.46%    passed     99.96%
+****  TOTAL                             9.45%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading input tree file /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/17_ASR_MK/02_results/asr_runs/OG0000095_rooted.nwk ...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -349.660
+2. Current log-likelihood: -322.260
+3. Current log-likelihood: -322.228
+4. Current log-likelihood: -322.208
+Optimal log-likelihood: -322.201
+Rate parameters:  A-C: 3.39811  A-G: 1.50119  A-T: 0.00010  C-G: 0.00010  C-T: 3.03630  G-T: 1.00000
+Warning! Some parameters hit the boundaries
+Base frequencies:  A: 0.415  C: 0.088  G: 0.153  T: 0.344
+Gamma shape alpha: 0.205
+Parameters optimization took 4 rounds (0.119 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -322.201
+Ancestral state probabilities printed to /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/17_ASR_MK/02_results/asr_runs/OG0000095.state
+Total tree length: 0.062
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.183 sec (0h:0m:0s)
+Total wall-clock time used: 0.234 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/17_ASR_MK/02_results/asr_runs/OG0000095.iqtree
+  Maximum-likelihood tree:       /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/17_ASR_MK/02_results/asr_runs/OG0000095.treefile
+  Ancestral state:               /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/17_ASR_MK/02_results/asr_runs/OG0000095.state
+  Screen log file:               /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/17_ASR_MK/02_results/asr_runs/OG0000095.log
+
+Date and Time: Fri Nov 20 00:13:43 2026

@@ -1,0 +1,8 @@
+orthogroup,trait,status,odds_ratio,empirical_p,bonferroni_p,supporting,opposing
+OG0000157,Asia,not testable,,,,,
+OG0000155,Asia,still convergent,10.656880733944954,0.023976023976023976,3.682142838506111e-07,10.0,5.0
+OG0000154,Europe,not testable,,,,,
+OG0000159,Africa,no longer significant,5.428571428571429,0.000999000999000999,0.07258496100431489,8.0,3.0
+OG0000161,Africa,no longer significant,3.546666666666667,0.001998001998001998,1.0,7.0,5.0
+OG0000156,Africa,not testable,,,,,
+OG0000152,Vaccine,not testable,,,,,

@@ -1,0 +1,62 @@
+core alignment: 291 sequences
+alignment length: 110703 columns
+matched 290 sequence names to the metadata by prefix
+usable genomes: 290
+
+11 groupings to scan
+  species:LSDV                         386 candidate sites (368 perfect)
+  species:SPPV                        1220 candidate sites (1176 perfect)
+  species:GTPV                         729 candidate sites (711 perfect)
+  vaccine:LSDV_vaccine                   0 candidate sites (0 perfect)
+  recombinant:Node_147                 295 candidate sites (46 perfect)
+  recombinant:clonal_backbone          239 candidate sites (63 perfect)
+  baps:BAPS_cluster_1                    0 candidate sites (0 perfect)
+  baps:BAPS_cluster_2                 1220 candidate sites (1176 perfect)
+  baps:BAPS_cluster_3                  729 candidate sites (711 perfect)
+  baps:BAPS_cluster_4                   74 candidate sites (17 perfect)
+  baps:BAPS_cluster_5                   71 candidate sites (22 perfect)
+
+reference coordinates available from parsnp.xmfa;
+the stage 25 step 4 translation can be reused to convert columns to
+NC_003027.1 positions. Not performed here to keep this step
+independent of that stage; the column numbers are unambiguous.
+
+=== recommended panel: up to 3 sites per grouping ===
+  grouping                            column  group  other  exceptions
+  baps:BAPS_cluster_2                    117      G      C  0 in / 0 out  PERFECT
+  baps:BAPS_cluster_2                    249      T      G  0 in / 0 out  PERFECT
+  baps:BAPS_cluster_2                    673      C      T  0 in / 0 out  PERFECT
+  baps:BAPS_cluster_3                     22      T      G  0 in / 0 out  PERFECT
+  baps:BAPS_cluster_3                    206      C      T  0 in / 0 out  PERFECT
+  baps:BAPS_cluster_3                    243      G      T  0 in / 0 out  PERFECT
+  baps:BAPS_cluster_4                   7951      C      T  0 in / 0 out  PERFECT
+  baps:BAPS_cluster_4                  23889      A      C  0 in / 0 out  PERFECT
+  baps:BAPS_cluster_4                  66177      C      A  0 in / 0 out  PERFECT
+  baps:BAPS_cluster_5                   5171      C      T  0 in / 0 out  PERFECT
+  baps:BAPS_cluster_5                   5351      C      T  0 in / 0 out  PERFECT
+  baps:BAPS_cluster_5                   5399      A      C  0 in / 0 out  PERFECT
+  recombinant:Node_147                  1972      G      A  0 in / 0 out  PERFECT
+  recombinant:Node_147                  2931      G      A  0 in / 0 out  PERFECT
+  recombinant:Node_147                  3076      T      C  0 in / 0 out  PERFECT
+  recombinant:clonal_backbone           4629      A      G  0 in / 0 out  PERFECT
+  recombinant:clonal_backbone           4665      A      G  0 in / 0 out  PERFECT
+  recombinant:clonal_backbone           4671      A      G  0 in / 0 out  PERFECT
+  species:GTPV                            22      T      G  0 in / 0 out  PERFECT
+  species:GTPV                           206      C      T  0 in / 0 out  PERFECT
+  species:GTPV                           243      G      T  0 in / 0 out  PERFECT
+  species:LSDV                           717      G      T  0 in / 0 out  PERFECT
+  species:LSDV                          1191      T      C  0 in / 0 out  PERFECT
+  species:LSDV                          1365      C      T  0 in / 0 out  PERFECT
+  species:SPPV                           117      G      C  0 in / 0 out  PERFECT
+  species:SPPV                           249      T      G  0 in / 0 out  PERFECT
+  species:SPPV                           673      C      T  0 in / 0 out  PERFECT
+
+4963 candidate sites in total, 4290 perfectly diagnostic
+
+written: 02_results/diagnostic_sites.csv
+        03_summary/diagnostic_panel.csv
+
+Before reporting these, check that each site falls outside the
+recombinant tracts from stage 06: a marker inside a region that moves
+between lineages is not a stable assay target. Step 5 produces the
+interval list needed for that check.

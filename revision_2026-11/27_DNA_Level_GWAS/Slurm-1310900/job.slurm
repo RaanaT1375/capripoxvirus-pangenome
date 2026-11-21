@@ -1,0 +1,8 @@
+JobId='1310900'
+UserId='xpkk(529000430)'
+BatchHost='node029'
+NumNodes='1'
+WorkDir='/cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/27_DNA_Level_GWAS'
+StdErr='/cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/27_DNA_Level_GWAS/logs/scoary_1310900.err'
+StdIn='/dev/null'
+StdOut='/cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/27_DNA_Level_GWAS/logs/scoary_1310900.out'

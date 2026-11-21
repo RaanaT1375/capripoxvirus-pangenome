@@ -1,0 +1,115 @@
+11/19/2026 09:56:37 PM    ==== Scoary started ====
+11/19/2026 09:56:37 PM    Command: /cfs/earth/scratch/xpkk/.conda/envs/scoary_env/bin/scoary --genes /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/27_DNA_Level_GWAS/03_summary/gene_presence_absence_dna.csv --traits /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/27_DNA_Level_GWAS/03_summary/traits_matched.csv --newicktree /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/27_DNA_Level_GWAS/03_summary/core_tree_pruned.newick --start_col 15 -e 1000 --threads 16 --outdir /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/27_DNA_Level_GWAS/02_results/scoary_results_dna
+11/19/2026 09:56:37 PM    Reading gene presence absence file
+11/19/2026 09:56:37 PM    Reading custom tree file
+11/19/2026 09:56:42 PM    Reading traits file
+11/19/2026 09:56:42 PM    Finished loading files into memory.
+
+
+11/19/2026 09:56:42 PM    ==== Performing statistics ====
+11/19/2026 09:56:42 PM    -- Filtration options --
+11/19/2026 09:56:42 PM    Individual (Naive):    0.05
+11/19/2026 09:56:42 PM    Collapse genes:    False
+
+
+11/19/2026 09:56:42 PM    Tallying genes and performing statistical analyses
+11/19/2026 09:56:42 PM    Gene-wise counting and Fisher's exact tests for trait: Africa
+11/19/2026 09:56:42 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:42 PM    Gene-wise counting and Fisher's exact tests for trait: Asia
+11/19/2026 09:56:43 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:43 PM    Gene-wise counting and Fisher's exact tests for trait: Europe
+11/19/2026 09:56:43 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:43 PM    Gene-wise counting and Fisher's exact tests for trait: Host_Cattle
+11/19/2026 09:56:44 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:44 PM    Gene-wise counting and Fisher's exact tests for trait: Host_Sheep
+11/19/2026 09:56:44 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:44 PM    Gene-wise counting and Fisher's exact tests for trait: Host_Goat
+11/19/2026 09:56:44 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:44 PM    Gene-wise counting and Fisher's exact tests for trait: Host_Giraffe
+11/19/2026 09:56:45 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:45 PM    Gene-wise counting and Fisher's exact tests for trait: Host_Wildlife
+11/19/2026 09:56:45 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:45 PM    Gene-wise counting and Fisher's exact tests for trait: Vaccine
+11/19/2026 09:56:46 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:46 PM    Gene-wise counting and Fisher's exact tests for trait: Wild
+11/19/2026 09:56:46 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:46 PM    Gene-wise counting and Fisher's exact tests for trait: Recombinant
+11/19/2026 09:56:46 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:46 PM    Gene-wise counting and Fisher's exact tests for trait: Ancestral_recombinant
+11/19/2026 09:56:47 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:47 PM    Gene-wise counting and Fisher's exact tests for trait: Independent_recombinant
+11/19/2026 09:56:47 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:47 PM    Gene-wise counting and Fisher's exact tests for trait: No_recombination
+11/19/2026 09:56:48 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:48 PM    Gene-wise counting and Fisher's exact tests for trait: BAPS_cluster_1
+11/19/2026 09:56:48 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:48 PM    Gene-wise counting and Fisher's exact tests for trait: BAPS_cluster_2
+11/19/2026 09:56:49 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:49 PM    Gene-wise counting and Fisher's exact tests for trait: BAPS_cluster_3
+11/19/2026 09:56:49 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:49 PM    Gene-wise counting and Fisher's exact tests for trait: BAPS_cluster_4
+11/19/2026 09:56:49 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:49 PM    Gene-wise counting and Fisher's exact tests for trait: BAPS_cluster_5
+11/19/2026 09:56:50 PM    Adding p-values adjusted for testing multiple hypotheses
+11/19/2026 09:56:50 PM    Storing results: Africa
+11/19/2026 09:56:50 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:57:05 PM    Storing results to file
+11/19/2026 09:57:05 PM    Storing results: Asia
+11/19/2026 09:57:05 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:57:12 PM    Storing results to file
+11/19/2026 09:57:12 PM    Storing results: Europe
+11/19/2026 09:57:13 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:57:23 PM    Storing results to file
+11/19/2026 09:57:23 PM    Storing results: Host_Cattle
+11/19/2026 09:57:23 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:57:38 PM    Storing results to file
+11/19/2026 09:57:38 PM    Storing results: Host_Sheep
+11/19/2026 09:57:38 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:57:46 PM    Storing results to file
+11/19/2026 09:57:46 PM    Storing results: Host_Goat
+11/19/2026 09:57:46 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:57:54 PM    Storing results to file
+11/19/2026 09:57:54 PM    Storing results: Host_Giraffe
+11/19/2026 09:57:54 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:57:54 PM    Storing results to file
+11/19/2026 09:57:54 PM    Storing results: Host_Wildlife
+11/19/2026 09:57:54 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:58:01 PM    Storing results to file
+11/19/2026 09:58:01 PM    Storing results: Vaccine
+11/19/2026 09:58:01 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:58:01 PM    Storing results to file
+11/19/2026 09:58:01 PM    Storing results: Wild
+11/19/2026 09:58:01 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:58:01 PM    Storing results to file
+11/19/2026 09:58:01 PM    Storing results: Recombinant
+11/19/2026 09:58:01 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:58:08 PM    Storing results to file
+11/19/2026 09:58:08 PM    Storing results: Ancestral_recombinant
+11/19/2026 09:58:08 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:58:23 PM    Storing results to file
+11/19/2026 09:58:23 PM    Storing results: Independent_recombinant
+11/19/2026 09:58:23 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:58:23 PM    Storing results to file
+11/19/2026 09:58:23 PM    Storing results: No_recombination
+11/19/2026 09:58:23 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:58:38 PM    Storing results to file
+11/19/2026 09:58:38 PM    Storing results: BAPS_cluster_1
+11/19/2026 09:58:38 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:58:46 PM    Storing results to file
+11/19/2026 09:58:46 PM    Storing results: BAPS_cluster_2
+11/19/2026 09:58:46 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:58:54 PM    Storing results to file
+11/19/2026 09:58:54 PM    Storing results: BAPS_cluster_3
+11/19/2026 09:58:54 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:59:02 PM    Storing results to file
+11/19/2026 09:59:02 PM    Storing results: BAPS_cluster_4
+11/19/2026 09:59:02 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:59:09 PM    Storing results to file
+11/19/2026 09:59:09 PM    Storing results: BAPS_cluster_5
+11/19/2026 09:59:09 PM    Calculating max number of contrasting pairs for each significant gene and performing 1000 permutations
+11/19/2026 09:59:25 PM    Storing results to file
+11/19/2026 09:59:25 PM    
+
+11/19/2026 09:59:25 PM    ==== Finished ====
+11/19/2026 09:59:25 PM    Checked a total of 206 genes for associations to 19 trait(s). Total time used: 167 seconds.
+11/19/2026 09:59:25 PM    No warnings were recorded.

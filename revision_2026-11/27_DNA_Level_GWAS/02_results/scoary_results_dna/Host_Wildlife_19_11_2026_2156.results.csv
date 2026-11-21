@@ -1,0 +1,2 @@
+"Gene","Non-unique Gene name","Annotation","Number_pos_present_in","Number_neg_present_in","Number_pos_not_present_in","Number_neg_not_present_in","Sensitivity","Specificity","Odds_ratio","Naive_p","Bonferroni_p","Benjamini_H_p","Max_Pairwise_comparisons","Max_supporting_pairs","Max_opposing_pairs","Best_pairwise_comp_p","Worst_pairwise_comp_p","Empirical_p"
+"OG0000192","","","4","125","0","161","100.0","56.29370629370629","inf","0.038142022751823455","1.0","1.0","2","2","0","0.5","0.5","0.03896103896103896"

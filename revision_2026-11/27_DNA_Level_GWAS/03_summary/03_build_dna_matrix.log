@@ -1,0 +1,55 @@
+thresholds: query coverage >= 80%, identity >= 80%
+annotation matrix: 206 orthogroups x 290 genomes
+54640 HSPs pass the identity filter, 206 orthogroups, 290 genomes
+50663 orthogroup-genome pairs with a hit
+
+=== how much the matrix changed ===
+orthogroups tested at the DNA level : 206
+  unchanged                         : 92
+  gained genomes                    : 63
+  lost genomes                      : 68
+total annotation-based presences    : 44048
+total DNA-level presences           : 48535
+
+25 orthogroups gained 50 or more genomes (annotation dropout on a large scale):
+  Orthogroup      ann   DNA  gained
+  OG0000204         1   290     289
+  OG0000195         2   290     288
+  OG0000193         2   290     288
+  OG0000202         2   290     288
+  OG0000178         4   290     286
+  OG0000177         4   290     286
+  OG0000190         2   288     286
+  OG0000174         5   290     285
+  OG0000182         3   288     285
+  OG0000171         7   290     283
+  OG0000170         7   290     283
+  OG0000169         8   290     282
+  OG0000167        11   290     279
+  OG0000173         5   274     269
+  OG0000157        26   289     263
+  OG0000194         2   256     254
+  OG0000183         3   243     240
+  OG0000189         1   222     221
+  OG0000152        91   269     179
+  OG0000154       114   289     175
+  OG0000153       150   288     139
+  OG0000151       156   288     134
+  OG0000192         2   129     128
+  OG0000149       202   289      88
+  OG0000004       194   270      77
+
+=== pan-genome compartments ===
+  compartment   annotation     DNA
+  core                 132     139
+  soft-core             10      14
+  shell                 14      18
+  cloud                 50      35
+
+=== Scoary inputs ===
+matrix genomes 290, tree tips 290, trait rows 290  ->  290 in common
+written: 03_summary/gene_presence_absence_dna.csv (206 orthogroups x 290 genomes)
+written: 03_summary/core_tree_pruned.newick
+written: 03_summary/traits_matched.csv
+
+next:  sbatch scripts/04_run_scoary.sbatch

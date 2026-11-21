@@ -1,0 +1,61 @@
+orthogroup,omega,product,category
+OG0000096,0.0,IMV membrane protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000109,0.03226731918945534,LSDV121 putative DNA packaging protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000058,0.03315360893077952,LSDV116 RNA polymerase subunit [Lumpy skin disease virus NI-2490],Transcription
+OG0000057,0.04770793709275861,LSDV094 putative virion core protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000091,0.05778920941339361,LSDV100 putative IMV membrane protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000083,0.0683456533688981,LSDV084 putative early transcription factor small subunit [Lumpy skin disease virus NI-2490],Transcription
+OG0000101,0.07082149263147088,LSDV111 hypothetical protein [Lumpy skin disease virus NI-2490],Unassigned
+OG0000070,0.07103472647921778,Ser/Thr kinase [Lumpy skin disease virus NI-2490],Redox / metabolism
+OG0000066,0.0741468738849782,LSDV020 ribonucleotide reductase small subunit [Lumpy skin disease virus NI-2490],DNA replication
+OG0000072,0.08555683129835372,palmytilated EEV membrane glycoprotein [Lumpy skin disease virus NI-2490],Membrane / EEV
+OG0000089,0.08695302560650918,LSDV098 putative early transcription factor large subunit [Lumpy skin disease virus NI-2490],Transcription
+OG0000092,0.0908809893257129,LSDV101 putative virion core protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000098,0.09381100615376223,LSDV108 putative myristylated membrane protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000119,0.09456305302559412,LSDV137 hypothetical protein [Lumpy skin disease virus NI-2490],Unassigned
+OG0000069,0.09596427750212554,S-S bond formation pathway protein [Lumpy skin disease virus NI-2490],Redox / metabolism
+OG0000074,0.09659838519914765,hypothetical protein LSDVgp029 [Lumpy skin disease virus NI-2490],Unassigned
+OG0000106,0.09900986561479956,LSDV119 RNA polymerase subunit [Lumpy skin disease virus NI-2490],Transcription
+OG0000093,0.09964992662735334,LSDV102 hypothetical protein [Lumpy skin disease virus NI-2490],Unassigned
+OG0000115,0.1040892864749596,hypothetical protein LSDVgp129 [Lumpy skin disease virus NI-2490],Unassigned
+OG0000105,0.1048287442867246,LSDV118 hypothetical protein [Lumpy skin disease virus NI-2490],Unassigned
+OG0000117,0.1093238950105353,LSDV133 DNA ligase-like protein [Lumpy skin disease virus NI-2490],DNA replication
+OG0000090,0.111359362283236,LSDV099 putative intermediate transcription factor subunit [Lumpy skin disease virus NI-2490],Transcription
+OG0000087,0.1151907533721426,LSDV096 RNA polymerase subunit [Lumpy skin disease virus NI-2490],Transcription
+OG0000088,0.1167283670484291,LSDV097 hypothetical protein [Lumpy skin disease virus NI-2490],Unassigned
+OG0000121,0.1180462065200723,LSDV139 putative ser/thr protein kinase [Lumpy skin disease virus NI-2490],Redox / metabolism
+OG0000113,0.1226430077759908,hypothetical protein LSDVgp125 [Lumpy skin disease virus NI-2490],Unassigned
+OG0000075,0.1295666858339308,DNA-binding virion core protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000071,0.1348946679422165,EEV maturation protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000084,0.1536454140008244,late transcription factor VLTF-2 [Lumpy skin disease virus NI-2490],Transcription
+OG0000104,0.1678123835853792,Hypothetical protein LSDVgp117 [Lumpy skin disease virus NI-2490],Unassigned
+OG0000102,0.1700623340079838,LSDV112 putative DNA polymerase processivity factor [Lumpy skin disease virus NI-2490],DNA replication
+OG0000085,0.1714660121649976,LSDV093 hypothetical protein [Lumpy skin disease virus NI-2490],Unassigned
+OG0000100,0.1739559270715144,LSDV110 putative DNA helicase transcriptional elongation factor [Lumpy skin disease virus NI-2490],Transcription
+OG0000108,0.1776016946367572,hypothetical protein,Unassigned
+OG0000073,0.1780662611308692,hypothetical protein,Unassigned
+OG0000094,0.1964234453052125,LSDV103 putative virion core protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000060,0.1987060120908936,G protein-coupled chemokine receptor-like protein [Lumpy skin disease virus NI-2490],Host interaction
+OG0000107,0.2106059547632338,IMV membrane protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000063,0.2118222477533973,IL-18 binding protein [Lumpy skin disease virus NI-2490],Host interaction
+OG0000116,0.212450987571429,superoxide dismutase precursor [Lumpy skin disease virus NI-2490],Redox / metabolism
+OG0000111,0.2162970246586039,IEV and EEV membrane glycoprotein [Lumpy skin disease virus NI-2490],Membrane / EEV
+OG0000110,0.2222293214049677,EEV glycoprotein [Lumpy skin disease virus NI-2490],Membrane / EEV
+OG0000097,0.2279190632820947,LSDV107 hypothetical protein [Lumpy skin disease virus NI-2490],Unassigned
+OG0000112,0.2286828990317797,hypothetical protein LSDVgp124 [Lumpy skin disease virus NI-2490],Unassigned
+OG0000086,0.2345477916044267,virion core protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000114,0.2537304643055273,EEV glycoprotein [Lumpy skin disease virus NI-2490],Membrane / EEV
+OG0000059,0.2577636086234557,LAP/PHD finger-like protein [Lumpy skin disease virus NI-2490],Host interaction
+OG0000118,0.2614546239754306,LSDV135 putative IFN-alpha/beta binding protein [Lumpy skin disease virus NI-2490],Host interaction
+OG0000122,0.2727013383605645,N1R/p28-like protein [Lumpy skin disease virus NI-2490],Host interaction
+OG0000123,0.2793880220273057,EEV Host range protein [Lumpy skin disease virus NI-2490],Membrane / EEV
+OG0000103,0.2840132736917226,LSDV114 hypothetical protein [Lumpy skin disease virus NI-2490],Unassigned
+OG0000062,0.3104448723708575,EIF2a-like PKR inhibitor [Lumpy skin disease virus NI-2490],Host interaction
+OG0000095,0.3175037369046302,IMV membrane protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000099,0.3508307463902151,LSDV109 putative phosphorylated IMV membrane protein [Lumpy skin disease virus NI-2490],Virion assembly
+OG0000061,0.3890848382232111,ankyrin repeat protein [Lumpy skin disease virus NI-2490],Host interaction
+OG0000065,0.5315828359520002,anti-apoptotic membrane protein [Lumpy skin disease virus NI-2490],Membrane / EEV
+OG0000120,0.537675885553731,Ig domain OX-2-like protein [Lumpy skin disease virus NI-2490],Host interaction
+OG0000064,0.5682938593814048,LSDV016 EGF-like growth factor [Lumpy skin disease virus NI-2490],Host interaction
+OG0000068,0.7132465745492826,hypothetical protein LSDVgp022 [Lumpy skin disease virus NI-2490],Unassigned
+OG0000067,0.7910502018936841,hypothetical protein LSDVgp021 [Lumpy skin disease virus NI-2490],Unassigned

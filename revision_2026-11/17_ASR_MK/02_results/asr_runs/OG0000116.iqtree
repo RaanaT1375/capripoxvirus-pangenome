@@ -1,0 +1,720 @@
+IQ-TREE 3.1.1 built Apr  8 2026
+
+Input file name: /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/10_Selection_Pressure/01_codon_alignments/OG0000116_codon.fasta
+User tree file name: /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/17_ASR_MK/02_results/asr_runs/OG0000116_rooted.nwk
+Type of analysis: tree reconstruction
+Random seed number: 389747
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 289 sequences with 513 nucleotide sites
+Number of constant sites: 438 (= 85.3801% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 438 (= 85.3801% of all sites)
+Number of parsimony informative sites: 71
+Number of distinct site patterns: 61
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+G4
+
+Rate parameter R:
+
+  A-C: 3.3977
+  A-G: 2.5444
+  A-T: 1.5851
+  C-G: 1.9798
+  C-T: 8.5222
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3593
+  pi(C) = 0.09518
+  pi(G) = 0.2096
+  pi(T) = 0.3359
+
+Rate matrix Q:
+
+  A   -0.7879    0.1834    0.3024     0.302
+  C    0.6925    -2.552    0.2353     1.624
+  G    0.5186    0.1069    -0.816    0.1905
+  T    0.3231    0.4601    0.1189    -0.902
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.5222
+
+ Category  Relative_rate  Proportion
+  1         0.03758        0.25
+  2         0.2662         0.25
+  3         0.8358         0.25
+  4         2.86           0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -1173.3002 (s.e. 56.2863)
+Unconstrained log-likelihood (without tree): -1410.7567
+Number of free parameters (#branches + #model parameters): 584
+Akaike information criterion (AIC) score: 3514.6005
+Corrected Akaike information criterion (AICc) score: 686794.6005
+Bayesian information criterion (BIC) score: 5990.9216
+
+**************************** WARNING ****************************
+Number of parameters (K, model parameters and branch lengths): 584
+Sample size (n, alignment length): 513
+
+Given that K>=n, the parameter estimates might be inaccurate.
+Thus, phylogenetic estimates should be interpreted with caution.
+
+Ideally, it is desirable that n >> K. When selecting optimal models,
+1. use AIC or BIC if n > 40K;
+2. use AICc or BIC if 40K >= n > K;
+3. be extremely cautious if n <= K
+
+To improve the situation (3), consider the following options:
+  1. Increase the sample size (n)
+  2. Decrease the number of parameters (K) to be estimated. If
+     possible:
+     a. Remove the least important sequences from the alignment
+     b. Specify some of the parameter values for the substitution
+        model (e.g., the nucleotide or amino acid frequencies)
+     c. Specify some of the parameter values for the rates-across-
+        sites model (e.g., the shape parameter for the discrete
+        Gamma distribution, the proportion of invariable sites, or
+        the rates of change for different rate categories under
+        the FreeRate model)
+
+Reference:
+Burnham KR, Anderson DR (2002). Model Selection and Multimodel
+Inference: A Practical Information-Theoretic Approach. Springer,
+New York.
+************************ END OF WARNING ***********************
+
+Total tree length (sum of branch lengths): 0.2068
+Sum of internal branch lengths: 0.1647 (79.6383% of tree length)
+
+WARNING: 268 near-zero internal branches (<0.0019) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AF325528.1' is drawn at root
+
++**AF325528.1
+| (Node1)
+|                             +**AF409137.1
+|                          +**| (Node11)
+|                          |  +**MW656253.1
+|                       +**| (Node10)
+|                       |  |                                   +**KX894508.1
+|                       |  |                                +**| (Node23)
+|                       |  |                                |  +**SRR27563726
+|                       |  |                             +**| (Node22)
+|                       |  |                             |  +**ON005067.1
+|                       |  |                          +**| (Node21)
+|                       |  |                          |  +**SRR28085237
+|                       |  |                       +**| (Node20)
+|                       |  |                       |  +**SRR28085236
+|                       |  |                    +**| (Node19)
+|                       |  |                    |  +**SRR28085238
+|                       |  |                 +**| (Node18)
+|                       |  |                 |  +**PV877838.1
+|                       |  |              +**| (Node17)
+|                       |  |              |  +**MN995838.1
+|                       |  |           +**| (Node16)
+|                       |  |           |  +**SRR28085235
+|                       |  |        +**| (Node15)
+|                       |  |        |  |                                                                                               +**KY702007.1
+|                       |  |        |  |                                                                                            +**| (Node55)
+|                       |  |        |  |                                                                                            |  +**OR134841.1
+|                       |  |        |  |                                                                                         +**| (Node54)
+|                       |  |        |  |                                                                                         |  +**SRR26747388_SRR26747389_Merged
+|                       |  |        |  |                                                                                      +**| (Node53)
+|                       |  |        |  |                                                                                      |  +**SRR26747364_SRR26747365_Merged
+|                       |  |        |  |                                                                                   +**| (Node52)
+|                       |  |        |  |                                                                                   |  +**SRR26747394_SRR26747395_Merged
+|                       |  |        |  |                                                                                +**| (Node51)
+|                       |  |        |  |                                                                                |  +**OR134846.1
+|                       |  |        |  |                                                                             +**| (Node50)
+|                       |  |        |  |                                                                             |  +**SRR26747366_SRR26747367_Merged
+|                       |  |        |  |                                                                          +**| (Node49)
+|                       |  |        |  |                                                                          |  +**OR134844.1
+|                       |  |        |  |                                                                       +**| (Node48)
+|                       |  |        |  |                                                                       |  +**OR134837.1
+|                       |  |        |  |                                                                    +**| (Node47)
+|                       |  |        |  |                                                                    |  +**OR134838.1
+|                       |  |        |  |                                                                 +**| (Node46)
+|                       |  |        |  |                                                                 |  +**SRR26747378_SRR26747377_Merged
+|                       |  |        |  |                                                              +**| (Node45)
+|                       |  |        |  |                                                              |  +**OR134842.1
+|                       |  |        |  |                                                           +**| (Node44)
+|                       |  |        |  |                                                           |  +**SRR26747384_SRR26747383_Merged
+|                       |  |        |  |                                                        +**| (Node43)
+|                       |  |        |  |                                                        |  +**SRR26747398_SRR26747399_Merged
+|                       |  |        |  |                                                     +**| (Node42)
+|                       |  |        |  |                                                     |  +**SRR26747374_SRR26747375_Merged
+|                       |  |        |  |                                                  +**| (Node41)
+|                       |  |        |  |                                                  |  +**OR134839.1
+|                       |  |        |  |                                               +**| (Node40)
+|                       |  |        |  |                                               |  +**SRR26747382_SRR26747381_Merged
+|                       |  |        |  |                                            +**| (Node39)
+|                       |  |        |  |                                            |  +**OR134845.1
+|                       |  |        |  |                                         +**| (Node38)
+|                       |  |        |  |                                         |  +**SRR26747386_SRR26747385_Merged
+|                       |  |        |  |                                      +**| (Node37)
+|                       |  |        |  |                                      |  +**OR134834.1
+|                       |  |        |  |                                   +**| (Node36)
+|                       |  |        |  |                                   |  +**OR134836.1
+|                       |  |        |  |                                +**| (Node35)
+|                       |  |        |  |                                |  +**OR134847.1
+|                       |  |        |  |                             +**| (Node34)
+|                       |  |        |  |                             |  +**SRR26747396_SRR26747397_Merged
+|                       |  |        |  |                          +**| (Node33)
+|                       |  |        |  |                          |  +**SRR26747368_SRR26747369_Merged
+|                       |  |        |  |                       +**| (Node32)
+|                       |  |        |  |                       |  +**OR134843.1
+|                       |  |        |  |                    +**| (Node31)
+|                       |  |        |  |                    |  +**OR134835.1
+|                       |  |        |  |                 +**| (Node30)
+|                       |  |        |  |                 |  +**OR134849.1
+|                       |  |        |  |              +**| (Node29)
+|                       |  |        |  |              |  +**OR134833.1
+|                       |  |        |  |           +**| (Node28)
+|                       |  |        |  |           |  +**SRR26747380_SRR26747379_Merged
+|                       |  |        |  |        +**| (Node27)
+|                       |  |        |  |        |  |  +**OR134832.1
+|                       |  |        |  |        |  +**| (Node56)
+|                       |  |        |  |        |     +**SRR26747387_SRR26747376_Merged
+|                       |  |        |  |     +**| (Node26)
+|                       |  |        |  |     |  |        +**KY829023.3
+|                       |  |        |  |     |  |     +**| (Node59)
+|                       |  |        |  |     |  |     |  +**OR134840.1
+|                       |  |        |  |     |  |  +**| (Node58)
+|                       |  |        |  |     |  |  |  +**SRR26747390_SRR26747391_Merged
+|                       |  |        |  |     |  +**| (Node57)
+|                       |  |        |  |     |     +**MT643825.1
+|                       |  |        |  |  +**| (Node25)
+|                       |  |        |  |  |  |           +**MT130502.2
+|                       |  |        |  |  |  |        +**| (Node63)
+|                       |  |        |  |  |  |        |  +**SRR11470182
+|                       |  |        |  |  |  |     +**| (Node62)
+|                       |  |        |  |  |  |     |  +**ON010590.1
+|                       |  |        |  |  |  |  +**| (Node61)
+|                       |  |        |  |  |  |  |  +**MW030512.1
+|                       |  |        |  |  |  +**| (Node60)
+|                       |  |        |  |  |     |     +**OQ588787.1
+|                       |  |        |  |  |     |  +**| (Node65)
+|                       |  |        |  |  |     |  |  |                                         +**OQ606832.1
+|                       |  |        |  |  |     |  |  |                                      +**| (Node79)
+|                       |  |        |  |  |     |  |  |                                      |  +**SRR25046328
+|                       |  |        |  |  |     |  |  |                                   +**| (Node78)
+|                       |  |        |  |  |     |  |  |                                   |  +**SRR24474207
+|                       |  |        |  |  |     |  |  |                                +**| (Node77)
+|                       |  |        |  |  |     |  |  |                                |  +**SRR21590386
+|                       |  |        |  |  |     |  |  |                             +**| (Node76)
+|                       |  |        |  |  |     |  |  |                             |  +**OR393178.1
+|                       |  |        |  |  |     |  |  |                          +**| (Node75)
+|                       |  |        |  |  |     |  |  |                          |  +**SRR25461328
+|                       |  |        |  |  |     |  |  |                       +**| (Node74)
+|                       |  |        |  |  |     |  |  |                       |  +**SRR26792425
+|                       |  |        |  |  |     |  |  |                    +**| (Node73)
+|                       |  |        |  |  |     |  |  |                    |  +**SRR25046331
+|                       |  |        |  |  |     |  |  |                 +**| (Node72)
+|                       |  |        |  |  |     |  |  |                 |  +**SRR21590382
+|                       |  |        |  |  |     |  |  |              +**| (Node71)
+|                       |  |        |  |  |     |  |  |              |  +**OR393177.1
+|                       |  |        |  |  |     |  |  |           +**| (Node70)
+|                       |  |        |  |  |     |  |  |           |  +**PV066182.1
+|                       |  |        |  |  |     |  |  |        +**| (Node69)
+|                       |  |        |  |  |     |  |  |        |  +**OR393173.1
+|                       |  |        |  |  |     |  |  |     +**| (Node68)
+|                       |  |        |  |  |     |  |  |     |  +**PP053747.1
+|                       |  |        |  |  |     |  |  |  +**| (Node67)
+|                       |  |        |  |  |     |  |  |  |  +**OR797612.1
+|                       |  |        |  |  |     |  |  +**| (Node66)
+|                       |  |        |  |  |     |  |     |        +**OR393167.1
+|                       |  |        |  |  |     |  |     |     +**| (Node82)
+|                       |  |        |  |  |     |  |     |     |  |  +**OR393172.1
+|                       |  |        |  |  |     |  |     |     |  +**| (Node83)
+|                       |  |        |  |  |     |  |     |     |     |  +**OR520147.1
+|                       |  |        |  |  |     |  |     |     |     +**| (Node84)
+|                       |  |        |  |  |     |  |     |     |        |  +**PV022135.1
+|                       |  |        |  |  |     |  |     |     |        +**| (Node85)
+|                       |  |        |  |  |     |  |     |     |           +**PV835012.1
+|                       |  |        |  |  |     |  |     |  +**| (Node81)
+|                       |  |        |  |  |     |  |     |  |  |           +**OR983146.1
+|                       |  |        |  |  |     |  |     |  |  |        +**| (Node89)
+|                       |  |        |  |  |     |  |     |  |  |        |  +**OR983149.1
+|                       |  |        |  |  |     |  |     |  |  |     +**| (Node88)
+|                       |  |        |  |  |     |  |     |  |  |     |  +**OR983151.1
+|                       |  |        |  |  |     |  |     |  |  |  +**| (Node87)
+|                       |  |        |  |  |     |  |     |  |  |  |  |  +**OR983148.1
+|                       |  |        |  |  |     |  |     |  |  |  |  +**| (Node90)
+|                       |  |        |  |  |     |  |     |  |  |  |     +**OR983150.1
+|                       |  |        |  |  |     |  |     |  |  +**| (Node86)
+|                       |  |        |  |  |     |  |     |  |     +**PQ472736.1
+|                       |  |        |  |  |     |  |     +**| (Node80)
+|                       |  |        |  |  |     |  |        +**OR983147.1
+|                       |  |        |  |  |     +**| (Node64)
+|                       |  |        |  |  |        |  +**PQ878211.1
+|                       |  |        |  |  |        +**| (Node91)
+|                       |  |        |  |  |           +**SRR25461327
+|                       |  |        |  +**| (Node24)
+|                       |  |        |     +**MN642592.1
+|                       |  |     +**| (Node14)
+|                       |  |     |  +**PX127681.1
+|                       |  |  +**| (Node13)
+|                       |  |  |  +**MH893760.2
+|                       |  +**| (Node12)
+|                       |     +**MW699032.1
+|                    +**| (Node9)
+|                    |  +**SRR27563731
+|                 +**| (Node8)
+|                 |  |        +**MT007950.1
+|                 |  |     +**| (Node94)
+|                 |  |     |  |  +**SRR12021190
+|                 |  |     |  +**| (Node95)
+|                 |  |     |     +**SRR12021191
+|                 |  |  +**| (Node93)
+|                 |  |  |  |  +**OR644282.1
+|                 |  |  |  +**| (Node96)
+|                 |  |  |     |  +**OR644284.1
+|                 |  |  |     +**| (Node97)
+|                 |  |  |        |  +**PP065788.1
+|                 |  |  |        +**| (Node98)
+|                 |  |  |           +**PP065789.1
+|                 |  +**| (Node92)
+|                 |     |  +**OR644283.1
+|                 |     +**| (Node99)
+|                 |        +**OR644285.1
+|              +--| (Node7)
+|              |  |        +**OK318001.1
+|              |  |     +**| (Node102)
+|              |  |     |  +**SRR28085239
+|              |  |  +**| (Node101)
+|              |  |  |  +**SRR34490579
+|              |  +**| (Node100)
+|              |     |        +**SRR27563723
+|              |     |     +**| (Node105)
+|              |     |     |  +**SRR27563734
+|              |     |  +**| (Node104)
+|              |     |  |  +**SRR27563732
+|              |     +**| (Node103)
+|              |        +**SRR27563735
+|           +**| (Node6)
+|           |  |                                                                                     +**AF409138.1
+|           |  |                                                                                  +**| (Node119)
+|           |  |                                                                                  |  |        +**MT134042.1
+|           |  |                                                                                  |  |     +**| (Node122)
+|           |  |                                                                                  |  |     |  |  +**MT992618.1
+|           |  |                                                                                  |  |     |  +**| (Node123)
+|           |  |                                                                                  |  |     |     +**OR194148.1
+|           |  |                                                                                  |  |  +**| (Node121)
+|           |  |                                                                                  |  |  |  +**OL542833.1
+|           |  |                                                                                  |  +**| (Node120)
+|           |  |                                                                                  |     |     +**PQ824703.1
+|           |  |                                                                                  |     |  +**| (Node125)
+|           |  |                                                                                  |     |  |  |  +**PQ824704.1
+|           |  |                                                                                  |     |  |  +**| (Node126)
+|           |  |                                                                                  |     |  |     |  +**PQ824706.1
+|           |  |                                                                                  |     |  |     +**| (Node127)
+|           |  |                                                                                  |     |  |        +**PQ824707.1
+|           |  |                                                                                  |     +**| (Node124)
+|           |  |                                                                                  |        +**PQ824705.1
+|           |  |                                                                               +--| (Node118)
+|           |  |                                                                               |  |        +**KX764643.1
+|           |  |                                                                               |  |     +**| (Node130)
+|           |  |                                                                               |  |     |  +**MG972412.1
+|           |  |                                                                               |  |  +**| (Node129)
+|           |  |                                                                               |  |  |  +**KX764644.1
+|           |  |                                                                               |  +**| (Node128)
+|           |  |                                                                               |     |     +**KX764645.1
+|           |  |                                                                               |     |  +**| (Node132)
+|           |  |                                                                               |     |  |  +**OR134848.1
+|           |  |                                                                               |     +**| (Node131)
+|           |  |                                                                               |        +**OM793609.1
+|           |  |                                +----------------------------------------------| (Node117)
+|           |  |                                |                                              +**MK441838.1
+|           |  |                             +**| (Node116)
+|           |  |                             |  +**MW656252.1
+|           |  |                          +**| (Node115)
+|           |  |                          |  |              +**MN636838.1
+|           |  |                          |  |           +**| (Node137)
+|           |  |                          |  |           |  +**MN636841.1
+|           |  |                          |  |        +**| (Node136)
+|           |  |                          |  |        |  +**MN636842.1
+|           |  |                          |  |     +**| (Node135)
+|           |  |                          |  |     |  +**MN636840.1
+|           |  |                          |  |  +**| (Node134)
+|           |  |                          |  |  |  |  +**MN636839.1
+|           |  |                          |  |  |  +**| (Node138)
+|           |  |                          |  |  |     +**MN636843.1
+|           |  |                          |  +**| (Node133)
+|           |  |                          |     |     +**MW435866.1
+|           |  |                          |     |  +**| (Node140)
+|           |  |                          |     |  |  +**SRR27563733
+|           |  |                          |     +**| (Node139)
+|           |  |                          |        +**OM793604.1
+|           |  |                       +**| (Node114)
+|           |  |                       |  |     +**OM793605.1
+|           |  |                       |  |  +**| (Node142)
+|           |  |                       |  |  |  +**OM793608.1
+|           |  |                       |  +**| (Node141)
+|           |  |                       |     +**OM793607.1
+|           |  |                    +--| (Node113)
+|           |  |                    |  +**OM793606.1
+|           |  |                 +--| (Node112)
+|           |  |                 |  |   +**MH646674.1
+|           |  |                 |  +---| (Node143)
+|           |  |                 |      +**OM530217.1
+|           |  |              +**| (Node111)
+|           |  |              |  |  +--MW732649.1
+|           |  |              |  +**| (Node144)
+|           |  |              |     |                                +**MZ577073.1
+|           |  |              |     |                             +**| (Node155)
+|           |  |              |     |                             |  +**MZ577075.1
+|           |  |              |     |                          +**| (Node154)
+|           |  |              |     |                          |  +**OL752713.2
+|           |  |              |     |                       +**| (Node153)
+|           |  |              |     |                       |  +**MZ577076.1
+|           |  |              |     |                    +**| (Node152)
+|           |  |              |     |                    |  +**SRR15145277_SRR15145278_Merged
+|           |  |              |     |                 +**| (Node151)
+|           |  |              |     |                 |  +**SRR15145279_SRR15145280_Merged
+|           |  |              |     |              +**| (Node150)
+|           |  |              |     |              |  +**SRR15145275_SRR15145276_Merged
+|           |  |              |     |           +**| (Node149)
+|           |  |              |     |           |  +**OP985536.1
+|           |  |              |     |        +**| (Node148)
+|           |  |              |     |        |  +**OM803091.1
+|           |  |              |     |     +**| (Node147)
+|           |  |              |     |     |  +**OM803092.1
+|           |  |              |     |  +**| (Node146)
+|           |  |              |     |  |  +**MZ577074.1
+|           |  |              |     +**| (Node145)
+|           |  |              |        |  +**ON616408.1
+|           |  |              |        +**| (Node156)
+|           |  |              |           |  +**PX127682.1
+|           |  |              |           +**| (Node157)
+|           |  |              |              +**PX127683.1
+|           |  |           +**| (Node110)
+|           |  |           |  |                                                                                                              +**MW355944.1
+|           |  |           |  |                                                                                                           +**| (Node194)
+|           |  |           |  |                                                                                                           |  +**OR347837.1
+|           |  |           |  |                                                                                                        +**| (Node193)
+|           |  |           |  |                                                                                                        |  +**PQ727628.1
+|           |  |           |  |                                                                                                     +**| (Node192)
+|           |  |           |  |                                                                                                     |  +**OQ253251.1
+|           |  |           |  |                                                                                                  +**| (Node191)
+|           |  |           |  |                                                                                                  |  +**OQ253256.1
+|           |  |           |  |                                                                                               +**| (Node190)
+|           |  |           |  |                                                                                               |  +**OM793603.1
+|           |  |           |  |                                                                                            +**| (Node189)
+|           |  |           |  |                                                                                            |  +**OM373209.1
+|           |  |           |  |                                                                                         +**| (Node188)
+|           |  |           |  |                                                                                         |  +**PV796583.1
+|           |  |           |  |                                                                                      +**| (Node187)
+|           |  |           |  |                                                                                      |  +**PQ682462.1
+|           |  |           |  |                                                                                   +**| (Node186)
+|           |  |           |  |                                                                                   |  +**OM984486.1
+|           |  |           |  |                                                                                +**| (Node185)
+|           |  |           |  |                                                                                |  +**OQ511520.1
+|           |  |           |  |                                                                             +**| (Node184)
+|           |  |           |  |                                                                             |  +**PP145891.1
+|           |  |           |  |                                                                          +**| (Node183)
+|           |  |           |  |                                                                          |  +**OR232413.1
+|           |  |           |  |                                                                       +**| (Node182)
+|           |  |           |  |                                                                       |  +**ON152411.1
+|           |  |           |  |                                                                    +**| (Node181)
+|           |  |           |  |                                                                    |  +**OQ253253.1
+|           |  |           |  |                                                                 +**| (Node180)
+|           |  |           |  |                                                                 |  +**OM793602.1
+|           |  |           |  |                                                              +**| (Node179)
+|           |  |           |  |                                                              |  +**OR347834.1
+|           |  |           |  |                                                           +**| (Node178)
+|           |  |           |  |                                                           |  +**OQ253252.1
+|           |  |           |  |                                                        +**| (Node177)
+|           |  |           |  |                                                        |  +**OQ253255.1
+|           |  |           |  |                                                     +**| (Node176)
+|           |  |           |  |                                                     |  +**OQ253254.1
+|           |  |           |  |                                                  +**| (Node175)
+|           |  |           |  |                                                  |  +**OQ267778.1
+|           |  |           |  |                                               +**| (Node174)
+|           |  |           |  |                                               |  +**OP752701.1
+|           |  |           |  |                                            +**| (Node173)
+|           |  |           |  |                                            |  +**OQ200493.1
+|           |  |           |  |                                         +**| (Node172)
+|           |  |           |  |                                         |  +**OQ349695.1
+|           |  |           |  |                                      +**| (Node171)
+|           |  |           |  |                                      |  +**PQ727633.1
+|           |  |           |  |                                   +**| (Node170)
+|           |  |           |  |                                   |  +**OR347835.1
+|           |  |           |  |                                +**| (Node169)
+|           |  |           |  |                                |  +**PP894832.1
+|           |  |           |  |                             +**| (Node168)
+|           |  |           |  |                             |  +**OP922506.1
+|           |  |           |  |                          +**| (Node167)
+|           |  |           |  |                          |  +**OR347836.1
+|           |  |           |  |                       +**| (Node166)
+|           |  |           |  |                       |  +**OR232414.1
+|           |  |           |  |                    +**| (Node165)
+|           |  |           |  |                    |  +**PQ727629.1
+|           |  |           |  |                 +**| (Node164)
+|           |  |           |  |                 |  +**PQ727632.1
+|           |  |           |  |              +**| (Node163)
+|           |  |           |  |              |  +**OR735987.1
+|           |  |           |  |           +**| (Node162)
+|           |  |           |  |           |  +**PP145892.1
+|           |  |           |  |        +**| (Node161)
+|           |  |           |  |        |  |  +**OQ267777.1
+|           |  |           |  |        |  +**| (Node195)
+|           |  |           |  |        |     +**PQ037207.1
+|           |  |           |  |     +**| (Node160)
+|           |  |           |  |     |  |  +**OM033705.1
+|           |  |           |  |     |  +**| (Node196)
+|           |  |           |  |     |     +**OP654649.1
+|           |  |           |  |  +**| (Node159)
+|           |  |           |  |  |  |     +**OQ253250.1
+|           |  |           |  |  |  |  +**| (Node198)
+|           |  |           |  |  |  |  |  |           +**OQ555660.1
+|           |  |           |  |  |  |  |  |        +**| (Node202)
+|           |  |           |  |  |  |  |  |        |  +**SRR28085240
+|           |  |           |  |  |  |  |  |     +**| (Node201)
+|           |  |           |  |  |  |  |  |     |  +**SRR28085241
+|           |  |           |  |  |  |  |  |  +**| (Node200)
+|           |  |           |  |  |  |  |  |  |  +**PQ682461.1
+|           |  |           |  |  |  |  |  +**| (Node199)
+|           |  |           |  |  |  |  |     +**OR567413.1
+|           |  |           |  |  |  +**| (Node197)
+|           |  |           |  |  |     |        +**PQ727625.1
+|           |  |           |  |  |     |     +**| (Node205)
+|           |  |           |  |  |     |     |  +**PQ727630.1
+|           |  |           |  |  |     |  +**| (Node204)
+|           |  |           |  |  |     |  |  +**PQ727631.1
+|           |  |           |  |  |     +**| (Node203)
+|           |  |           |  |  |        +**PQ727626.1
+|           |  |           |  +**| (Node158)
+|           |  |           |     +--OM105589.1
+|           |  |        +**| (Node109)
+|           |  |        |  +**OM984485.1
+|           |  |     +**| (Node108)
+|           |  |     |  +**OP508345.1
+|           |  |  +--| (Node107)
+|           |  |  |  +**PQ727627.1
+|           |  +--| (Node106)
+|           |     |                                 +**AY077832.1
+|           |     |                              +**| (Node213)
+|           |     |                              |  +**NC_004002.1
+|           |     |                           +**| (Node212)
+|           |     |                           |  +**MN072629.1
+|           |     |                        +**| (Node211)
+|           |     |                        |  |     +**MW167071.1
+|           |     |                        |  |  +**| (Node215)
+|           |     |                        |  |  |  +**PP886239.1
+|           |     |                        |  +**| (Node214)
+|           |     |                        |     |     +**PP886236.1
+|           |     |                        |     |  +**| (Node217)
+|           |     |                        |     |  |  +**PP886237.1
+|           |     |                        |     +**| (Node216)
+|           |     |                        |        +**PP886238.1
+|           |     |                     +**| (Node210)
+|           |     |                     |  +**PP843160.1
+|           |     |                  +--| (Node209)
+|           |     |                  |  +**OR239060.1
+|           |     |               +**| (Node208)
+|           |     |               |  |           +**AY077833.1
+|           |     |               |  |        +**| (Node221)
+|           |     |               |  |        |  |     +**AY077834.1
+|           |     |               |  |        |  |  +**| (Node223)
+|           |     |               |  |        |  |  |  +**MW020571.1
+|           |     |               |  |        |  +**| (Node222)
+|           |     |               |  |        |     |  +**MW167070.1
+|           |     |               |  |        |     +**| (Node224)
+|           |     |               |  |        |        +**PV167793.1
+|           |     |               |  |     +**| (Node220)
+|           |     |               |  |     |  |  +**MT137384.1
+|           |     |               |  |     |  +**| (Node225)
+|           |     |               |  |     |     |           +**ON961655.1
+|           |     |               |  |     |     |        +**| (Node229)
+|           |     |               |  |     |     |        |  +**PQ014465.1
+|           |     |               |  |     |     |     +**| (Node228)
+|           |     |               |  |     |     |     |  +**ON961656.1
+|           |     |               |  |     |     |  +**| (Node227)
+|           |     |               |  |     |     |  |  +**ON961657.1
+|           |     |               |  |     |     +**| (Node226)
+|           |     |               |  |     |        |     +**OQ434236.1
+|           |     |               |  |     |        |  +**| (Node231)
+|           |     |               |  |     |        |  |  |     +**OQ434237.1
+|           |     |               |  |     |        |  |  |  +**| (Node233)
+|           |     |               |  |     |        |  |  |  |  +**OQ434239.1
+|           |     |               |  |     |        |  |  +**| (Node232)
+|           |     |               |  |     |        |  |     +**OQ434238.1
+|           |     |               |  |     |        +**| (Node230)
+|           |     |               |  |     |           +**PV434148.1
+|           |     |               |  |  +**| (Node219)
+|           |     |               |  |  |  |  +**MN072630.1
+|           |     |               |  |  |  +**| (Node234)
+|           |     |               |  |  |     +**MN072631.1
+|           |     |               |  +**| (Node218)
+|           |     |               |     |        +**KT438550.1
+|           |     |               |     |     +**| (Node237)
+|           |     |               |     |     |  +**OQ434235.1
+|           |     |               |     |  +**| (Node236)
+|           |     |               |     |  |  +**KT438551.1
+|           |     |               |     +**| (Node235)
+|           |     |               |        +**MG000156.1
+|           |     |  +------------| (Node207)
+|           |     |  |            |     +**MN072626.1
+|           |     |  |            |  +**| (Node239)
+|           |     |  |            |  |  +**MN072627.1
+|           |     |  |            +**| (Node238)
+|           |     |  |               +**MN072628.1
+|           |     +--| (Node206)
+|           |        |                    +**AY077835.1
+|           |        |                 +**| (Node245)
+|           |        |                 |  +**NC_004003.1
+|           |        |              +**| (Node244)
+|           |        |              |  +**KX576657.1
+|           |        |           +**| (Node243)
+|           |        |           |  +**AY077836.1
+|           |        |        +--| (Node242)
+|           |        |        |  +**MN072622.1
+|           |        |     +--| (Node241)
+|           |        |     |  |           +**KC951854.1
+|           |        |     |  |        +**| (Node249)
+|           |        |     |  |        |  +**MN072621.1
+|           |        |     |  |     +**| (Node248)
+|           |        |     |  |     |  +**MH381810.1
+|           |        |     |  |  +**| (Node247)
+|           |        |     |  |  |  |  +**MN072620.1
+|           |        |     |  |  |  +--| (Node250)
+|           |        |     |  |  |     +**MW020570.1
+|           |        |     |  +--| (Node246)
+|           |        |     |     |  +**PV167794.1
+|           |        |     |     +**| (Node251)
+|           |        |     |        |  +**PX497580.1
+|           |        |     |        +**| (Node252)
+|           |        |     |           +**PX499192.1
+|           |        +-----| (Node240)
+|           |              |     +**MN072623.1
+|           |              |  +--| (Node254)
+|           |              |  |  +**MN072625.1
+|           |              +--| (Node253)
+|           |                 +**MN072624.1
+|        +**| (Node5)
+|        |  +--SRR27563725
+|     +**| (Node4)
+|     |  |        +**MW631933.1
+|     |  |     +**| (Node257)
+|     |  |     |  +**SRR27563724
+|     |  |  +**| (Node256)
+|     |  |  |  |     +**MW883897.1
+|     |  |  |  |  +**| (Node259)
+|     |  |  |  |  |  |                                                                 +**OK422492.1
+|     |  |  |  |  |  |                                                              +**| (Node281)
+|     |  |  |  |  |  |                                                              |  +**SRR27563729
+|     |  |  |  |  |  |                                                           +**| (Node280)
+|     |  |  |  |  |  |                                                           |  +**PQ201927.1
+|     |  |  |  |  |  |                                                        +**| (Node279)
+|     |  |  |  |  |  |                                                        |  +**OP688129.1
+|     |  |  |  |  |  |                                                     +**| (Node278)
+|     |  |  |  |  |  |                                                     |  +**ON400507.1
+|     |  |  |  |  |  |                                                  +**| (Node277)
+|     |  |  |  |  |  |                                                  |  +**OR393171.1
+|     |  |  |  |  |  |                                               +**| (Node276)
+|     |  |  |  |  |  |                                               |  +**PV066181.1
+|     |  |  |  |  |  |                                            +**| (Node275)
+|     |  |  |  |  |  |                                            |  +**PQ005629.1
+|     |  |  |  |  |  |                                         +**| (Node274)
+|     |  |  |  |  |  |                                         |  +**PQ179265.1
+|     |  |  |  |  |  |                                      +**| (Node273)
+|     |  |  |  |  |  |                                      |  +**SRR27563730
+|     |  |  |  |  |  |                                   +**| (Node272)
+|     |  |  |  |  |  |                                   |  +**PP979138.1
+|     |  |  |  |  |  |                                +**| (Node271)
+|     |  |  |  |  |  |                                |  +**SRR25461324
+|     |  |  |  |  |  |                             +**| (Node270)
+|     |  |  |  |  |  |                             |  +**OR393170.1
+|     |  |  |  |  |  |                          +**| (Node269)
+|     |  |  |  |  |  |                          |  +**SRR29762742
+|     |  |  |  |  |  |                       +**| (Node268)
+|     |  |  |  |  |  |                       |  +**OR863389.1
+|     |  |  |  |  |  |                    +**| (Node267)
+|     |  |  |  |  |  |                    |  +**OR393176.1
+|     |  |  |  |  |  |                 +**| (Node266)
+|     |  |  |  |  |  |                 |  +**OR393175.1
+|     |  |  |  |  |  |              +**| (Node265)
+|     |  |  |  |  |  |              |  +**OP297402.1
+|     |  |  |  |  |  |           +**| (Node264)
+|     |  |  |  |  |  |           |  +**SRR27563728
+|     |  |  |  |  |  |        +**| (Node263)
+|     |  |  |  |  |  |        |  +**OR393169.1
+|     |  |  |  |  |  |     +**| (Node262)
+|     |  |  |  |  |  |     |  |  +**OK422493.1
+|     |  |  |  |  |  |     |  +**| (Node282)
+|     |  |  |  |  |  |     |     |  +**PP746705.1
+|     |  |  |  |  |  |     |     +**| (Node283)
+|     |  |  |  |  |  |     |        +**PP756497.1
+|     |  |  |  |  |  |  +**| (Node261)
+|     |  |  |  |  |  |  |  |  +**PQ510117.1
+|     |  |  |  |  |  |  |  +**| (Node284)
+|     |  |  |  |  |  |  |     +**PQ510118.1
+|     |  |  |  |  |  +**| (Node260)
+|     |  |  |  |  |     |        +**OK422494.1
+|     |  |  |  |  |     |     +**| (Node287)
+|     |  |  |  |  |     |     |  +**OR393174.1
+|     |  |  |  |  |     |  +**| (Node286)
+|     |  |  |  |  |     |  |  +**OP688128.1
+|     |  |  |  |  |     +**| (Node285)
+|     |  |  |  |  |        +**OR983152.1
+|     |  |  |  +**| (Node258)
+|     |  |  |     +**OQ427097.1
+|     |  +**| (Node255)
+|     |     +**SRR27563727
+|  +**| (Node3)
+|  |  +**MN072619.1
++**| (Node2)
+|  +**KX683219.1
+|
++**NC_003027.1
+
+Tree in newick format:
+
+(AF325528.1:0.0000010000,((((((((((AF409137.1:0.0000010000,MW656253.1:0.0000010000)Node11:0.0000020781,((((((((((((KX894508.1:0.0000010000,SRR27563726:0.0000010000)Node23:0.0000010000,ON005067.1:0.0000010000)Node22:0.0000010000,SRR28085237:0.0000010000)Node21:0.0000010000,SRR28085236:0.0000010000)Node20:0.0000010000,SRR28085238:0.0000010000)Node19:0.0000010000,PV877838.1:0.0000010000)Node18:0.0000010000,MN995838.1:0.0000010000)Node17:0.0000010000,SRR28085235:0.0000010000)Node16:0.0000010000,((((((((((((((((((((((((((((((((KY702007.1:0.0000010000,OR134841.1:0.0000010000)Node55:0.0000010000,SRR26747388_SRR26747389_Merged:0.0000010000)Node54:0.0000010000,SRR26747364_SRR26747365_Merged:0.0000010000)Node53:0.0000010000,SRR26747394_SRR26747395_Merged:0.0000010000)Node52:0.0000010000,OR134846.1:0.0000010000)Node51:0.0000010000,SRR26747366_SRR26747367_Merged:0.0000010000)Node50:0.0000010000,OR134844.1:0.0000010000)Node49:0.0000010000,OR134837.1:0.0000010000)Node48:0.0000010000,OR134838.1:0.0000010000)Node47:0.0000010000,SRR26747378_SRR26747377_Merged:0.0000010000)Node46:0.0000010000,OR134842.1:0.0000010000)Node45:0.0000010000,SRR26747384_SRR26747383_Merged:0.0000010000)Node44:0.0000010000,SRR26747398_SRR26747399_Merged:0.0000010000)Node43:0.0000010000,SRR26747374_SRR26747375_Merged:0.0000010000)Node42:0.0000010000,OR134839.1:0.0000010000)Node41:0.0000010000,SRR26747382_SRR26747381_Merged:0.0000010000)Node40:0.0000010000,OR134845.1:0.0000010000)Node39:0.0000010000,SRR26747386_SRR26747385_Merged:0.0000010000)Node38:0.0000010000,OR134834.1:0.0000010000)Node37:0.0000010000,OR134836.1:0.0000010000)Node36:0.0000010000,OR134847.1:0.0000010000)Node35:0.0000010000,SRR26747396_SRR26747397_Merged:0.0000010000)Node34:0.0000010000,SRR26747368_SRR26747369_Merged:0.0000010000)Node33:0.0000010000,OR134843.1:0.0000010000)Node32:0.0000010000,OR134835.1:0.0000010000)Node31:0.0000010000,OR134849.1:0.0000010000)Node30:0.0000010000,OR134833.1:0.0000010000)Node29:0.0000010000,SRR26747380_SRR26747379_Merged:0.0000010000)Node28:0.0000010000,(OR134832.1:0.0000010000,SRR26747387_SRR26747376_Merged:0.0000010000)Node56:0.0000020781)Node27:0.0000020781,(((KY829023.3:0.0000010000,OR134840.1:0.0000010000)Node59:0.0000010000,SRR26747390_SRR26747391_Merged:0.0000010000)Node58:0.0000010000,MT643825.1:0.0000010000)Node57:0.0000010000)Node26:0.0000020781,((((MT130502.2:0.0000020781,SRR11470182:0.0000010000)Node63:0.0000010000,ON010590.1:0.0000020781)Node62:0.0000010000,MW030512.1:0.0000010000)Node61:0.0000020781,((OQ588787.1:0.0000010000,((((((((((((((OQ606832.1:0.0000010000,SRR25046328:0.0000010000)Node79:0.0000010000,SRR24474207:0.0000010000)Node78:0.0000010000,SRR21590386:0.0000010000)Node77:0.0000010000,OR393178.1:0.0000010000)Node76:0.0000010000,SRR25461328:0.0000010000)Node75:0.0000010000,SRR26792425:0.0000010000)Node74:0.0000010000,SRR25046331:0.0000010000)Node73:0.0000010000,SRR21590382:0.0000010000)Node72:0.0000010000,OR393177.1:0.0000010000)Node71:0.0000010000,PV066182.1:0.0000010000)Node70:0.0000010000,OR393173.1:0.0000010000)Node69:0.0000010000,PP053747.1:0.0000010000)Node68:0.0000010000,OR797612.1:0.0000010000)Node67:0.0000010000,(((OR393167.1:0.0000010000,(OR393172.1:0.0000010000,(OR520147.1:0.0000010000,(PV022135.1:0.0000010000,PV835012.1:0.0000020781)Node85:0.0000010000)Node84:0.0000010000)Node83:0.0000010000)Node82:0.0000010000,((((OR983146.1:0.0000010000,OR983149.1:0.0000010000)Node89:0.0000010000,OR983151.1:0.0000010000)Node88:0.0000010000,(OR983148.1:0.0000010000,OR983150.1:0.0000010000)Node90:0.0000010000)Node87:0.0000010000,PQ472736.1:0.0000029883)Node86:0.0000020781)Node81:0.0000010000,OR983147.1:0.0000020781)Node80:0.0000010000)Node66:0.0000010000)Node65:0.0000010000,(PQ878211.1:0.0000020781,SRR25461327:0.0000027109)Node91:0.0000010000)Node64:0.0000027148)Node60:0.0000010000)Node25:0.0000010000,MN642592.1:0.0000010000)Node24:0.0000010000)Node15:0.0000010000,PX127681.1:0.0000010000)Node14:0.0000010000,MH893760.2:0.0000010000)Node13:0.0000010000,MW699032.1:0.0000020781)Node12:0.0000021641)Node10:0.0000010000,SRR27563731:0.0000010000)Node9:0.0000010000,(((MT007950.1:0.0000020781,(SRR12021190:0.0000010000,SRR12021191:0.0000020781)Node95:0.0000020898)Node94:0.0000020859,(OR644282.1:0.0000020898,(OR644284.1:0.0000020781,(PP065788.1:0.0000010000,PP065789.1:0.0000010000)Node98:0.0000020781)Node97:0.0000010000)Node96:0.0000020781)Node93:0.0000010000,(OR644283.1:0.0000010000,OR644285.1:0.0000010000)Node99:0.0000010000)Node92:0.0000020781)Node8:0.0000021289,(((OK318001.1:0.0000010000,SRR28085239:0.0000010000)Node102:0.0000020781,SRR34490579:0.0000025215)Node101:0.0000026328,(((SRR27563723:0.0000010000,SRR27563734:0.0000010000)Node105:0.0000020781,SRR27563732:0.0000020781)Node104:0.0000010000,SRR27563735:0.0000010000)Node103:0.0000010000)Node100:0.0000020859)Node7:0.0020770211,((((((((((((((AF409138.1:0.0000020781,(((MT134042.1:0.0000027666,(MT992618.1:0.0000020347,OR194148.1:0.0000021416)Node123:0.0000028535)Node122:0.0000023457,OL542833.1:0.0000022783)Node121:0.0000025713,((PQ824703.1:0.0000010000,(PQ824704.1:0.0000010000,(PQ824706.1:0.0000010000,PQ824707.1:0.0000010000)Node127:0.0000010000)Node126:0.0000010000)Node125:0.0000010000,PQ824705.1:0.0000010000)Node124:0.0000026328)Node120:0.0000010000)Node119:0.0000010000,(((KX764643.1:0.0000010000,MG972412.1:0.0000010000)Node130:0.0000010000,KX764644.1:0.0000010000)Node129:0.0000010000,((KX764645.1:0.0000010000,OR134848.1:0.0000010000)Node132:0.0000010000,OM793609.1:0.0000010000)Node131:0.0000010000)Node128:0.0000010000)Node118:0.0061300313,MK441838.1:0.0000027179)Node117:0.0916351167,MW656252.1:0.0000010000)Node116:0.0000020781,(((((MN636838.1:0.0000010000,MN636841.1:0.0000010000)Node137:0.0000010000,MN636842.1:0.0000010000)Node136:0.0000010000,MN636840.1:0.0000010000)Node135:0.0000010000,(MN636839.1:0.0000010000,MN636843.1:0.0000010000)Node138:0.0000020781)Node134:0.0000020859,((MW435866.1:0.0000010000,SRR27563733:0.0000010000)Node140:0.0000010000,OM793604.1:0.0000010000)Node139:0.0000010000)Node133:0.0000020781)Node115:0.0000010000,((OM793605.1:0.0000010000,OM793608.1:0.0000010000)Node142:0.0000010000,OM793607.1:0.0000010000)Node141:0.0000010000)Node114:0.0000010000,OM793606.1:0.0000020781)Node113:0.0062639865,(MH646674.1:0.0000020781,OM530217.1:0.0000010000)Node143:0.0083358536)Node112:0.0020479389,(MW732649.1:0.0062346633,(((((((((((MZ577073.1:0.0000010000,MZ577075.1:0.0000010000)Node155:0.0000010000,OL752713.2:0.0000010000)Node154:0.0000010000,MZ577076.1:0.0000010000)Node153:0.0000010000,SRR15145277_SRR15145278_Merged:0.0000010000)Node152:0.0000010000,SRR15145279_SRR15145280_Merged:0.0000010000)Node151:0.0000010000,SRR15145275_SRR15145276_Merged:0.0000010000)Node150:0.0000010000,OP985536.1:0.0000010000)Node149:0.0000010000,OM803091.1:0.0000010000)Node148:0.0000010000,OM803092.1:0.0000010000)Node147:0.0000010000,MZ577074.1:0.0000010000)Node146:0.0000010000,(ON616408.1:0.0000010000,(PX127682.1:0.0000010000,PX127683.1:0.0000010000)Node157:0.0000020781)Node156:0.0000010000)Node145:0.0000010000)Node144:0.0000020781)Node111:0.0000010000,(((((((((((((((((((((((((((((((((((((MW355944.1:0.0000010000,OR347837.1:0.0000010000)Node194:0.0000010000,PQ727628.1:0.0000010000)Node193:0.0000010000,OQ253251.1:0.0000010000)Node192:0.0000010000,OQ253256.1:0.0000010000)Node191:0.0000010000,OM793603.1:0.0000010000)Node190:0.0000010000,OM373209.1:0.0000010000)Node189:0.0000010000,PV796583.1:0.0000010000)Node188:0.0000010000,PQ682462.1:0.0000010000)Node187:0.0000010000,OM984486.1:0.0000010000)Node186:0.0000010000,OQ511520.1:0.0000010000)Node185:0.0000010000,PP145891.1:0.0000010000)Node184:0.0000010000,OR232413.1:0.0000010000)Node183:0.0000010000,ON152411.1:0.0000010000)Node182:0.0000010000,OQ253253.1:0.0000010000)Node181:0.0000010000,OM793602.1:0.0000010000)Node180:0.0000010000,OR347834.1:0.0000010000)Node179:0.0000010000,OQ253252.1:0.0000010000)Node178:0.0000010000,OQ253255.1:0.0000010000)Node177:0.0000010000,OQ253254.1:0.0000010000)Node176:0.0000010000,OQ267778.1:0.0000010000)Node175:0.0000010000,OP752701.1:0.0000010000)Node174:0.0000010000,OQ200493.1:0.0000010000)Node173:0.0000010000,OQ349695.1:0.0000010000)Node172:0.0000010000,PQ727633.1:0.0000010000)Node171:0.0000010000,OR347835.1:0.0000010000)Node170:0.0000010000,PP894832.1:0.0000010000)Node169:0.0000010000,OP922506.1:0.0000010000)Node168:0.0000010000,OR347836.1:0.0000010000)Node167:0.0000010000,OR232414.1:0.0000010000)Node166:0.0000010000,PQ727629.1:0.0000010000)Node165:0.0000010000,PQ727632.1:0.0000010000)Node164:0.0000010000,OR735987.1:0.0000010000)Node163:0.0000010000,PP145892.1:0.0000010000)Node162:0.0000010000,(OQ267777.1:0.0000020781,PQ037207.1:0.0000020781)Node195:0.0000010000)Node161:0.0000010000,(OM033705.1:0.0000010000,OP654649.1:0.0000010000)Node196:0.0000010000)Node160:0.0000010000,((OQ253250.1:0.0000020781,((((OQ555660.1:0.0000010000,SRR28085240:0.0000010000)Node202:0.0000010000,SRR28085241:0.0000010000)Node201:0.0000010000,PQ682461.1:0.0000010000)Node200:0.0000010000,OR567413.1:0.0000020781)Node199:0.0000020781)Node198:0.0000010000,(((PQ727625.1:0.0000010000,PQ727630.1:0.0000010000)Node205:0.0000010000,PQ727631.1:0.0000010000)Node204:0.0000010000,PQ727626.1:0.0000010000)Node203:0.0000020781)Node197:0.0000010000)Node159:0.0000010000,OM105589.1:0.0020551684)Node158:0.0000010000)Node110:0.0000010000,OM984485.1:0.0000010000)Node109:0.0000010000,OP508345.1:0.0000026367)Node108:0.0000028438,PQ727627.1:0.0000022344)Node107:0.0051527043,((((((((AY077832.1:0.0000010000,NC_004002.1:0.0000010000)Node213:0.0000020859,MN072629.1:0.0000025547)Node212:0.0000010000,((MW167071.1:0.0000025977,PP886239.1:0.0000010000)Node215:0.0000010000,((PP886236.1:0.0000010000,PP886237.1:0.0000010000)Node217:0.0000010000,PP886238.1:0.0000010000)Node216:0.0000020781)Node214:0.0000010000)Node211:0.0000010000,PP843160.1:0.0000010000)Node210:0.0000020781,OR239060.1:0.0000020508)Node209:0.0021079832,((((AY077833.1:0.0000020781,((AY077834.1:0.0000010000,MW020571.1:0.0000010000)Node223:0.0000020859,(MW167070.1:0.0000010000,PV167793.1:0.0000020859)Node224:0.0000025547)Node222:0.0000020859)Node221:0.0000010000,(MT137384.1:0.0000020781,((((ON961655.1:0.0000010000,PQ014465.1:0.0000025420)Node229:0.0000020781,ON961656.1:0.0000010000)Node228:0.0000010000,ON961657.1:0.0000010000)Node227:0.0000010000,((OQ434236.1:0.0000021514,((OQ434237.1:0.0000010000,OQ434239.1:0.0000010000)Node233:0.0000010000,OQ434238.1:0.0000010000)Node232:0.0000026328)Node231:0.0000010000,PV434148.1:0.0000020859)Node230:0.0000010000)Node226:0.0000010000)Node225:0.0000020781)Node220:0.0000010000,(MN072630.1:0.0000025547,MN072631.1:0.0000020859)Node234:0.0000020781)Node219:0.0000020508,(((KT438550.1:0.0000020781,OQ434235.1:0.0000020781)Node237:0.0000010000,KT438551.1:0.0000010000)Node236:0.0000020508,MG000156.1:0.0000027363)Node235:0.0000010000)Node218:0.0000020078)Node208:0.0000020117,((MN072626.1:0.0000020117,MN072627.1:0.0000023242)Node239:0.0000023174,MN072628.1:0.0000025996)Node238:0.0000022344)Node207:0.0258969508,((((((AY077835.1:0.0000010000,NC_004003.1:0.0000010000)Node245:0.0000010000,KX576657.1:0.0000010000)Node244:0.0000010000,AY077836.1:0.0000020781)Node243:0.0000022090,MN072622.1:0.0000021895)Node242:0.0041113246,((((KC951854.1:0.0000022070,MN072621.1:0.0000028594)Node249:0.0000026328,MH381810.1:0.0000029707)Node248:0.0000026328,(MN072620.1:0.0000010000,MW020570.1:0.0000010000)Node250:0.0021617181)Node247:0.0000010000,(PV167794.1:0.0000028594,(PX497580.1:0.0000020781,PX499192.1:0.0000010000)Node252:0.0000026328)Node251:0.0000024766)Node246:0.0023517904)Node241:0.0046373596,((MN072623.1:0.0000021641,MN072625.1:0.0000022285)Node254:0.0021271927,MN072624.1:0.0000023955)Node253:0.0042717475)Node240:0.0134626888)Node206:0.0035986511)Node106:0.0053354813)Node6:0.0000020078,SRR27563725:0.0060861179)Node5:0.0000020781,(((MW631933.1:0.0000010000,SRR27563724:0.0000020781)Node257:0.0000010000,((MW883897.1:0.0000010000,((((((((((((((((((((((OK422492.1:0.0000010000,SRR27563729:0.0000010000)Node281:0.0000010000,PQ201927.1:0.0000010000)Node280:0.0000010000,OP688129.1:0.0000010000)Node279:0.0000010000,ON400507.1:0.0000010000)Node278:0.0000010000,OR393171.1:0.0000010000)Node277:0.0000010000,PV066181.1:0.0000010000)Node276:0.0000010000,PQ005629.1:0.0000010000)Node275:0.0000010000,PQ179265.1:0.0000010000)Node274:0.0000010000,SRR27563730:0.0000010000)Node273:0.0000010000,PP979138.1:0.0000010000)Node272:0.0000010000,SRR25461324:0.0000010000)Node271:0.0000010000,OR393170.1:0.0000010000)Node270:0.0000010000,SRR29762742:0.0000010000)Node269:0.0000010000,OR863389.1:0.0000010000)Node268:0.0000010000,OR393176.1:0.0000010000)Node267:0.0000010000,OR393175.1:0.0000010000)Node266:0.0000010000,OP297402.1:0.0000010000)Node265:0.0000010000,SRR27563728:0.0000010000)Node264:0.0000010000,OR393169.1:0.0000010000)Node263:0.0000010000,(OK422493.1:0.0000010000,(PP746705.1:0.0000010000,PP756497.1:0.0000020781)Node283:0.0000010000)Node282:0.0000010000)Node262:0.0000010000,(PQ510117.1:0.0000010000,PQ510118.1:0.0000010000)Node284:0.0000010000)Node261:0.0000010000,(((OK422494.1:0.0000010000,OR393174.1:0.0000010000)Node287:0.0000020781,OP688128.1:0.0000020781)Node286:0.0000010000,OR983152.1:0.0000020781)Node285:0.0000010000)Node260:0.0000010000)Node259:0.0000010000,OQ427097.1:0.0000020781)Node258:0.0000020781)Node256:0.0000020781,SRR27563727:0.0000010000)Node255:0.0000010000)Node4:0.0000010000,MN072619.1:0.0000026328)Node3:0.0000010000,KX683219.1:0.0000010000)Node2:0.0000010000,NC_003027.1:0.0000010000)Node1;
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/17_ASR_MK/02_results/asr_runs/OG0000116.treefile -m "GTR{3.39771,2.54441,1.58508,1.97981,8.52215}+F{0.359345,0.0951845,0.209564,0.335907}+G4{0.52224}" --length 513
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/10_Selection_Pressure/01_codon_alignments/OG0000116_codon.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/10_Selection_Pressure/01_codon_alignments/OG0000116_codon.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Nov 20 00:13:56 2026
+Total CPU time used: 0.313058 seconds (0h:0m:0s)
+Total wall-clock time used: 0.394291 seconds (0h:0m:0s)
+

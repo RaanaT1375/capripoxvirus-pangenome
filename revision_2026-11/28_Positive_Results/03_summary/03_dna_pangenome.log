@@ -1,0 +1,34 @@
+gene-call matrix : 206 orthogroups x 290 genomes
+DNA-level matrix : 206 x 290
+total presences  : 44048 -> 48535 (+10.2%)
+
+=== genecall matrix ===
+  core        132  (64.1%)
+  soft-core    10  (4.9%)
+  shell        14  (6.8%)
+  cloud        50  (24.3%)
+  total       206
+  Heaps: k = 141.137, gamma = 0.0675, R2 = 0.9897
+  pan-genome at N=290: 206.0, strict core 111.0
+
+=== dna matrix ===
+  core        139  (67.5%)
+  soft-core    14  (6.8%)
+  shell        18  (8.7%)
+  cloud        35  (17.0%)
+  total       206
+  Heaps: k = 170.427, gamma = 0.0291, R2 = 0.9655
+  pan-genome at N=290: 200.0, strict core 92.0
+
+=== what to report ===
+Heaps' exponent falls from 0.0675 on gene calls to 0.0291 on
+sequence. Current practice places the open/closed boundary near 0.3, so
+both are closed, but the sequence-based estimate is the defensible one
+and it is the more closed of the two.
+
+The strict core rises because annotation dropout was scoring present
+genes as absent. That is the positive form of the pan-GWAS negative
+result: the same correction that destroys the associations improves the
+pan-genome description.
+
+written: 03_summary/pangenome_comparison.csv

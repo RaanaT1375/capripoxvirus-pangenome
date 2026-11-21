@@ -1,0 +1,36 @@
+53 SRA-derived genomes, 237 GenBank genomes
+
+=== A. orthogroups absent from every GenBank genome, by class ===
+pangenome_class
+cloud        30
+shell         0
+soft_core     0
+core          0
+  cloud      n=50   per-genome load  SRA  3.58  GenBank  0.45  ratio   7.9x  MWU p=2.41e-04
+  shell      n=14   per-genome load  SRA  8.98  GenBank  9.19  ratio   1.0x  MWU p=1.16e-04
+  soft_core  n=10   per-genome load  SRA  9.87  GenBank  9.78  ratio   1.0x  MWU p=3.97e-01
+  core       n=132  per-genome load  SRA 131.87  GenBank 131.93  ratio   1.0x  MWU p=3.30e-01
+
+=== B. Heaps' law, by genome provenance ===
+  all290       n=290  pan=206  gamma=0.0698 (R2=0.9945) -> open
+  genbank237   n=237  pan=176  gamma=0.0325 (R2=0.9861) -> closed
+  sra53        n=53   pan=191  gamma=0.0613 (R2=0.9987) -> open
+
+=== C. provenance of the robust pan-GWAS hits (stage 11) ===
+Orthogroup   trait  n_sra  n_genbank  pct_sra  pct_genbank     fisher_p  sra_exclusive
+ OG0000159  Africa     19          0     35.8          0.0 4.334187e-16           True
+ OG0000156  Africa     16          0     30.2          0.0 1.891549e-13           True
+ OG0000161  Africa     16          0     30.2          0.0 1.891549e-13           True
+ OG0000155    Asia      1         47      1.9         19.8 7.421042e-04          False
+ OG0000157    Asia      0         26      0.0         11.0 6.456214e-03          False
+ OG0000154  Europe     15         99     28.3         41.8 8.677218e-02          False
+ OG0000152 Vaccine      3         88      5.7         37.1 1.214356e-06          False
+
+=== C2. are the traits themselves confounded with provenance? ===
+  Africa       SRA  15/53 (28.3%)  GenBank  37/237 (15.6%)  p=4.56e-02
+  Asia         SRA  21/53 (39.6%)  GenBank 132/237 (55.7%)  p=4.72e-02
+  Europe       SRA  17/53 (32.1%)  GenBank  68/237 (28.7%)  p=6.20e-01
+  Vaccine      SRA   1/53 ( 1.9%)  GenBank  19/237 ( 8.0%)  p=1.40e-01
+  Recombinant  SRA   0/53 ( 0.0%)  GenBank  10/237 ( 4.2%)  p=2.17e-01
+
+written: 02_results/*.csv

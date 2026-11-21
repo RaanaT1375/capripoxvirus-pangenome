@@ -1,0 +1,235 @@
+IQ-TREE 3.1.1 built Apr  8 2026
+
+Input file name: /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r0.fa
+Type of analysis: tree reconstruction
+Random seed number: 544522
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 48 sequences with 48645 nucleotide sites
+Number of constant sites: 45931 (= 94.4208% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 45931 (= 94.4208% of all sites)
+Number of parsimony informative sites: 2462
+Number of distinct site patterns: 1158
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: UNREST+FO+G4
+
+Rate parameter R:
+
+  A-C: 0.8350
+  A-G: 5.4316
+  A-T: 1.2407
+  C-A: 7.9041
+  C-G: 0.5664
+  C-T: 13.7086
+  G-A: 11.2068
+  G-C: 0.9634
+  G-T: 5.1669
+  T-A: 1.3679
+  T-C: 6.0119
+  T-G: 1.0000
+
+State frequencies: (estimated with maximum likelihood)
+
+  pi(A) = 0.4024
+  pi(C) = 0.1127
+  pi(G) = 0.1491
+  pi(T) = 0.3358
+
+Rate matrix Q:
+
+  A   -0.6875   0.07647    0.4974    0.1136
+  C    0.7239    -2.031   0.05187     1.255
+  G     1.026   0.08823    -1.588    0.4732
+  T    0.1253    0.5506   0.09158   -0.7675
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.02003
+
+ Category  Relative_rate  Proportion
+  1         4.85e-31       0.25
+  2         1.042e-15      0.25
+  3         9.693e-07      0.25
+  4         4              0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -86411.3229 (s.e. 476.7283)
+Unconstrained log-likelihood (without tree): -114071.4358
+Number of free parameters (#branches + #model parameters): 104
+Akaike information criterion (AIC) score: 173030.6459
+Corrected Akaike information criterion (AICc) score: 173031.0958
+Bayesian information criterion (BIC) score: 173945.0455
+
+Total tree length (sum of branch lengths): 0.0776
+Sum of internal branch lengths: 0.0656 (84.5220% of tree length)
+
+WARNING: 6 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is ROOTED at virtual root '__root__'
+
+                              +--SRR25461327
+                           +**|
+                           |  +**SRR21590386
+                        +--|
+                        |  +**OR797612.1
+                     +--|
+                     |  |  +**OR134839.1
+                     |  +--|
+                     |     +--OR134832.1
+                  +--|
+                  |  +--MW656253.1
+               +--|
+               |  +--OK318001.1
+          +----|
+          |    +--OR393169.1
++---------|
+|         |                          +--OR134848.1
+|         |                     +----|
+|         |                     |    |  +--MN636839.1
+|         |                     |    +--|
+|         |                     |       +--OM793606.1
+|         |                +----|
+|         |                |    +-----OR194148.1
+|         |        +-------|
+|         |        |       +--MT134042.1
+|         +--------|
+|                  |     +**PQ727633.1
+|                  |  +**|
+|                  |  |  +--OM803092.1
+|                  +--|
+|                     +--OQ555660.1
+|
+|                                                                             +--PQ014465.1
+|                                                                          +**|
+|                                                                          |  |  +--OQ434238.1
+|                                                                          |  +**|
+|                                                                          |     +--OQ434236.1
+|                                                                       +--|
+|                                                                       |  +--PV434148.1
+|                                                                    +--|
+|                                                                    |  +--MT137384.1
+|                                                                 +--|
+|                                                                 |  +--AY077833.1
+|                                                              +--|
+|                                                              |  |  +--MW167070.1
+|                                                              |  +--|
+|                                                              |     +--MW020571.1
+|                                                           +**|
+|                                                           |  +--KT438551.1
+|                                                        +--|
+|                                                        |  +--MG000156.1
+|                                                     +--|
+|                                                     |  |  +--OR239060.1
+|                                                     |  +--|
+|                                                     |     |     +--MW167071.1
+|                                                     |     |  +--|
+|                                                     |     |  |  +--PP886237.1
+|                                                     |     +--|
+|                                                     |        +--AY077832.1
+|      +----------------------------------------------|
+|      |                                              |  +--MN072627.1
+|      |                                              +--|
+|      |                                                 +--MN072626.1
++------|
+|      |                                               +--PX497580.1
+|      |                                            +--|
+|      |                                            |  +**PX499192.1
+|      |                                         +--|
+|      |                                         |  +--PV167794.1
+|      |                                      +--|
+|      |                                      |  |  +**MW020570.1
+|      |                                      |  +--|
+|      |                                      |     +**MN072620.1
+|      |                                +-----|
+|      |                                |     |     +--KC951854.1
+|      |                                |     |  +--|
+|      |                                |     |  |  +--MN072621.1
+|      |                                |     +--|
+|      |                                |        +--MH381810.1
+|      |                         +------|
+|      |                         |      |          +**NC_004003.1
+|      |                         |      |       +**|
+|      |                         |      |       |  +**KX576657.1
+|      |                         |      |    +--|
+|      |                         |      |    |  +--AY077836.1
+|      |                         |      +----|
+|      |                         |           +--MN072622.1
+|      +-------------------------|
+|                                |                   +--MN072623.1
+|                                |                +--|
+|                                |                |  +--MN072625.1
+|                                +----------------|
+|                                                 +--MN072624.1
+|
++**__root__
+
+Tree in newick format:
+
+((((((((SRR25461327:0.0001045160,SRR21590386:0.0000010000):0.0000010000,OR797612.1:0.0000010000):0.0001856068,(OR134839.1:0.0000010000,OR134832.1:0.0000205577):0.0000411164):0.0000818197,MW656253.1:0.0001442691):0.0000828864,OK318001.1:0.0002048550):0.0003728450,OR393169.1:0.0004758674):0.0020864545,((((OR134848.1:0.0000576119,(MN636839.1:0.0002276327,OM793606.1:0.0000205577):0.0008134175):0.0019528974,OR194148.1:0.0025089039):0.0018507199,MT134042.1:0.0010918202):0.0028982529,((PQ727633.1:0.0000010000,OM803092.1:0.0000205577):0.0000010000,OQ555660.1:0.0000205577):0.0013620948):0.0034911999):0.0036792125,((((((((((PQ014465.1:0.0006517871,(OQ434238.1:0.0001514558,OQ434236.1:0.0007916064):0.0000010000):0.0000010000,PV434148.1:0.0001080735):0.0000864489,MT137384.1:0.0000431676):0.0000648257,AY077833.1:0.0000431397):0.0000205577,(MW167070.1:0.0000864758,MW020571.1:0.0000431195):0.0001298061):0.0001729725,KT438551.1:0.0003445326):0.0000010000,MG000156.1:0.0004555222):0.0002190682,(OR239060.1:0.0002378601,((MW167071.1:0.0001729648,PP886237.1:0.0001296881):0.0000430851,AY077832.1:0.0000647849):0.0000647269):0.0001476680):0.0000856352,(MN072627.1:0.0001976538,MN072626.1:0.0001472436):0.0006599985):0.0172084034,((((((PX497580.1:0.0000205577,PX499192.1:0.0000010000):0.0001450311,PV167794.1:0.0000768736):0.0002023281,(MW020570.1:0.0000010000,MN072620.1:0.0000010000):0.0001305199):0.0001241887,((KC951854.1:0.0001910617,MN072621.1:0.0000640773):0.0000872263,MH381810.1:0.0007451686):0.0000873740):0.0021762980,(((NC_004003.1:0.0000010000,KX576657.1:0.0000010000):0.0000010000,AY077836.1:0.0000205577):0.0003835725,MN072622.1:0.0003042655):0.0019967592):0.0026264185,((MN072623.1:0.0003081534,MN072625.1:0.0003986411):0.0012440216,MN072624.1:0.0011707617):0.0062030874):0.0096199213):0.0028668393):0.0000000000;
+
+
+USER TREES
+----------
+
+See /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r0_z.trees for trees with branch lengths.
+
+Tree      logL    deltaL  bp-RELL    p-KH     p-SH       c-ELW       p-AU
+-------------------------------------------------------------------------
+  1 -86589.46729       0   0.938 +  0.941 +      1 +      0.89 +        1 + 
+  2 -86594.73145  5.2642  0.0308 -  0.058 +  0.058 +    0.0547 +   0.0566 + 
+  3 -86594.72673  5.2594  0.0312 + 0.0586 + 0.0586 +     0.055 +   0.0545 + 
+
+deltaL  : logL difference from the maximal logl in the set.
+bp-RELL : bootstrap proportion using RELL method (Kishino et al. 1990).
+p-KH    : p-value of one sided Kishino-Hasegawa test (1989).
+p-SH    : p-value of Shimodaira-Hasegawa test (2000).
+c-ELW   : Expected Likelihood Weight (Strimmer & Rambaut 2002).
+p-AU    : p-value of approximately unbiased (AU) test (Shimodaira, 2002).
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+All tests performed 10000 resamplings using the RELL method.
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r0_z.treefile -m "UNREST{0.835014,5.43162,1.24071,7.90408,0.566413,13.7086,11.2068,0.963434,5.16685,1.36789,6.01195,1}+G4{0.0200272}" --length 48645
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r0.fa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /cfs/earth/scratch/xpkk/Raana/Pangenome_Analysis/revision_2026-11/24_Root_Inference/02_results/balanced/r0.fa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 21 00:09:07 2026
+Total CPU time used: 3.05 seconds (0h:0m:3s)
+Total wall-clock time used: 25.6 seconds (0h:0m:25s)
+
